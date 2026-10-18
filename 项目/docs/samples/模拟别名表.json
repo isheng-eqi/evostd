@@ -1,0 +1,17 @@
+﻿{
+  "政务数据资源目录标识": "catalog_id",
+  "数据分级": "data_level",
+  "共享类型": "share_type",
+  "数据项数量": "field_count",
+  "数据提供方": "provider",
+  "数据来源系统": "source_system",
+  "目录名称": "catalog_name",
+  "责任处室": "owner_dept",
+  "解密日期": "declassify_date",
+  "共享条件": "share_condition",
+  "采集日期": "collect_date",
+  "入库日期": "ingest_date",
+  "发布日期": "publish_date",
+  "原始文件": "source_document",
+  "已下线信息系统": "source_system"
+}

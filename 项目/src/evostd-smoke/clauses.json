@@ -1,0 +1,348 @@
+{
+  "第5条": {
+    "spec": {
+      "clause_id": "第5条",
+      "title": "资产标识格式",
+      "kind": "格式约束",
+      "text": "资产标识应为全局唯一字符串，由 8 至 64 位字母、数字或连字符组成。",
+      "params": {
+        "field": "asset_id",
+        "pattern": "[A-Za-z0-9\\-]{8,64}"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第6条": {
+    "spec": {
+      "clause_id": "第6条",
+      "title": "资产模态受控",
+      "kind": "受控词表",
+      "text": "数据资产的模态应属于受控词表：文本、表格、图文、影像。",
+      "params": {
+        "field": "modality",
+        "allowed": [
+          "文本",
+          "表格",
+          "图文",
+          "影像"
+        ]
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第7条": {
+    "spec": {
+      "clause_id": "第7条",
+      "title": "密级受控",
+      "kind": "受控词表",
+      "text": "数据资产密级应属于受控词表：公开、内部、秘密。",
+      "params": {
+        "field": "secrecy",
+        "allowed": [
+          "公开",
+          "内部",
+          "秘密"
+        ]
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第8条": {
+    "spec": {
+      "clause_id": "第8条",
+      "title": "责任部门必填",
+      "kind": "必填约束",
+      "text": "数据资产应登记责任部门，不得为空。",
+      "params": {
+        "field": "owner_dept"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第9条": {
+    "spec": {
+      "clause_id": "第9条",
+      "title": "秘密级附加要求",
+      "kind": "条件必填",
+      "text": "密级为“秘密”的数据资产，应同时登记解密日期。",
+      "params": {
+        "when_field": "secrecy",
+        "when_value": "秘密",
+        "require_field": "declassify_date"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第10条": {
+    "spec": {
+      "clause_id": "第10条",
+      "title": "影像模态附加要求",
+      "kind": "条件必填",
+      "text": "资产若包含影像模态，应同时登记标注说明。",
+      "params": {
+        "when_field": "modality",
+        "when_value": "影像",
+        "require_field": "annotation_note"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第11条": {
+    "spec": {
+      "clause_id": "第11条",
+      "title": "时间序一致性",
+      "kind": "跨字段一致性",
+      "text": "数据资产的采集时间不得晚于入库时间。",
+      "params": {
+        "left": "collect_time",
+        "right": "ingest_time",
+        "op": "<="
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第12条": {
+    "spec": {
+      "clause_id": "第12条",
+      "title": "质量评分区间",
+      "kind": "数值范围",
+      "text": "数据资产质量评分应为 0 至 100 之间的数值。",
+      "params": {
+        "field": "quality_score",
+        "min": 0,
+        "max": 100
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第13条": {
+    "spec": {
+      "clause_id": "第13条",
+      "title": "字段完整度区间",
+      "kind": "数值范围",
+      "text": "字段完整度应为 0 至 1 之间的小数。",
+      "params": {
+        "field": "completeness",
+        "min": 0.0,
+        "max": 1.0
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第14条": {
+    "spec": {
+      "clause_id": "第14条",
+      "title": "原始文件哈希格式",
+      "kind": "格式约束",
+      "text": "原始文件哈希应为 64 位小写十六进制字符串。",
+      "params": {
+        "field": "file_hash",
+        "pattern": "[0-9a-f]{64}"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第15条": {
+    "spec": {
+      "clause_id": "第15条",
+      "title": "引用标准受控",
+      "kind": "跨文档引用",
+      "text": "数据资产引用的标准编号，应存在于受控标准清单中。",
+      "params": {
+        "field": "cited_standards",
+        "registry": "controlled_standards"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第16条": {
+    "spec": {
+      "clause_id": "第16条",
+      "title": "存储位置必填",
+      "kind": "必填约束",
+      "text": "数据资产应登记存储位置，不得为空。",
+      "params": {
+        "field": "storage_uri"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {},
+    "reason": "由标准编译而来（种子判据）",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第20条": {
+    "spec": {
+      "clause_id": "第20条",
+      "title": "业务真实性",
+      "kind": "必填约束",
+      "text": "数据资产应真实反映其所描述的业务过程，不得虚构。",
+      "params": {
+        "field": "_uncompilable_business_truth_"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": false
+    },
+    "status": "uncompilable",
+    "evidence": {},
+    "reason": "不可编译：只能靠人判断，留待软确认或判据语言扩张",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "第21条": {
+    "spec": {
+      "clause_id": "第21条",
+      "title": "描述清晰完整",
+      "kind": "必填约束",
+      "text": "数据资产的描述信息应清晰、完整，便于跨部门理解与复用。",
+      "params": {
+        "field": "_uncompilable_description_quality_"
+      },
+      "standard": "工业数据资产登记与校验规范（演示样例）",
+      "compilable": false
+    },
+    "status": "uncompilable",
+    "evidence": {},
+    "reason": "不可编译：只能靠人判断，留待软确认或判据语言扩张",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "standard"
+  },
+  "提案-存储位置失效": {
+    "spec": {
+      "clause_id": "提案-存储位置失效",
+      "title": "存储位置不得指向已下线存储",
+      "kind": "禁止取值",
+      "text": "数据资产的存储位置不得指向已下线存储。",
+      "params": {
+        "field": "storage_uri",
+        "registry": "retired_storage"
+      },
+      "standard": "（系统自提案）",
+      "compilable": true
+    },
+    "status": "adopted",
+    "evidence": {
+      "n_anchors": 35,
+      "n_compliant_anchors": 17,
+      "n_soft_confirms": 2,
+      "attributable_caught": 2,
+      "false_alarm": 0,
+      "explained_by_existing": 0,
+      "caught_ids": [
+        "SA-001",
+        "SA-002"
+      ],
+      "false_alarm_ids": []
+    },
+    "reason": "R1/R2/R3 全部满足：可归因命中 2 条，零误报",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "system_proposed"
+  },
+  "提案-过度宽泛": {
+    "spec": {
+      "clause_id": "提案-过度宽泛",
+      "title": "存储位置不得属于该清单",
+      "kind": "禁止取值",
+      "text": "存储位置不得属于该清单。",
+      "params": {
+        "field": "storage_uri",
+        "registry": "bogus_registry"
+      },
+      "standard": "（系统自提案）",
+      "compilable": true
+    },
+    "status": "rejected",
+    "evidence": {
+      "n_anchors": 35,
+      "n_compliant_anchors": 17,
+      "n_soft_confirms": 2,
+      "attributable_caught": 0,
+      "false_alarm": 17,
+      "explained_by_existing": 14,
+      "caught_ids": [],
+      "false_alarm_ids": [
+        "HA2-001",
+        "HA2-003",
+        "HA2-004",
+        "HA2-005",
+        "HA2-006",
+        "HA2-008",
+        "HA2-009",
+        "HA2-010",
+        "HA2-015",
+        "HA2-017"
+      ]
+    },
+    "reason": "R2 未满足：在合规锚点 ['HA2-001', 'HA2-003', 'HA2-004'] 上误报",
+    "added_at": "2026-10-17T14:13:11Z",
+    "origin": "system_proposed"
+  }
+}

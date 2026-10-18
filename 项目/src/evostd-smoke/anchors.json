@@ -1,0 +1,1407 @@
+[
+  {
+    "anchor_id": "HA2-001",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第5条",
+    "how": "asset_id 取合法样例（由正则生成并复核）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-002",
+    "asset": {
+      "asset_id": "短",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第5条",
+    "how": "asset_id 取非法样例",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "短",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-003",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "文本",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第6条",
+    "how": "modality 取受控词表内取值「文本」",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "文本",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-004",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第6条",
+    "how": "modality 取受控词表内取值「表格」",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-005",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "图文",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第6条",
+    "how": "modality 取受控词表内取值「图文」",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "图文",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-006",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "影像",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv",
+      "annotation_note": "已填写"
+    },
+    "label": "compliant",
+    "source_clause": "第6条",
+    "how": "modality 取受控词表内取值「影像」 ｜闭包补齐：annotation_note（因 modality=影像）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "影像",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv",
+        "annotation_note": "已填写"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-007",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "∉受控词表",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第6条",
+    "how": "modality 取受控词表外取值",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "∉受控词表",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-008",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "公开",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第7条",
+    "how": "secrecy 取受控词表内取值「公开」",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "公开",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-009",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第7条",
+    "how": "secrecy 取受控词表内取值「内部」",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-010",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "秘密",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv",
+      "declassify_date": "2026-01-01"
+    },
+    "label": "compliant",
+    "source_clause": "第7条",
+    "how": "secrecy 取受控词表内取值「秘密」 ｜闭包补齐：declassify_date（因 secrecy=秘密）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "秘密",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv",
+        "declassify_date": "2026-01-01"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-011",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "∉受控词表",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第7条",
+    "how": "secrecy 取受控词表外取值",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "∉受控词表",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-012",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第8条",
+    "how": "owner_dept 缺失（必填）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-013",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "   ",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第8条",
+    "how": "owner_dept 为空白串（必填）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "   ",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-014",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "秘密",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第9条",
+    "how": "secrecy=秘密 时 declassify_date 缺失",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "秘密",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-015",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "秘密",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv",
+      "declassify_date": "已填写"
+    },
+    "label": "compliant",
+    "source_clause": "第9条",
+    "how": "secrecy=秘密 且 declassify_date 已填",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "秘密",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv",
+        "declassify_date": "已填写"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-016",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "影像",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第10条",
+    "how": "modality=影像 时 annotation_note 缺失",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "影像",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-017",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "影像",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv",
+      "annotation_note": "已填写"
+    },
+    "label": "compliant",
+    "source_clause": "第10条",
+    "how": "modality=影像 且 annotation_note 已填",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "影像",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv",
+        "annotation_note": "已填写"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-018",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-12-31",
+      "ingest_time": "2026-01-01",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第11条",
+    "how": "collect_time <= ingest_time 的反例",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-12-31",
+        "ingest_time": "2026-01-01",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-019",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-05",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第11条",
+    "how": "collect_time 与 ingest_time 相等（满足 <=）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-05",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-020",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 0,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第12条",
+    "how": "quality_score 取下界 0",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 0,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-021",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": -1,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第12条",
+    "how": "quality_score 低于下界 0",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": -1,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-022",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 100,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第12条",
+    "how": "quality_score 取上界 100",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 100,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-023",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 101,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第12条",
+    "how": "quality_score 超过上界 100",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 101,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-024",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.0,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第13条",
+    "how": "completeness 取下界 0.0",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.0,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-025",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": -1.0,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第13条",
+    "how": "completeness 低于下界 0.0",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": -1.0,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-026",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 1.0,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第13条",
+    "how": "completeness 取上界 1.0",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 1.0,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-027",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 2.0,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第13条",
+    "how": "completeness 超过上界 1.0",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 2.0,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-028",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第14条",
+    "how": "file_hash 取合法样例（由正则生成并复核）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-029",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "ZZZ",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第14条",
+    "how": "file_hash 取非法样例",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "ZZZ",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-030",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "compliant",
+    "source_clause": "第15条",
+    "how": "cited_standards 取受控清单 controlled_standards 内条目",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-031",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "∉清单"
+      ],
+      "storage_uri": "oss://assets/2026/0001.csv"
+    },
+    "label": "violating",
+    "source_clause": "第15条",
+    "how": "cited_standards 取受控清单外条目",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "∉清单"
+        ],
+        "storage_uri": "oss://assets/2026/0001.csv"
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-032",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ]
+    },
+    "label": "violating",
+    "source_clause": "第16条",
+    "how": "storage_uri 缺失（必填）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ]
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "HA2-033",
+    "asset": {
+      "asset_id": "AST-2026-0001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "   "
+    },
+    "label": "violating",
+    "source_clause": "第16条",
+    "how": "storage_uri 为空白串（必填）",
+    "kind": "hard",
+    "level": "point",
+    "assets": [
+      {
+        "asset_id": "AST-2026-0001",
+        "modality": "表格",
+        "secrecy": "内部",
+        "owner_dept": "设备管理部",
+        "collect_time": "2026-03-01",
+        "ingest_time": "2026-03-05",
+        "quality_score": 87.5,
+        "completeness": 0.93,
+        "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "cited_standards": [
+          "GB/T 33863.1-2017"
+        ],
+        "storage_uri": "   "
+      }
+    ],
+    "attributed_to": null
+  },
+  {
+    "anchor_id": "SA-001",
+    "label": "violating",
+    "source_clause": "人工确认",
+    "how": "由 专家A 确认",
+    "kind": "soft",
+    "asset": {
+      "asset_id": "AST-2026-9000",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://retired/legacy-2019",
+      "_label": "violating",
+      "_why": "存储位置指向已下线存储（现有判据测不到）"
+    }
+  },
+  {
+    "anchor_id": "SA-002",
+    "label": "violating",
+    "source_clause": "人工确认",
+    "how": "由 专家A 确认",
+    "kind": "soft",
+    "asset": {
+      "asset_id": "AST-2026-9001",
+      "modality": "表格",
+      "secrecy": "内部",
+      "owner_dept": "设备管理部",
+      "collect_time": "2026-03-01",
+      "ingest_time": "2026-03-05",
+      "quality_score": 87.5,
+      "completeness": 0.93,
+      "file_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "cited_standards": [
+        "GB/T 33863.1-2017"
+      ],
+      "storage_uri": "oss://retired/legacy-2019",
+      "_label": "violating",
+      "_why": "存储位置指向已下线存储（现有判据测不到）"
+    }
+  }
+]
