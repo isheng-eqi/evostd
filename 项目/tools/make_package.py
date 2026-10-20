@@ -32,6 +32,8 @@ CURRENT_FILES = [
     "平台核验记录-20261021.md",
     "开源发布说明.md",
     "演示视频脚本-3分钟.md",
+    "答辩问答准备.md",
+    "新行业迁移手册.md",
     "数字对账.json",
     "成本基准.json",
     "agent-callgraph.png",
