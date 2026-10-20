@@ -72,12 +72,28 @@ def clauses_from_tables(start_no: int = 45, docs: Optional[list] = None,
                         domain: str = "manufacturing") -> list[Clause]:
     """从语料机械抽表 → 自动生成条款。抽不出就返回空（不猜）。"""
     try:
+        import importlib
+
         from standard.table_extractor import extract_limit_tables, clauses_from_tables as gen
-        from domains.manufacturing import standards as _ms
+
+        # ★ 实测缺陷（2026-10-21，平台端到端调用暴露）：
+        #   原写法 `from domains.manufacturing import standards as _ms` 拿到的是
+        #   **包里的 `standards()` 函数**，不是标准名；`_ms()` 返回的对象没有
+        #   `STANDARD_NAME`，于是第45/46条的 `source` 变成 **`《》第45条`**——
+        #   条款能回指，标准名却丢了。对一个以"可溯源"为卖点的系统，这是硬伤。
+        #   现在直接取**领域包的包级常量**，并且按 domain 取对应包，
+        #   不再是政务包也去读制造业的标准名。
+        _PKG = {
+            "manufacturing": "domains.manufacturing",
+            "gov_catalog": "domains.gov_catalog",
+        }
+        pkg_name = _PKG.get(domain, "domains.manufacturing")
         if docs is None:
-            from domains.manufacturing.corpus import all_docs as _ad
-            docs = _ad()
-        name = getattr(_ms(), "STANDARD_NAME", "")
+            docs = importlib.import_module(f"{pkg_name}.corpus").all_docs()
+        name = getattr(importlib.import_module(pkg_name), "STANDARD_NAME", "")
+        if not name:
+            # 大声失败：宁可显示"标准名缺失"，也不要悄悄生成一个《》第N条
+            name = "（标准名缺失）"
         return gen(extract_limit_tables(docs), name, start_no=start_no, domain=domain)
     except Exception as e:
         print(f"[warn] 从语料抽表失败：{e}")
