@@ -83,13 +83,17 @@ def main() -> int:
         print("★ 对账失败：材料数字与代码不一致，拒绝继续。")
         return 1
 
-    print("== 4. 设计文档 → docx ==")
+    print("== 4. 交付自检（链接/图片/占位符）==")
+    if not run([sys.executable, os.path.join("tools", "check_deliverables.py")], ROOT, "交付自检"):
+        return 1
+
+    print("== 5. 设计文档 → docx ==")
     if not run([sys.executable, os.path.join("tools", "md2docx.py"),
                 os.path.join("submission", "开发设计文档-六节版.md"),
                 os.path.join("submission", "开发设计文档-六节版.docx")], ROOT, "docx 生成"):
         return 1
 
-    print("== 5. 初赛包 ==")
+    print("== 6. 初赛包 ==")
     if not run([sys.executable, os.path.join("tools", "make_package.py")], ROOT, "提交包"):
         return 1
 
