@@ -1,6 +1,6 @@
 # Nexent Skills 机制与开发指南（v2.7.0 源码实证）
 
-> 源码基线：`C:\Users\HI\Desktop\ict自进化\第三方\nexent`，`VERSION` = `v2.7.0`（仓库根 `VERSION` 文件）。
+> 源码基线：`<Nexent 源码目录>`，`VERSION` = `v2.7.0`（仓库根 `VERSION` 文件）。
 > 本文所有结论均来自实读源码/文档，标注 `文件路径:行号`。无法执行验证的环节显式标注 `【未验证】`。
 > 阅读范围：`sdk/nexent/skills/**`、`sdk/nexent/core/tools/{run_skill_script,read_skill_md,read_skill_config}_tool.py`、`sdk/nexent/core/agents/{context,prompt}/**`、`.agents/skills/**`、`.claude/skills/**`、`backend/**`、`frontend/**`、`deploy/**`、`doc/docs/zh/**`。
 

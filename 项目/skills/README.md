@@ -89,7 +89,7 @@
 **打包**（`SKILL.md` 必须在 ZIP 的根，或第一层子目录下；根目录最稳）：
 
 ```powershell
-cd "C:\Users\HI\Desktop\ict自进化\项目\skills"
+cd "项目\skills"
 foreach ($s in @('asset-onboarding','standard-verify','clause-proposal','decision-trace','evolution-run')) {
     if (Test-Path "$s.zip") { Remove-Item "$s.zip" }
     Compress-Archive -Path $s -DestinationPath "$s.zip"
@@ -117,7 +117,7 @@ curl.exe -X POST "http://<nexent-host>:<port>/api/skills/upload" `
 ## 四、本地自检
 
 ```powershell
-cd "C:\Users\HI\Desktop\ict自进化\项目\skills"
+cd "项目\skills"
 python _validate.py              # 静态自检（5 项必检 + 5 项附加）
 python _validate.py --execute    # 追加：跑每个脚本的 --selftest，逐条校验 artifact 8 项契约
 ```

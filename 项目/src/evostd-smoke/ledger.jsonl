@@ -1,9 +1,0 @@
-{"event": "sync_anchors", "n_base": 33, "n_extra": 0, "n_total": 33, "t": "2026-10-17T14:13:11Z"}
-{"event": "seed", "n_clauses": 14, "n_compiled": 12, "n_hard_anchors": 33, "uncompilable": ["第20条", "第21条"], "t": "2026-10-17T14:13:11Z"}
-{"event": "propose", "clause": "提案-存储位置失效", "verdict": "rejected", "reason": "R3 未满足：没有任何**可归因**命中（要么抓不到违规锚点，要么现有判据已经能抓到）", "stats": {"n_anchors": 33, "n_compliant_anchors": 17, "n_soft_confirms": 0, "attributable_caught": 0, "false_alarm": 0, "explained_by_existing": 0, "caught_ids": [], "false_alarm_ids": []}, "t": "2026-10-17T14:13:11Z"}
-{"event": "soft_confirm", "anchor_id": "SA-001", "label": "violating", "by": "专家A", "asset_id": "AST-2026-9000", "t": "2026-10-17T14:13:11Z"}
-{"event": "soft_confirm", "anchor_id": "SA-002", "label": "violating", "by": "专家A", "asset_id": "AST-2026-9001", "t": "2026-10-17T14:13:11Z"}
-{"event": "propose", "clause": "提案-存储位置失效", "verdict": "adopted", "reason": "R1/R2/R3 全部满足：可归因命中 2 条，零误报", "stats": {"n_anchors": 35, "n_compliant_anchors": 17, "n_soft_confirms": 2, "attributable_caught": 2, "false_alarm": 0, "explained_by_existing": 0, "caught_ids": ["SA-001", "SA-002"], "false_alarm_ids": []}, "t": "2026-10-17T14:13:11Z"}
-{"event": "propose", "clause": "提案-过度宽泛", "verdict": "rejected", "reason": "R2 未满足：在合规锚点 ['HA2-001', 'HA2-003', 'HA2-004'] 上误报", "stats": {"n_anchors": 35, "n_compliant_anchors": 17, "n_soft_confirms": 2, "attributable_caught": 0, "false_alarm": 17, "explained_by_existing": 14, "caught_ids": [], "false_alarm_ids": ["HA2-001", "HA2-003", "HA2-004", "HA2-005", "HA2-006", "HA2-008", "HA2-009", "HA2-010", "HA2-015", "HA2-017"]}, "t": "2026-10-17T14:13:11Z"}
-{"event": "snapshot", "id": "SNAP-1792246391", "label": "冒烟测试", "n_clauses": 16, "t": "2026-10-17T14:13:11Z"}
-{"event": "rollback", "to": "SNAP-1792246391", "n_clauses": 16, "t": "2026-10-17T14:13:11Z"}

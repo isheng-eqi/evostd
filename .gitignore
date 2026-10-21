@@ -57,3 +57,5 @@ ICT自进化-给测试者-*.zip
 /0[0-7]-*.md
 /README-研究档案.md
 ICT自进化-初赛包-*.zip
+# 生成的状态目录（可再跑 smoke 重建），不入库
+项目/src/evostd-smoke/
