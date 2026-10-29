@@ -1,0 +1,413 @@
+{
+ "labels": {
+  "国务院": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "abstain",
+    "detail": "正文未解析到日期"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：网站标识码、联系电话"
+   }
+  },
+  "北京": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "fail",
+    "detail": "最近日期 2026-01-13，距今 289 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "天津": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "河北": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系电话"
+   }
+  },
+  "山西": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系电话"
+   }
+  },
+  "内蒙古": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "辽宁": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "吉林": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "abstain",
+    "detail": "正文未解析到日期"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：主办单位、联系电话"
+   }
+  },
+  "黑龙江": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-31，距今 -2 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "上海": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "江苏": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-25，距今 4 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：主办单位、联系电话"
+   }
+  },
+  "浙江": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：主办单位"
+   }
+  },
+  "安徽": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "fail",
+    "detail": "最近日期 2026-10-14，距今 15 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系电话"
+   }
+  },
+  "福建": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：公安备案"
+   }
+  },
+  "江西": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "河南": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-19，距今 10 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：公安备案、联系电话"
+   }
+  },
+  "湖南": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "fail",
+    "detail": "最近日期 2026-10-08，距今 21 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：公安备案"
+   }
+  },
+  "广东": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-28，距今 1 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系电话"
+   }
+  },
+  "海南": {
+   "error": "no render"
+  },
+  "四川": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "abstain",
+    "detail": "正文未解析到日期"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系电话"
+   }
+  },
+  "贵州": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "云南": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-12-01，距今 -33 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "西藏": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-28，距今 1 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "陕西": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：主办单位、联系电话"
+   }
+  },
+  "宁夏": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-26，距今 3 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系电话"
+   }
+  },
+  "新疆": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-28，距今 1 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "太原": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "教育部": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-26，距今 3 天"
+   },
+   "R5": {
+    "status": "abstain",
+    "detail": "页脚只取到 2/5 项"
+   }
+  },
+  "工信部": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：网站标识码、联系电话"
+   }
+  },
+  "应急部": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：网站标识码、联系电话"
+   }
+  }
+ }
+}
