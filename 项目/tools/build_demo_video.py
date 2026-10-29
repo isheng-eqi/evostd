@@ -41,8 +41,8 @@ SCENES = [
      "不合格 1：网站标识缺联系电话", "按检查指标，这一项扣 0.5 分。"),
     ("s4", "体检报告-河北.png", (520, 250, 1000, 430), 6,
      "不合格 2：页面缺 meta description", "普通人看不见，搜索引擎和读屏软件会读。"),
-    ("s5", "体检报告-北京.png", (0, 0, 1440, 430), 6,
-     "北京：页脚标识由脚本注入，正文不可见", "系统弃权，不判不合格。"),
+    ("s5", "体检报告-河北.png", (0, 120, 1440, 700), 6,
+     "严重错别字：需要人判，系统弃权", "判不了就不判，不拿“通过”糊过去。"),
     ("s6", "基准对比.png", None, 8,
      "同样 84 个判定：模型 0.643，逐项核对 0.52",
      "给它整份标准反而更低（0.583）。"),
@@ -123,7 +123,7 @@ def main() -> int:
         fitted = fit(raw, f"{name}_fit.png")
         make_seg(fitted, secs, (c1, c2), str(i))
         print(f"   {name} {secs}s")
-    make_seg("s7.png", 7, None, "7")
+    make_seg("s7.png", 7, None, "9")
 
     with open(os.path.join(WORK, "list.txt"), "w", encoding="utf-8") as f:
         for s in segs:
