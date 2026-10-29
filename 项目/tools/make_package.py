@@ -27,8 +27,8 @@ SUB = os.path.join(ROOT, "submission")
 # 包内清单：只放**当前口径**的材料；历史版本留在工作区，不进包
 CURRENT_FILES = [
     "00-先读我-评委入口.md",
-    "开发设计文档-模板版.md",
-    "开发设计文档-模板版.docx",
+    "开发设计文档-合规体检版.md",
+    "开发设计文档-合规体检版.docx",
     "Nexent智能体说明.md",
     "Nexent智能体说明.docx",
     "agent-config.json",

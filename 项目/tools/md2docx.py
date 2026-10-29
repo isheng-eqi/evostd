@@ -203,6 +203,24 @@ def convert(md_path: str, out_path: str):
             buf = []
             continue
 
+        m_ul = re.match(r"^\s*[-*]\s+(.*)$", line)
+        if m_ul:
+            _flush_paragraph(doc, buf)
+            buf = []
+            p = doc.add_paragraph(style="List Bullet")
+            p.paragraph_format.space_after = Pt(2)
+            _add_rich_text(p, m_ul.group(1))
+            continue
+
+        m_ol = re.match(r"^\s*\d+[.)]\s+(.*)$", line)
+        if m_ol:
+            _flush_paragraph(doc, buf)
+            buf = []
+            p = doc.add_paragraph(style="List Number")
+            p.paragraph_format.space_after = Pt(2)
+            _add_rich_text(p, m_ol.group(1))
+            continue
+
         buf.append(line)
 
     _flush_paragraph(doc, buf)

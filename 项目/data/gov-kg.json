@@ -1,0 +1,6996 @@
+{
+ "schema": {
+  "entities": [
+   "站点",
+   "判定",
+   "条款"
+  ],
+  "relations": [
+   "有一项判定",
+   "依据条款"
+  ]
+ },
+ "counts": {
+  "nodes": 464,
+  "edges": 840,
+  "sites": 30,
+  "verdicts": 420,
+  "pass": 215,
+  "fail": 40,
+  "abstain": 165
+ },
+ "nodes": [
+  {
+   "id": "clause:R1",
+   "type": "条款",
+   "label": "单项否决：监测期内超过 15 秒打不开的次数占比 ≥5%"
+  },
+  {
+   "id": "clause:R2",
+   "type": "条款",
+   "label": "单项否决：监测 2 周，首页无信息更新"
+  },
+  {
+   "id": "clause:R3",
+   "type": "条款",
+   "label": "政策文件类一级栏目 6 个月内未更新，扣 5 分"
+  },
+  {
+   "id": "clause:R4",
+   "type": "条款",
+   "label": "政策解读类一级栏目 6 个月内未更新，扣 5 分"
+  },
+  {
+   "id": "clause:R5",
+   "type": "条款",
+   "label": "网站标识五项，每缺一项扣 0.5 分"
+  },
+  {
+   "id": "clause:R6",
+   "type": "条款",
+   "label": "未添加“我为政府网站找错”入口，扣 1 分"
+  },
+  {
+   "id": "clause:R7",
+   "type": "条款",
+   "label": "未提供全站搜索或不可用，扣 4 分"
+  },
+  {
+   "id": "clause:R8",
+   "type": "条款",
+   "label": "内容页无站点标签或内容标签，每个扣 0.1 分"
+  },
+  {
+   "id": "clause:R9",
+   "type": "条款",
+   "label": "首页链接打不开或错误，每条扣 0.2 分"
+  },
+  {
+   "id": "clause:R10",
+   "type": "条款",
+   "label": "未完成 IPv6 改造，扣 1 分"
+  },
+  {
+   "id": "clause:R11",
+   "type": "条款",
+   "label": "办事指南重点要素每缺一处扣 0.5 分"
+  },
+  {
+   "id": "clause:R12",
+   "type": "条款",
+   "label": "单项否决：出现严重表述错误"
+  },
+  {
+   "id": "clause:R13",
+   "type": "条款",
+   "label": "单项否决：未提供有效咨询渠道或超 3 个月未回应"
+  },
+  {
+   "id": "clause:R14",
+   "type": "条款",
+   "label": "兼容性 / 一号登录"
+  },
+  {
+   "id": "site:国务院",
+   "type": "站点",
+   "label": "国务院",
+   "url": "https://www.gov.cn/"
+  },
+  {
+   "id": "verdict:国务院:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.32s"
+  },
+  {
+   "id": "verdict:国务院:R2",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "首页未解析到发布日期，需人工核对"
+  },
+  {
+   "id": "verdict:国务院:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:国务院:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:国务院:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码"
+  },
+  {
+   "id": "verdict:国务院:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:国务院:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:国务院:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:国务院:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:国务院:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:国务院:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:国务院:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:国务院:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:国务院:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:北京",
+   "type": "站点",
+   "label": "北京",
+   "url": "https://www.beijing.gov.cn/"
+  },
+  {
+   "id": "verdict:北京:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.26s"
+  },
+  {
+   "id": "verdict:北京:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:北京:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:北京:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:北京:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位"
+  },
+  {
+   "id": "verdict:北京:R6",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "静态页面未见入口，可能由脚本注入"
+  },
+  {
+   "id": "verdict:北京:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:北京:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:北京:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:北京:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:北京:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:北京:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:北京:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:北京:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:天津",
+   "type": "站点",
+   "label": "天津",
+   "url": "https://www.tj.gov.cn/"
+  },
+  {
+   "id": "verdict:天津:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.84s"
+  },
+  {
+   "id": "verdict:天津:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:天津:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:天津:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-09-03，距今 56 天"
+  },
+  {
+   "id": "verdict:天津:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：1200000052；ICP备05010518；公网安备 12010302000991；主办：；12345"
+  },
+  {
+   "id": "verdict:天津:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:天津:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:天津:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:天津:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:天津:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:天津:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页面仅命中 0/10 个要素，疑似栏目页而非事项详情页"
+  },
+  {
+   "id": "verdict:天津:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:天津:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:天津:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:河北",
+   "type": "站点",
+   "label": "河北",
+   "url": "https://www.hebei.gov.cn/"
+  },
+  {
+   "id": "verdict:河北:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.36s"
+  },
+  {
+   "id": "verdict:河北:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:河北:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-19，距今 10 天"
+  },
+  {
+   "id": "verdict:河北:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-19，距今 10 天"
+  },
+  {
+   "id": "verdict:河北:R5",
+   "type": "判定",
+   "label": "fail",
+   "detail": "缺少：联系电话｜网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办："
+  },
+  {
+   "id": "verdict:河北:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:河北:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:河北:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:河北:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:河北:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:河北:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:河北:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:河北:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:河北:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:山西",
+   "type": "站点",
+   "label": "山西",
+   "url": "https://www.shanxi.gov.cn/"
+  },
+  {
+   "id": "verdict:山西:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.28s"
+  },
+  {
+   "id": "verdict:山西:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:山西:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-08，距今 21 天"
+  },
+  {
+   "id": "verdict:山西:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:山西:R5",
+   "type": "判定",
+   "label": "fail",
+   "detail": "缺少：联系电话｜网站标识码：1400000045；ICP备12000773；公网安备 14010502050691；主办："
+  },
+  {
+   "id": "verdict:山西:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:山西:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:山西:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:山西:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:山西:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:山西:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页面仅命中 1/10 个要素，疑似栏目页而非事项详情页"
+  },
+  {
+   "id": "verdict:山西:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:山西:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:山西:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:内蒙古",
+   "type": "站点",
+   "label": "内蒙古",
+   "url": "https://www.nmg.gov.cn/"
+  },
+  {
+   "id": "verdict:内蒙古:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.37s"
+  },
+  {
+   "id": "verdict:内蒙古:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:内蒙古:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:内蒙古:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:内蒙古:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：1500000001；ICP备05000248；公网安备15010502000333；主办单位：；联系电话：0471-4865916"
+  },
+  {
+   "id": "verdict:内蒙古:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:内蒙古:R7",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到"
+  },
+  {
+   "id": "verdict:内蒙古:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:内蒙古:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:内蒙古:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:内蒙古:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:内蒙古:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:内蒙古:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:内蒙古:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:辽宁",
+   "type": "站点",
+   "label": "辽宁",
+   "url": "https://www.ln.gov.cn/"
+  },
+  {
+   "id": "verdict:辽宁:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.44s"
+  },
+  {
+   "id": "verdict:辽宁:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:辽宁:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-09-30，距今 29 天"
+  },
+  {
+   "id": "verdict:辽宁:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:辽宁:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：2100000037；ICP备05023109；公网安备 21010502000372；主办单位：；12345"
+  },
+  {
+   "id": "verdict:辽宁:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:辽宁:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:辽宁:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:辽宁:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:辽宁:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:辽宁:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页面仅命中 0/10 个要素，疑似栏目页而非事项详情页"
+  },
+  {
+   "id": "verdict:辽宁:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:辽宁:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:辽宁:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:吉林",
+   "type": "站点",
+   "label": "吉林",
+   "url": "https://www.jl.gov.cn/"
+  },
+  {
+   "id": "verdict:吉林:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.59s"
+  },
+  {
+   "id": "verdict:吉林:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:吉林:R3",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策文件栏目入口"
+  },
+  {
+   "id": "verdict:吉林:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-22，距今 7 天"
+  },
+  {
+   "id": "verdict:吉林:R5",
+   "type": "判定",
+   "label": "fail",
+   "detail": "缺少：主办单位、联系电话｜网站标识码：2200000019；ICP备05001602；公网安备 22000002000002"
+  },
+  {
+   "id": "verdict:吉林:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:吉林:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:吉林:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:吉林:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:吉林:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:吉林:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:吉林:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:吉林:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:吉林:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:黑龙江",
+   "type": "站点",
+   "label": "黑龙江",
+   "url": "https://www.hlj.gov.cn/"
+  },
+  {
+   "id": "verdict:黑龙江:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.49s"
+  },
+  {
+   "id": "verdict:黑龙江:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:黑龙江:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-26，距今 3 天"
+  },
+  {
+   "id": "verdict:黑龙江:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-20，距今 9 天"
+  },
+  {
+   "id": "verdict:黑龙江:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：2300000061；ICP备05008713；公网安备 23010302000360；主办：；12345"
+  },
+  {
+   "id": "verdict:黑龙江:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:黑龙江:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:黑龙江:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:黑龙江:R9",
+   "type": "判定",
+   "label": "fail",
+   "detail": "抽查 5 条，坏链 1 条"
+  },
+  {
+   "id": "verdict:黑龙江:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:黑龙江:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:黑龙江:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:黑龙江:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:黑龙江:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:上海",
+   "type": "站点",
+   "label": "上海",
+   "url": "https://www.sh.gov.cn/"
+  },
+  {
+   "id": "verdict:上海:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.77s"
+  },
+  {
+   "id": "verdict:上海:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:上海:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:上海:R4",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策解读栏目入口"
+  },
+  {
+   "id": "verdict:上海:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：3100000044；ICP备2021016245；公网安备 31010102004544；主办单位：；12345"
+  },
+  {
+   "id": "verdict:上海:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:上海:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:上海:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:上海:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:上海:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:上海:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:上海:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:上海:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:上海:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:江苏",
+   "type": "站点",
+   "label": "江苏",
+   "url": "https://www.jiangsu.gov.cn/"
+  },
+  {
+   "id": "verdict:江苏:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.38s"
+  },
+  {
+   "id": "verdict:江苏:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-25，距今 4 天"
+  },
+  {
+   "id": "verdict:江苏:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:江苏:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:江苏:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格"
+  },
+  {
+   "id": "verdict:江苏:R6",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "静态页面未见入口，可能由脚本注入"
+  },
+  {
+   "id": "verdict:江苏:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:江苏:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:江苏:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:江苏:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:江苏:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:江苏:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:江苏:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:江苏:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:浙江",
+   "type": "站点",
+   "label": "浙江",
+   "url": "https://www.zj.gov.cn/"
+  },
+  {
+   "id": "verdict:浙江:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.51s"
+  },
+  {
+   "id": "verdict:浙江:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:浙江:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:浙江:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-27，距今 2 天"
+  },
+  {
+   "id": "verdict:浙江:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格"
+  },
+  {
+   "id": "verdict:浙江:R6",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "静态页面未见入口，可能由脚本注入"
+  },
+  {
+   "id": "verdict:浙江:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:浙江:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:浙江:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:浙江:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:浙江:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:浙江:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:浙江:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:浙江:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:安徽",
+   "type": "站点",
+   "label": "安徽",
+   "url": "https://www.ah.gov.cn/"
+  },
+  {
+   "id": "verdict:安徽:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.34s"
+  },
+  {
+   "id": "verdict:安徽:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:安徽:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-14，距今 15 天"
+  },
+  {
+   "id": "verdict:安徽:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:安徽:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话"
+  },
+  {
+   "id": "verdict:安徽:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:安徽:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:安徽:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:安徽:R9",
+   "type": "判定",
+   "label": "fail",
+   "detail": "抽查 5 条，坏链 5 条"
+  },
+  {
+   "id": "verdict:安徽:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:安徽:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:安徽:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:安徽:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:安徽:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:福建",
+   "type": "站点",
+   "label": "福建",
+   "url": "https://www.fujian.gov.cn/"
+  },
+  {
+   "id": "verdict:福建:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.71s"
+  },
+  {
+   "id": "verdict:福建:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:福建:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-26，距今 3 天"
+  },
+  {
+   "id": "verdict:福建:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-27，距今 2 天"
+  },
+  {
+   "id": "verdict:福建:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：公安备案"
+  },
+  {
+   "id": "verdict:福建:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:福建:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:福建:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:福建:R9",
+   "type": "判定",
+   "label": "fail",
+   "detail": "抽查 5 条，坏链 1 条"
+  },
+  {
+   "id": "verdict:福建:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:福建:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:福建:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:福建:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:福建:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:江西",
+   "type": "站点",
+   "label": "江西",
+   "url": "https://www.jiangxi.gov.cn/"
+  },
+  {
+   "id": "verdict:江西:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，1.48s"
+  },
+  {
+   "id": "verdict:江西:R2",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "首页未解析到发布日期，需人工核对"
+  },
+  {
+   "id": "verdict:江西:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:江西:R4",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策解读栏目入口"
+  },
+  {
+   "id": "verdict:江西:R5",
+   "type": "判定",
+   "label": "fail",
+   "detail": "缺少：联系电话｜网站标识码：3600000012；ICP备15008784；公网安备 36010802000128；主办："
+  },
+  {
+   "id": "verdict:江西:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:江西:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:江西:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:江西:R9",
+   "type": "判定",
+   "label": "fail",
+   "detail": "抽查 5 条，坏链 3 条"
+  },
+  {
+   "id": "verdict:江西:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:江西:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:江西:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:江西:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:江西:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:河南",
+   "type": "站点",
+   "label": "河南",
+   "url": "https://www.henan.gov.cn/"
+  },
+  {
+   "id": "verdict:河南:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.38s"
+  },
+  {
+   "id": "verdict:河南:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-19，距今 10 天"
+  },
+  {
+   "id": "verdict:河南:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:河南:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:河南:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位"
+  },
+  {
+   "id": "verdict:河南:R6",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "静态页面未见入口，可能由脚本注入"
+  },
+  {
+   "id": "verdict:河南:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:河南:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:河南:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:河南:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:河南:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:河南:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:河南:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:河南:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:湖南",
+   "type": "站点",
+   "label": "湖南",
+   "url": "https://www.hunan.gov.cn/"
+  },
+  {
+   "id": "verdict:湖南:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.42s"
+  },
+  {
+   "id": "verdict:湖南:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-15，距今 14 天"
+  },
+  {
+   "id": "verdict:湖南:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-23，距今 6 天"
+  },
+  {
+   "id": "verdict:湖南:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:湖南:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：公安备案"
+  },
+  {
+   "id": "verdict:湖南:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:湖南:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:湖南:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:湖南:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:湖南:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:湖南:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:湖南:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:湖南:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:湖南:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:广东",
+   "type": "站点",
+   "label": "广东",
+   "url": "https://www.gd.gov.cn/"
+  },
+  {
+   "id": "verdict:广东:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.56s"
+  },
+  {
+   "id": "verdict:广东:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:广东:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-27，距今 2 天"
+  },
+  {
+   "id": "verdict:广东:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:广东:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话"
+  },
+  {
+   "id": "verdict:广东:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:广东:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:广东:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:广东:R9",
+   "type": "判定",
+   "label": "fail",
+   "detail": "抽查 5 条，坏链 1 条"
+  },
+  {
+   "id": "verdict:广东:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:广东:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:广东:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:广东:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:广东:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:海南",
+   "type": "站点",
+   "label": "海南",
+   "url": "https://www.hainan.gov.cn/"
+  },
+  {
+   "id": "verdict:海南:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，2.0s"
+  },
+  {
+   "id": "verdict:海南:R2",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "首页未解析到发布日期，需人工核对"
+  },
+  {
+   "id": "verdict:海南:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "首页仅 1 条链接，疑似脚本渲染，无法确认栏目是否存在"
+  },
+  {
+   "id": "verdict:海南:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "首页仅 1 条链接，疑似脚本渲染，无法确认栏目是否存在"
+  },
+  {
+   "id": "verdict:海南:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格"
+  },
+  {
+   "id": "verdict:海南:R6",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "静态页面未见入口，可能由脚本注入"
+  },
+  {
+   "id": "verdict:海南:R7",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到"
+  },
+  {
+   "id": "verdict:海南:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:海南:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 1 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:海南:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:海南:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:海南:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:海南:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:海南:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:四川",
+   "type": "站点",
+   "label": "四川",
+   "url": "https://www.sc.gov.cn/"
+  },
+  {
+   "id": "verdict:四川:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.33s"
+  },
+  {
+   "id": "verdict:四川:R2",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "首页未解析到发布日期，需人工核对"
+  },
+  {
+   "id": "verdict:四川:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:四川:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:四川:R5",
+   "type": "判定",
+   "label": "fail",
+   "detail": "缺少：联系电话｜网站标识码5100000062；ICP备 13001288；公网安备 51010402000507；主办单位："
+  },
+  {
+   "id": "verdict:四川:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:四川:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:四川:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:四川:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:四川:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:四川:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "页面仅命中 0/10 个要素，疑似栏目页而非事项详情页"
+  },
+  {
+   "id": "verdict:四川:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:四川:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:四川:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:贵州",
+   "type": "站点",
+   "label": "贵州",
+   "url": "https://www.guizhou.gov.cn/"
+  },
+  {
+   "id": "verdict:贵州:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.44s"
+  },
+  {
+   "id": "verdict:贵州:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-23，距今 6 天"
+  },
+  {
+   "id": "verdict:贵州:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:贵州:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-11-01，距今 -3 天"
+  },
+  {
+   "id": "verdict:贵州:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：5200000083；ICP备16004405；公网安备 52010302001563；主办：；联系电话：0851-86892753"
+  },
+  {
+   "id": "verdict:贵州:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:贵州:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:贵州:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:贵州:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:贵州:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:贵州:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:贵州:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:贵州:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:贵州:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:云南",
+   "type": "站点",
+   "label": "云南",
+   "url": "https://www.yn.gov.cn/"
+  },
+  {
+   "id": "verdict:云南:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.39s"
+  },
+  {
+   "id": "verdict:云南:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-12-01，距今 -33 天"
+  },
+  {
+   "id": "verdict:云南:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-23，距今 6 天"
+  },
+  {
+   "id": "verdict:云南:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-27，距今 2 天"
+  },
+  {
+   "id": "verdict:云南:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：5300000033；ICP备05000002；公网安备 53010202000476；主办单位：；12345"
+  },
+  {
+   "id": "verdict:云南:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:云南:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:云南:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:云南:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:云南:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:云南:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:云南:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:云南:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:云南:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:西藏",
+   "type": "站点",
+   "label": "西藏",
+   "url": "https://www.xizang.gov.cn/"
+  },
+  {
+   "id": "verdict:西藏:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.39s"
+  },
+  {
+   "id": "verdict:西藏:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:西藏:R3",
+   "type": "判定",
+   "label": "fail",
+   "detail": "最近更新 2026-01-02，距今 300 天"
+  },
+  {
+   "id": "verdict:西藏:R4",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策解读栏目入口"
+  },
+  {
+   "id": "verdict:西藏:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：5400000040；ICP备07000001；公网安备54010202000164；主办单位：；联系电话：0891-6318179"
+  },
+  {
+   "id": "verdict:西藏:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:西藏:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:西藏:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:西藏:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:西藏:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:西藏:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:西藏:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:西藏:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:西藏:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:陕西",
+   "type": "站点",
+   "label": "陕西",
+   "url": "https://www.shaanxi.gov.cn/"
+  },
+  {
+   "id": "verdict:陕西:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.6s"
+  },
+  {
+   "id": "verdict:陕西:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:陕西:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:陕西:R4",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策解读栏目入口"
+  },
+  {
+   "id": "verdict:陕西:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位"
+  },
+  {
+   "id": "verdict:陕西:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:陕西:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:陕西:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:陕西:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:陕西:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:陕西:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:陕西:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:陕西:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:陕西:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:宁夏",
+   "type": "站点",
+   "label": "宁夏",
+   "url": "https://www.nx.gov.cn/"
+  },
+  {
+   "id": "verdict:宁夏:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，2.68s"
+  },
+  {
+   "id": "verdict:宁夏:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-23，距今 6 天"
+  },
+  {
+   "id": "verdict:宁夏:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:宁夏:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-23，距今 6 天"
+  },
+  {
+   "id": "verdict:宁夏:R5",
+   "type": "判定",
+   "label": "fail",
+   "detail": "缺少：联系电话｜网站标识码6400000091；ICP备05000081；公网安备 64010402000731；主办单位："
+  },
+  {
+   "id": "verdict:宁夏:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:宁夏:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:宁夏:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:宁夏:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:宁夏:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:宁夏:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:宁夏:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:宁夏:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:宁夏:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:新疆",
+   "type": "站点",
+   "label": "新疆",
+   "url": "https://www.xinjiang.gov.cn/"
+  },
+  {
+   "id": "verdict:新疆:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.54s"
+  },
+  {
+   "id": "verdict:新疆:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-28，距今 1 天"
+  },
+  {
+   "id": "verdict:新疆:R3",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策文件栏目入口"
+  },
+  {
+   "id": "verdict:新疆:R4",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策解读栏目入口"
+  },
+  {
+   "id": "verdict:新疆:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：6500000034；ICP备05001680；公网安备65010202000778；主办：；12345"
+  },
+  {
+   "id": "verdict:新疆:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:新疆:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:新疆:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:新疆:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:新疆:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:新疆:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:新疆:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:新疆:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:新疆:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:太原",
+   "type": "站点",
+   "label": "太原",
+   "url": "https://www.taiyuan.gov.cn/"
+  },
+  {
+   "id": "verdict:太原:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.32s"
+  },
+  {
+   "id": "verdict:太原:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:太原:R3",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到政策文件栏目入口"
+  },
+  {
+   "id": "verdict:太原:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-14，距今 15 天"
+  },
+  {
+   "id": "verdict:太原:R5",
+   "type": "判定",
+   "label": "pass",
+   "detail": "齐全｜网站标识码：1401000055；ICP备05003854；公网安备 14010002001529；主办单位：；12345"
+  },
+  {
+   "id": "verdict:太原:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:太原:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:太原:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:太原:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:太原:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:太原:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:太原:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:太原:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:太原:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:教育部",
+   "type": "站点",
+   "label": "教育部",
+   "url": "https://www.moe.gov.cn/"
+  },
+  {
+   "id": "verdict:教育部:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.3s"
+  },
+  {
+   "id": "verdict:教育部:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:教育部:R3",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-19，距今 10 天"
+  },
+  {
+   "id": "verdict:教育部:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-10-19，距今 10 天"
+  },
+  {
+   "id": "verdict:教育部:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码、主办单位"
+  },
+  {
+   "id": "verdict:教育部:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:教育部:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:教育部:R8",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页 title=有，description=有"
+  },
+  {
+   "id": "verdict:教育部:R9",
+   "type": "判定",
+   "label": "fail",
+   "detail": "抽查 5 条，坏链 1 条"
+  },
+  {
+   "id": "verdict:教育部:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:教育部:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:教育部:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:教育部:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:教育部:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:工信部",
+   "type": "站点",
+   "label": "工信部",
+   "url": "https://www.miit.gov.cn/"
+  },
+  {
+   "id": "verdict:工信部:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.34s"
+  },
+  {
+   "id": "verdict:工信部:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-29，距今 0 天"
+  },
+  {
+   "id": "verdict:工信部:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:工信部:R4",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:工信部:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位"
+  },
+  {
+   "id": "verdict:工信部:R6",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "静态页面未见入口，可能由脚本注入"
+  },
+  {
+   "id": "verdict:工信部:R7",
+   "type": "判定",
+   "label": "fail",
+   "detail": "未找到"
+  },
+  {
+   "id": "verdict:工信部:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:工信部:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:工信部:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:工信部:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:工信部:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:工信部:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:工信部:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  },
+  {
+   "id": "site:应急部",
+   "type": "站点",
+   "label": "应急部",
+   "url": "https://www.mem.gov.cn/"
+  },
+  {
+   "id": "verdict:应急部:R1",
+   "type": "判定",
+   "label": "pass",
+   "detail": "HTTP 200，0.22s"
+  },
+  {
+   "id": "verdict:应急部:R2",
+   "type": "判定",
+   "label": "pass",
+   "detail": "首页最近日期 2026-10-21，距今 8 天"
+  },
+  {
+   "id": "verdict:应急部:R3",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "栏目已找到，但列表页未解析到日期"
+  },
+  {
+   "id": "verdict:应急部:R4",
+   "type": "判定",
+   "label": "pass",
+   "detail": "最近更新 2026-09-08，距今 51 天"
+  },
+  {
+   "id": "verdict:应急部:R5",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码"
+  },
+  {
+   "id": "verdict:应急部:R6",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到入口脚本/链接"
+  },
+  {
+   "id": "verdict:应急部:R7",
+   "type": "判定",
+   "label": "pass",
+   "detail": "找到搜索框"
+  },
+  {
+   "id": "verdict:应急部:R8",
+   "type": "判定",
+   "label": "fail",
+   "detail": "首页 title=有，description=无"
+  },
+  {
+   "id": "verdict:应急部:R9",
+   "type": "判定",
+   "label": "pass",
+   "detail": "抽查 5 条，坏链 0 条"
+  },
+  {
+   "id": "verdict:应急部:R10",
+   "type": "判定",
+   "label": "pass",
+   "detail": "解析到 AAAA"
+  },
+  {
+   "id": "verdict:应急部:R11",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "未定位到事项详情页（栏目首页不判定）"
+  },
+  {
+   "id": "verdict:应急部:R12",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需语言模型或人工判定，自动判定会误伤"
+  },
+  {
+   "id": "verdict:应急部:R13",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需实际提交留言并等待答复，探针不做"
+  },
+  {
+   "id": "verdict:应急部:R14",
+   "type": "判定",
+   "label": "abstain",
+   "detail": "需多浏览器与账号体系，超出静态抓取范围"
+  }
+ ],
+ "edges": [
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:国务院",
+   "to": "verdict:国务院:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:国务院:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:北京",
+   "to": "verdict:北京:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:北京:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:天津",
+   "to": "verdict:天津:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:天津:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河北",
+   "to": "verdict:河北:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河北:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:山西",
+   "to": "verdict:山西:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:山西:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:内蒙古",
+   "to": "verdict:内蒙古:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:内蒙古:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:辽宁",
+   "to": "verdict:辽宁:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:辽宁:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:吉林",
+   "to": "verdict:吉林:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:吉林:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:黑龙江",
+   "to": "verdict:黑龙江:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:黑龙江:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:上海",
+   "to": "verdict:上海:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:上海:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江苏",
+   "to": "verdict:江苏:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江苏:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:浙江",
+   "to": "verdict:浙江:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:浙江:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:安徽",
+   "to": "verdict:安徽:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:安徽:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:福建",
+   "to": "verdict:福建:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:福建:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:江西",
+   "to": "verdict:江西:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:江西:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:河南",
+   "to": "verdict:河南:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:河南:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:湖南",
+   "to": "verdict:湖南:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:湖南:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:广东",
+   "to": "verdict:广东:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:广东:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:海南",
+   "to": "verdict:海南:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:海南:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:四川",
+   "to": "verdict:四川:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:四川:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:贵州",
+   "to": "verdict:贵州:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:贵州:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:云南",
+   "to": "verdict:云南:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:云南:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:西藏",
+   "to": "verdict:西藏:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:西藏:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:陕西",
+   "to": "verdict:陕西:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:陕西:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:宁夏",
+   "to": "verdict:宁夏:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:宁夏:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:新疆",
+   "to": "verdict:新疆:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:新疆:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:太原",
+   "to": "verdict:太原:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:太原:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:教育部",
+   "to": "verdict:教育部:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:教育部:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:工信部",
+   "to": "verdict:工信部:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:工信部:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R1",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R1",
+   "to": "clause:R1",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R2",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R2",
+   "to": "clause:R2",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R3",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R3",
+   "to": "clause:R3",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R4",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R4",
+   "to": "clause:R4",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R5",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R5",
+   "to": "clause:R5",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R6",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R6",
+   "to": "clause:R6",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R7",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R7",
+   "to": "clause:R7",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R8",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R8",
+   "to": "clause:R8",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R9",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R9",
+   "to": "clause:R9",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R10",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R10",
+   "to": "clause:R10",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R11",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R11",
+   "to": "clause:R11",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R12",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R12",
+   "to": "clause:R12",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R13",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R13",
+   "to": "clause:R13",
+   "rel": "依据条款"
+  },
+  {
+   "from": "site:应急部",
+   "to": "verdict:应急部:R14",
+   "rel": "有一项判定"
+  },
+  {
+   "from": "verdict:应急部:R14",
+   "to": "clause:R14",
+   "rel": "依据条款"
+  }
+ ]
+}
