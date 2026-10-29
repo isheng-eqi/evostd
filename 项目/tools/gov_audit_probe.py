@@ -220,23 +220,33 @@ def audit_site(name: str, home_url: str, session: requests.Session) -> dict:
                           f"{pg.url}", 0 if days <= 183 else -5))
 
     # R5 网站标识（5 项）
-    footer = home.html[-8000:]
-    flags = {
-        "网站标识码": bool(re.search(r"网站标识码", footer)),
-        "ICP 备案号": bool(re.search(r"ICP[备证]|京ICP|晋ICP|川ICP|陕ICP", footer)),
-        "公安备案": bool(re.search(r"公网安备|公安备案", footer)),
-        "主办单位": bool(re.search(r"主办[:：]|主办单位", footer)),
-        "联系电话": bool(re.search(r"联系电话|联系方式|电话", footer)),
+    footer = home.text[-3000:]
+    pats = {
+        "网站标识码": r"网站标识码[:：]?\s*\d{6,}",
+        "ICP 备案号": r"ICP\s*备?\s*\d{6,}",
+        "公安备案": r"公网安备\s*\d{6,}|公安备案",
+        "主办单位": r"主办(单位)?[:：]",
+        "联系电话": r"(联系电话|联系方式|服务热线|热线|电话)[:：]?\s*[\d\-]{7,}|12345",
     }
+    flags = {k: bool(re.search(p, footer)) for k, p in pats.items()}
+    ev = [re.search(p, footer).group(0)[:24] for p in pats.values() if re.search(p, footer)]
+    evidence_text = "；".join(ev)[:120]
     missing = [k for k, v in flags.items() if not v]
-    if not any(flags.values()):
+    kw = {"网站标识码": "网站标识码", "ICP 备案号": "ICP",
+          "公安备案": "公网安备", "主办单位": "主办", "联系电话": "联系电话"}
+    hidden = [k for k in flags if not flags[k] and kw[k] in home.html]
+    found = sum(1 for v in flags.values() if v)
+    if hidden:
         rules.append(rule("R5", "网站标识", "每缺一项扣 0.5 分", "abstain",
-                          "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认"))
+                          "HTML 中存在但正文不可见（可能脚本/隐藏元素）：" + "、".join(hidden)))
+    elif found < 3:
+        rules.append(rule("R5", "网站标识", "每缺一项扣 0.5 分", "abstain",
+                          f"页脚只取到 {found}/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格"))
     else:
         rules.append(rule("R5", "网站标识", "每缺一项扣 0.5 分",
                           "pass" if not missing else "fail",
-                          "齐全" if not missing else "缺少：" + "、".join(missing),
-                          points=-0.5 * len(missing)))
+                          ("齐全" if not missing else "缺少：" + "、".join(missing)) + "｜" + evidence_text,
+                          evidence_text, -0.5 * len(missing)))
 
     # R6 我为政府网站找错
     has_bug = ("jiucuo" in home.html.lower()) or ("找错" in home.html) or \

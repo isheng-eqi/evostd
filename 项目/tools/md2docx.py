@@ -153,10 +153,10 @@ def convert(md_path: str, out_path: str):
             buf = []
             level = len(line) - len(line.lstrip("#"))
             text = line[level:].strip()
-            h = doc.add_heading(level=min(level, 3))
+            h = doc.add_heading(level=min(level, 4))
             run = h.add_run(text)
             _set_cjk(run)
-            run.font.size = Pt(18 - 2 * level)
+            run.font.size = Pt(max(18 - 2 * level, 10.5))
             run.font.color.rgb = RGBColor(0x1F, 0x23, 0x28)
             continue
 

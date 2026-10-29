@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-29T12:34:36",
- "samples": 87,
+ "generated_at": "2026-10-29T12:40:56",
+ "samples": 84,
  "rules": [
   "R2",
   "R5",
@@ -9,28 +9,28 @@
  "scores": {
   "B1_raw": {
    "n": 69,
-   "correct": 42,
-   "accuracy": 0.609,
-   "abstain": 24,
-   "abstain_rate": 0.348,
-   "false_positive": 0,
-   "false_negative": 3,
-   "specificity": 1.0,
-   "n_unverifiable": 18,
-   "overclaim": 5,
-   "overclaim_rate": 0.278
+   "correct": 46,
+   "accuracy": 0.667,
+   "abstain": 21,
+   "abstain_rate": 0.304,
+   "false_positive": 2,
+   "false_negative": 0,
+   "specificity": 0.958,
+   "n_unverifiable": 15,
+   "overclaim": 6,
+   "overclaim_rate": 0.4
   },
   "B2_rag": {
    "n": 69,
-   "correct": 34,
-   "accuracy": 0.493,
-   "abstain": 34,
-   "abstain_rate": 0.493,
-   "false_positive": 0,
-   "false_negative": 1,
-   "specificity": 1.0,
-   "n_unverifiable": 18,
-   "overclaim": 6,
+   "correct": 41,
+   "accuracy": 0.594,
+   "abstain": 27,
+   "abstain_rate": 0.391,
+   "false_positive": 1,
+   "false_negative": 0,
+   "specificity": 0.979,
+   "n_unverifiable": 15,
+   "overclaim": 5,
    "overclaim_rate": 0.333
   },
   "B3_ours": {
@@ -42,7 +42,7 @@
    "false_positive": 0,
    "false_negative": 0,
    "specificity": 1.0,
-   "n_unverifiable": 18,
+   "n_unverifiable": 15,
    "overclaim": 0,
    "overclaim_rate": 0.0
   }
@@ -56,9 +56,9 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "2026-10-29 今日上海 青浦交易分团集结3464家采购单位",
-    "reason": "首页要闻动态等栏目有标注 2026-10-29 的稿件，说明两周内存在信息更新，首页未超过监测期。"
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "上海",
@@ -66,10 +66,10 @@
     "rule_name": "网站标识",
     "label": "pass",
     "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "our_detail": "齐全｜网站标识码：3100000044；ICP备2021016245；公网安备 31010102004544；主办单位：；12345",
+    "verdict": "合规",
+    "evidence": "沪公网安备 31010102004544号 | 沪ICP备2021016245号-1 | 政府网站标识码：3100000044；主办单位：上海市人民政府办公厅；",
+    "reason": "该网页页脚清晰列出了网站标识码、ICP备案号、公安备案标识、主办单位和联系电话，未发现缺项。"
    },
    {
     "site": "上海",
@@ -80,7 +80,7 @@
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
     "evidence": "标题：上海市人民政府；meta description：中国上海",
-    "reason": "该页面同时具备站点标签（title）和内容标签（meta description），不触发扣分。"
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），均非空。"
    },
    {
     "site": "云南",
@@ -89,20 +89,20 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-12-01，距今 -33 天",
-    "verdict": "合规",
-    "evidence": "云南省第二届职业技能大赛在昆开幕 2026-10-28",
-    "reason": "首页要闻区存在 2026-10-28 的发布日期，属于最近更新，符合两周内更新的要求。"
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "云南",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：5300000033；ICP备05000002；公网安备 53010202000476；主办单位：；12345",
     "verdict": "合规",
     "evidence": "主办单位：云南省人民政府办公厅 政务服务便民热线：12345 滇ICP备05000002号 政府网站标识码：5300000033 滇公网安备 530102020",
-    "reason": "页脚已清晰列出主办单位、联系电话（12345热线）、ICP备案号、政府网站标识码和公安备案号，这五项齐全，因此不扣分。"
+    "reason": "页脚中已清晰列明主办单位、联系电话、ICP备案号、网站标识码和公安备案标识，五项齐全。"
    },
    {
     "site": "云南",
@@ -113,7 +113,7 @@
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
     "evidence": "【标题】云南省人民政府门户网站；【meta description】（空）",
-    "reason": "页面有站点标签（title），但缺少内容标签（meta description），未同时具备两项。"
+    "reason": "该页面有站点标签（title），但缺少内容标签（meta description 为空），不符合同时具备两项标签的要求。"
    },
    {
     "site": "内蒙古",
@@ -123,19 +123,19 @@
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
     "verdict": "合规",
-    "evidence": "自治区政协举办全区旗县（市、区）政协主席专题培训班 2026-10-29",
-    "reason": "首页多处栏目显示最近发布日期是2026-10-29，处在14天更新周期内，因此首页有更新。"
+    "evidence": "要闻动态多条2026-10-29、2026-10-28更新",
+    "reason": "首页要闻、通知公告等栏目存在当天及近日发布的信息，符合2周内更新要求。"
    },
    {
     "site": "内蒙古",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：1500000001；ICP备05000248；公网安备15010502000333；主办单位：；联系电话：0471-4865916",
     "verdict": "合规",
     "evidence": "主办单位：内蒙古自治区人民政府办公厅 政府网站标识码：1500000001 蒙ICP备05000248号 蒙公网安备15010502000333 联系电话：04",
-    "reason": "页脚清晰列明主办单位、网站标识码、ICP备案号、公安备案标识和联系电话，五项齐全。"
+    "reason": "页脚清晰列明主办单位、网站标识码、ICP备案号、公安备案号及联系电话，五项齐全。"
    },
    {
     "site": "内蒙古",
@@ -145,8 +145,8 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "标题：内蒙古自治区人民政府；meta description：内蒙古自治区人民政府门户网站...",
-    "reason": "页面同时具备站点标签和内容标签。"
+    "evidence": "标题：内蒙古自治区人民政府；meta description：内蒙古自治区人民政府门户网站是由内蒙古自治区人民政府主办……",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），不扣分。"
    },
    {
     "site": "北京",
@@ -165,10 +165,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "页脚仅见“链接：市人大 市政协 市监察委 市高级人民法院 市人民检察院 回到顶部”，没有出现标识或备案信息",
-    "reason": "页脚未列明网站标识码、ICP 备案号、公安备案、主办单位和联系电话，这五项都缺失，每缺一项应扣 0.5 分。"
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "北京",
@@ -178,374 +178,11 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "标题：北京市人民政府门户网站；meta description：北京市人民政府门户网站——首都之窗",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
+    "evidence": "【标题】北京市人民政府门户网站；【meta description】北京市人民政府门户网站——首都之窗…",
+    "reason": "页面同时具备title站点标签和meta description内容标签，符合要求。"
    },
    {
-    "site": "四川",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "首页未解析到发布日期，需人工核对",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "四川",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "四川",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】四川省人民政府网站；【meta description】（空）",
-    "reason": "该页面虽然有站点标签（title），但内容标签（meta description）缺失，不符合同时具备这两项的要求。"
-   },
-   {
-    "site": "国务院",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "首页未解析到发布日期，需人工核对",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "国务院",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "国务院",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【meta description】（空）",
-    "reason": "页面有 title 但 meta description 为空，缺少内容标签，应扣 0.1 分。"
-   },
-   {
-    "site": "天津",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "天津",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "天津",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【meta description】（空）",
-    "reason": "该页面有 title（站点标签），但 meta description 为空，缺少内容标签，因此按条款每项扣 0.1 分。"
-   },
-   {
-    "site": "太原",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "太原",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "太原",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：太原市人民政府；meta description：负责市政府会议的会务组织工作...",
-    "reason": "该网页同时具备站点标签（title）和内容标签（meta description），不触发扣分。"
-   },
-   {
-    "site": "宁夏",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-23，距今 6 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "宁夏",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "宁夏",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：中国 - 宁夏；meta description：宁夏",
-    "reason": "页面同时具备站点标签title和内容标签meta description。"
-   },
-   {
-    "site": "安徽",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "安徽",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "安徽",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：安徽省人民政府；meta description：安徽省人民政府门户网站是由安徽省人民政府办公厅主办……",
-    "reason": "网页同时具备title站点标签和meta description内容标签，不扣分。"
-   },
-   {
-    "site": "山西",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "2026年以来消费品以旧换新带动销售额超2万亿元 10/29；太原大同…10/29",
-    "reason": "首页多处信息发布日期为10/29等，可以确认在监测日前14天内更新过。"
-   },
-   {
-    "site": "山西",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "山西",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：山西省人民政府；meta description：山西省人民政府网是山西省……综合平台",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description）"
-   },
-   {
-    "site": "工信部",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "2026-10-29 工业和信息化部召开加快新一代通信网建设发展座谈会",
-    "reason": "首页可见最新发布日期为2026-10-29，且近两周有多条更新，符合更新要求。"
-   },
-   {
-    "site": "工信部",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：网站标识码、ICP 备案号、公安备案、主办单位",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "工信部",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "标题：中华人民共和国工业和信息化部；meta description：（空）",
-    "reason": "页面有站点标签（title），但内容标签（meta description）为空，因此不符合同时具备两项标签的要求。"
-   },
-   {
-    "site": "广东",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-28，距今 1 天",
-    "verdict": "合规",
-    "evidence": "2025年度广东省科学技术奖获奖名单公布 227个项目（人）获奖 10-28",
-    "reason": "首页多个栏目显示最近发布日期为10-28，早于当前日期不足14天，因此可判定该首页在最近两周内更新过。"
-   },
-   {
-    "site": "广东",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "广东",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：广东省人民政府门户网站；meta description：广东省人民政府门户网站由广东省人民政府办公厅主办…",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合要求。"
-   },
-   {
-    "site": "应急部",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-21，距今 8 天",
-    "verdict": "合规",
-    "evidence": "关于全国应急管理系统一级英雄模范……公示 [10-21]；应急管理部公告（2026年第10号）[10-21]",
-    "reason": "首页通知公告栏可见多条10月21日、20日发布的更新，发布日期在最近14天内。"
-   },
-   {
-    "site": "应急部",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "应急部",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】中华人民共和国应急管理部；【meta description】（空）",
-    "reason": "该页面有站点标签title，但meta description为空，缺少内容标签，应扣0.1分。"
-   },
-   {
-    "site": "教育部",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "10-29 天津市南开中学以百年校史涵育时代新人；10-28 上海财经大学系统重构学科生态",
-    "reason": "首页栏目可以看到 10-29、10-28 等最近发布的信息，更新时间在 14 天内。"
-   },
-   {
-    "site": "教育部",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：主办单位、联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "教育部",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：中华人民共和国教育部政府门户网站；meta description：教育部政府门户网站由教育部办公厅主办……",
-    "reason": "页面同时具备 title 站点标签和 meta description 内容标签，因此不扣分。"
-   },
-   {
-    "site": "新疆",
+    "site": "吉林",
     "rule": "R2",
     "rule_name": "首页 2 周内更新",
     "label": "pass",
@@ -556,589 +193,26 @@
     "reason": "解析失败"
    },
    {
-    "site": "新疆",
+    "site": "吉林",
     "rule": "R5",
     "rule_name": "网站标识",
     "label": "fail",
     "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "合规",
-    "evidence": "主办：新疆维吾尔自治区人民政府办公厅 ICP备案号：新ICP备05001680号 政府网站标识码：6500000034 新公网安备… 政务服务热线：12345",
-    "reason": "页脚已列明主办单位、ICP备案号、网站标识码、公安备案号和联系电话五项。"
-   },
-   {
-    "site": "新疆",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【meta description】（空）",
-    "reason": "页面有 title，但缺少 meta description 内容标签，因此应扣 0.1 分。"
-   },
-   {
-    "site": "江苏",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-25，距今 4 天",
+    "our_detail": "缺少：主办单位、联系电话｜网站标识码：2200000019；ICP备05001602；公网安备 22000002000002",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
    },
    {
-    "site": "江苏",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "页脚未发现网站标识码、ICP备案号、公安备案、主办单位、联系电话",
-    "reason": "页脚未清晰列明上述五项标识信息，每缺一项扣0.5分。"
-   },
-   {
-    "site": "江苏",
+    "site": "吉林",
     "rule": "R8",
     "rule_name": "页面标签",
     "label": "fail",
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【标题】江苏省人民政府；【meta description】（空）",
-    "reason": "标题（站点标签）存在，但 meta description 为空，缺少内容标签，按每个扣 0.1 分。"
-   },
-   {
-    "site": "江西",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "首页未解析到发布日期，需人工核对",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "江西",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "主办：江西省人民政府办公厅 赣ICP备15008784号-8 政府网站标识码：3600000012 赣公网安备 36010802000128 号",
-    "reason": "页脚列明了网站标识码、ICP备案号、公安备案和主办单位，但未列明联系电话。"
-   },
-   {
-    "site": "江西",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】江西省人民政府；【meta description】（空）",
-    "reason": "站点标签存在，但内容标签meta description为空，未同时具备。"
-   },
-   {
-    "site": "河北",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "河北",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "河北",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】河北省人民政府；【meta description】（空）",
-    "reason": "页面具备站点标签 title，但内容标签 meta description 为空，因此不符合条款要求。"
-   },
-   {
-    "site": "河南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-19，距今 10 天",
-    "verdict": "合规",
-    "evidence": "河南政务周报（2026年10月19日-10月25日）；10月24日，省委副书记、代省长王陆进主持召开省政府常务会议",
-    "reason": "首页有具体到10月24日、当周政务周报等近期内容更新，表明该页在最近两周内有更新。"
-   },
-   {
-    "site": "河南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "河南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题为“河南省人民政府门户网站”，meta description 已提供",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
-   },
-   {
-    "site": "浙江",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "浙江",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "浙江",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】浙江省人民政府；【meta description】（空）",
-    "reason": "该页面有站点标签（title），但没有内容标签（meta description），因此不符合本条要求。"
-   },
-   {
-    "site": "海南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-23，距今 6 天",
-    "verdict": "不确定",
-    "evidence": "海南省人民政府网",
-    "reason": "材料中仅有网站标题与页脚，未提供任何稿件发布日期信息，无法判断首页是否在近14天内更新。"
-   },
-   {
-    "site": "海南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "海南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "标题：海南省人民政府网；meta description：（空）",
-    "reason": "页面有站点标签但缺少内容标签meta description，不符合同时具备两项的要求。"
-   },
-   {
-    "site": "湖南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-15，距今 14 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "湖南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "合规",
-    "evidence": "主办单位：湖南省人民政府办公厅 备案号：湘ICP备05000618号 网站标识码：4300000001 湘公网安备：43010302000524号 联系方式：0",
-    "reason": "页脚清晰列明主办单位、ICP备案号、网站标识码、公安备案号及联系电话，五项齐全。"
-   },
-   {
-    "site": "湖南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "福建",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "福建",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "网站标识码：3500000049 闽公网安备：35000899002 闽ICP备15003084号 主办：福建省人民政府办公厅",
-    "reason": "页脚仅列出网站标识码、公安备案号、ICP备案号和主办单位，未列明联系电话，缺少一项，应扣0.5分。"
-   },
-   {
-    "site": "福建",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：福建省人民政府门户网站；meta description：中国福建，福建省人民政府官方网站……",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
-   },
-   {
-    "site": "西藏",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "龚会才：全面落实… 10-29；习近平致电祝贺卢拉… 10-28",
-    "reason": "首页要闻和自治区党委政府栏目列有 10-28、10-29 等近期发布日期，说明首页在最近两周内有过更新。"
-   },
-   {
-    "site": "西藏",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "合规",
-    "evidence": "主办单位：西藏自治区人民政府……联系电话：0891-6318179……网站标识码：5400000040 藏ICP备07000001号-1 藏公网安备540102",
-    "reason": "页脚已清晰列明网站标识码、ICP备案号、公安备案号、主办单位和联系电话，五项均已列明，没有缺项。"
-   },
-   {
-    "site": "西藏",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：西藏自治区人民政府；meta description：西藏自治区人民政府门户网站…由西藏自治区人民政府主办",
-    "reason": "该页面同时具备站点标签（title）和内容标签（meta description），不触发扣分。"
-   },
-   {
-    "site": "贵州",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-23，距今 6 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "贵州",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "合规",
-    "evidence": "主办：贵州省人民政府办公厅 联系电话：0851-86892753 政府网站标识码：5200000083 黔ICP备16004405号 贵公网安备 5201030",
-    "reason": "页脚清晰列明主办单位、联系电话、网站标识码、ICP备案号和公安备案标识，五项齐全。"
-   },
-   {
-    "site": "贵州",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：贵州省人民政府；meta description：贵州省人民政府门户网站由贵州省人民政府办公厅主办……",
-    "reason": "页面同时具备title站点标签和meta description内容标签，不扣分。"
-   },
-   {
-    "site": "辽宁",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "强化服务意识 助力绿色能源产业发展壮大 2026-10-29",
-    "reason": "首页要闻动态显示最新发布日期为2026-10-29，属于近期更新，可判定近2周内有信息更新。"
-   },
-   {
-    "site": "辽宁",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "不合规",
-    "evidence": "主办单位：辽宁省人民政府办公厅 地址：沈阳市皇姑区北陵大街45-9号 邮编：110032 辽公网安备 21010502000372号 网站标识码：2100000",
-    "reason": "页脚已列明网站标识码、ICP备案号、公安备案标识和主办单位，但未列明联系电话（仅有联系邮箱），缺少一项，扣0.5分。"
-   },
-   {
-    "site": "辽宁",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "标题：辽宁省人民政府；meta description：（空）",
-    "reason": "页面有站点标签title，但缺少内容标签meta description，应扣0.1分。"
-   },
-   {
-    "site": "陕西",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "陕西",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：主办单位、联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "陕西",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【meta description】（空）；【标题】陕西省人民政府",
-    "reason": "页面虽具备站点标签title，但meta description为空，缺少内容标签，不符合同时具备两项标签的要求。"
-   },
-   {
-    "site": "黑龙江",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "黑龙江",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "黑龙江",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】黑龙江省人民政府；【meta description】（空）",
-    "reason": "有站点标签title，但meta description为空，缺少内容标签，按条款应扣0.1分。"
-   }
-  ],
-  "B2": [
-   {
-    "site": "上海",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "总书记的人民情怀 | “更加清醒坚定地推进反腐败斗争” 2026-10-29",
-    "reason": "首页要闻动态中显示有2026-10-29的更新，在监测时间点前2周内。"
-   },
-   {
-    "site": "上海",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "上海",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "【标题】上海市人民政府【meta description】中国上海",
-    "reason": "网页同时具备title站点标签和meta description内容标签。"
-   },
-   {
-    "site": "云南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-12-01，距今 -33 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "云南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "云南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "【标题】云南省人民政府门户网站；【meta description】（空）",
-    "reason": "页面有站点标签（title）但内容标签（meta description）为空，未同时具备两项标签。"
-   },
-   {
-    "site": "内蒙古",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "自治区政协举办全区旗县（市、区）政协主席专题培训班……2026-10-29",
-    "reason": "首页要闻动态栏目可见发布日期为2026-10-29的信息，属于近期更新，未出现首页连续2周无信息更新的情形。"
-   },
-   {
-    "site": "内蒙古",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "内蒙古",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "【标题】内蒙古自治区人民政府；【meta description】内蒙古自治区人民政府门户网站是由内蒙古自治区人民政府主办……",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合要求。"
-   },
-   {
-    "site": "北京",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "北京",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "北京",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：北京市人民政府门户网站；meta description：北京市人民政府门户网站——首都之窗……",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合页面标签指标要求。"
+    "evidence": "【标题】吉林省人民政府；【meta description】（空）",
+    "reason": "站点标签（title）存在，但内容标签（meta description）为空，因此未同时具备这两个标签。"
    },
    {
     "site": "四川",
@@ -1157,7 +231,7 @@
     "rule_name": "网站标识",
     "label": "fail",
     "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
+    "our_detail": "缺少：联系电话｜网站标识码5100000062；ICP备 13001288；公网安备 51010402000507；主办单位：",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1170,8 +244,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【标题】四川省人民政府网站；【meta description】（空）",
-    "reason": "站点标签（title）存在，但内容标签（meta description）为空，缺少内容标签，不符合页面标签要求。"
+    "evidence": "meta description：（空）",
+    "reason": "页面有站点标签（title），但缺少内容标签（meta description），因此不符合同时具备两者要求。"
    },
    {
     "site": "国务院",
@@ -1181,8 +255,8 @@
     "ground_truth": "不确定",
     "our_detail": "首页未解析到发布日期，需人工核对",
     "verdict": "不确定",
-    "evidence": "页面正文与页脚均未出现任何发布日期、时间标注",
-    "reason": "首页内容中无可见发布时间，无法确认是否在今天前14天内更新过，需要进一步采集带日期的稿件页进行核实。"
+    "evidence": "首页栏目为要闻、最新政策等，正文与页脚均未出现具体发布日期",
+    "reason": "首页未见任何可核对的发布日期，无法判断是否在近14天内更新，故存疑。"
    },
    {
     "site": "国务院",
@@ -1190,10 +264,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
+    "verdict": "不合规",
+    "evidence": "主办单位：国务院办公厅 网站标识码bm01000001 京ICP备05070218号 京公网安备11010202000001号",
+    "reason": "页脚已列明主办单位、网站标识码、ICP备案号和公安备案标识，但没有清晰列明联系电话，缺少1项，扣0.5分。"
    },
    {
     "site": "国务院",
@@ -1204,7 +278,7 @@
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
     "evidence": "【标题】中国政府网_中央人民政府门户网站；【meta description】（空）",
-    "reason": "页面有title但meta description为空，未同时具备站点标签与内容标签。"
+    "reason": "具备站点标签title，但meta description为空，缺少内容标签，应扣0.1分。"
    },
    {
     "site": "天津",
@@ -1213,20 +287,20 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "前三季度我市跨境电商进出口交易额同比增12.7% 2026-10-29",
+    "reason": "首页多处栏目显示 2026-10-29 发布的最新信息，首页内容在近 2 周内有过更新。"
    },
    {
     "site": "天津",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：1200000052；ICP备05010518；公网安备 12010302000991；主办：；12345",
     "verdict": "不合规",
-    "evidence": "主办：天津市人民政府办公厅 版权所有© 承办：天津市人民政府办公厅政务信息发布中心 网站标识码：1200000052 津ICP备05010518号-1 津公网安",
-    "reason": "页脚已清晰列明网站标识码、ICP备案号、公安备案和主办单位，但未列明联系电话，缺失一项，按评分细则扣0.5分。"
+    "evidence": "主办：天津市人民政府办公厅 网站标识码：1200000052 津ICP备05010518号-1 津公网安备 12010302000991号",
+    "reason": "页脚未列明联系电话，缺少联系方式一项，应扣0.5分。"
    },
    {
     "site": "天津",
@@ -1237,7 +311,7 @@
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
     "evidence": "【标题】天津政务网_天津市人民政府；【meta description】（空）",
-    "reason": "页面有站点标签（title），但 meta description 内容为空，内容标签缺失，按“页面标签”指标每条内容扣 0.1 分。"
+    "reason": "页面虽然有站点标签（title），但内容标签（meta description）为空，未同时具备站点标签和内容标签。"
    },
    {
     "site": "太原",
@@ -1246,20 +320,20 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "精修城市 惠民提质 太原以城市更新绘就人民城市崭新图景 2026-10-29",
+    "reason": "首页要闻栏目显示有近期发布日期的稿件，说明首页在两周内有信息更新。"
    },
    {
     "site": "太原",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：1401000055；ICP备05003854；公网安备 14010002001529；主办单位：；12345",
+    "verdict": "不合规",
+    "evidence": "主办单位：太原市人民政府办公室 网站标识码：1401000055 备案号：晋ICP备05003854 晋公网安备 14010002001529号",
+    "reason": "页脚列明了网站标识码、ICP备案号、公安备案标识和主办单位，但未列明联系电话等联系方式，缺少1项，扣0.5分。"
    },
    {
     "site": "太原",
@@ -1269,8 +343,8 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "标题：太原市人民政府；且含meta description",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
+    "evidence": "标题：太原市人民政府；meta description：负责市政府会议的会务组织工作...",
+    "reason": "页面同时具备 title 站点标签和 meta description 内容标签。"
    },
    {
     "site": "宁夏",
@@ -1287,12 +361,12 @@
     "site": "宁夏",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "主办单位：宁夏回族自治区人民政府办公厅 网站标识码6400000091 宁ICP备05000081号 宁公网安备64010402000731号",
-    "reason": "页脚列明了网站标识码、ICP备案号、公安备案和主办单位，但未列明联系电话，缺1项。"
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码6400000091；ICP备05000081；公网安备 64010402000731；主办单位：",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "宁夏",
@@ -1303,7 +377,7 @@
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
     "evidence": "标题：中国 - 宁夏；meta description：宁夏,",
-    "reason": "该页面同时设置了站点标签（title）和内容标签（meta description），因此不触发页面标签扣分。"
+    "reason": "该页面同时具备站点标签（title）和内容标签（meta description），因此不扣分。"
    },
    {
     "site": "安徽",
@@ -1322,10 +396,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "合规",
-    "evidence": "主办单位：安徽省人民政府办公厅 网站运维联系电话 皖ICP备05003657号 网站标识码：3400000001 皖公网安备 34000002000001号",
-    "reason": "页脚在底部功能区已清晰列明五项内容，包括主办单位、联系电话、ICP备案号、网站标识码和公安备案标识，没有缺项。"
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "安徽",
@@ -1335,8 +409,8 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "标题：安徽省人民政府；meta description：安徽省人民政府门户网站是由安徽省人民政府办公厅主办……",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合页面标签指标要求。"
+    "evidence": "标题“安徽省人民政府”；meta description：“安徽省人民政府门户网站是由安徽省人民政府办公厅主办…”",
+    "reason": "该页面同时具备站点标签（title）和内容标签（meta description），因此符合要求。"
    },
    {
     "site": "山西",
@@ -1345,17 +419,17 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "首页多个栏目显示 10/29、10/28 更新，如“习近平致电祝贺卢拉当选连任巴西总统 10/28”",
+    "reason": "首页可见发布日期为近期，存在2周内的信息更新，因此不属于单项否决情形。"
    },
    {
     "site": "山西",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码：1400000045；ICP备12000773；公网安备 14010502050691；主办：",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1369,7 +443,7 @@
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
     "evidence": "标题：山西省人民政府；meta description：山西省人民政府网是山西省和山西省各部门……综合平台",
-    "reason": "页面同时具备站点标签（title）与内容标签（meta description），符合指标要求。"
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），不扣分。"
    },
    {
     "site": "工信部",
@@ -1378,17 +452,17 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "2026-10-29 工业和信息化部召开加快新一代通信网建设发展座谈会",
+    "reason": "首页存在带明确发布时间的近期更新内容，发布时间在最近两周内，符合更新要求。"
    },
    {
     "site": "工信部",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：网站标识码、ICP 备案号、公安备案、主办单位",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1401,8 +475,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【meta description】（空）",
-    "reason": "页面虽设有站点标签（title）“中华人民共和国工业和信息化部”，但内容标签（meta description）为空，所以不属于同时具备站点标签和内容标签的情形"
+    "evidence": "标题为“中华人民共和国工业和信息化部”，meta description 为空",
+    "reason": "页面仅有站点标签（title），缺少内容标签（meta description），不符合同时具备两项标签的要求。"
    },
    {
     "site": "广东",
@@ -1411,20 +485,20 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-28，距今 1 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "广东省人民政府关于颁发2025年度广东省科学技术奖的通报 10-27；政策解读 10-28",
+    "reason": "首页可见发布日期为10-27、10-28，属于近期更新，且首页要闻、政策解读等栏目均有新内容，因此判定为在两周内更新过。"
    },
    {
     "site": "广东",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话",
+    "verdict": "合规",
+    "evidence": "主办：广东省人民政府办公厅，联系电话 020-83135078，粤公网安备 44010402001160号，粤ICP备05070829号，网站标识码440000",
+    "reason": "页脚已清晰列明网站标识码、ICP 备案号、公安备案、主办单位和联系电话这五项内容，没有缺失项。"
    },
    {
     "site": "广东",
@@ -1434,8 +508,8 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "标题：广东省人民政府门户网站；meta description：广东省人民政府门户网站由广东省人民政府办公厅主办……",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），均合规。"
+    "evidence": "标题：广东省人民政府门户网站；meta description：广东省人民政府门户网站由广东省人民政府办公厅主办…",
+    "reason": "页面同时具备 title 站点标签和 meta description 内容标签，故不扣分。"
    },
    {
     "site": "应急部",
@@ -1444,9 +518,9 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-21，距今 8 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "中华人民共和国应急管理部公告（2026年第10号）：批准4项行业标准 [10-21]",
+    "reason": "首页通知公告栏目显示10月21日发布的稿件，说明最近2周内有信息更新。"
    },
    {
     "site": "应急部",
@@ -1454,7 +528,7 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1467,8 +541,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【meta description】（空）",
-    "reason": "页面缺少内容标签（meta description），仅具备站点标签 title，不符合同时具备两项标签的要求。"
+    "evidence": "meta description：（空）",
+    "reason": "页面标题存在，但页面没有 meta description 内容标签，不满足同时具备站点标签和内容标签的要求。"
    },
    {
     "site": "教育部",
@@ -1477,20 +551,20 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "10-29 天津市南开中学以百年校史涵育时代新人…",
+    "reason": "首页可见发布日期10-29，为近期更新，说明两周内有信息更新。"
    },
    {
     "site": "教育部",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：主办单位、联系电话",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码、主办单位",
+    "verdict": "不合规",
+    "evidence": "版权所有：中华人民共和国教育部 京ICP备10028400号-1 京公网安备11010202007625号 网站标识码：bm05000001",
+    "reason": "页脚缺少具体的联系电话，其余各项（网站标识码、ICP备案号、公安备案号、主办单位）均已列明。"
    },
    {
     "site": "教育部",
@@ -1500,8 +574,8 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "【标题】中华人民共和国教育部政府门户网站；【meta description】教育部政府门户网站由教育部办公厅主办……",
-    "reason": "页面同时具备title站点标签与有内容的meta description内容标签，符合页面标签要求。"
+    "evidence": "标题：中华人民共和国教育部政府门户网站；含meta description",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合要求。"
    },
    {
     "site": "新疆",
@@ -1510,17 +584,17 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-28，距今 1 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "2026-10-28 习近平向日本前首相福田康夫遗属致唁电",
+    "reason": "首页要闻区有多条带明确发布日期的最新信息，据此可判定该页面持续更新，未超过两周未更新。"
    },
    {
     "site": "新疆",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：6500000034；ICP备05001680；公网安备65010202000778；主办：；12345",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1533,8 +607,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "标题：新疆维吾尔自治区人民政府网；meta description：（空）",
-    "reason": "页面有title但meta description为空，未同时具备站点标签和内容标签。"
+    "evidence": "【标题】新疆维吾尔自治区人民政府网；【meta description】（空）",
+    "reason": "页面仅有 title 站点标签，缺少 meta description 内容标签，应按每个扣0.1分处理。"
    },
    {
     "site": "江苏",
@@ -1553,10 +627,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "our_detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格",
+    "verdict": "不合规",
+    "evidence": "页脚内容为专题专栏等导航链接，未见网站标识码、ICP备案号、公安备案、主办单位、联系电话",
+    "reason": "页脚未清晰列明网站标识码、ICP备案号、公安备案、主办单位、联系电话五项，每项缺失扣0.5分，共扣2.5分。"
    },
    {
     "site": "江苏",
@@ -1567,7 +641,7 @@
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
     "evidence": "【标题】江苏省人民政府；【meta description】（空）",
-    "reason": "页面有站点标签（title），但 meta description 为空，缺少内容标签，按“页面标签”指标应扣分。"
+    "reason": "该页面有站点标签（title），但内容标签（meta description）为空，未同时具备两者。"
    },
    {
     "site": "江西",
@@ -1577,19 +651,19 @@
     "ground_truth": "不确定",
     "our_detail": "首页未解析到发布日期，需人工核对",
     "verdict": "不确定",
-    "evidence": "正文前4000字未见发布日期信息",
-    "reason": "材料中无可判断首页信息更新时间的日期，无法确认是否在最近2周内更新。"
+    "evidence": "江西要闻 中国政府网信息 更多 +（正文未见任何发布日期）",
+    "reason": "抓取内容中没有任何可识别的发布日期，无法判断首页是否在最近14天内更新过，因此不作合规或不合规的判定。"
    },
    {
     "site": "江西",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "主办：江西省人民政府办公厅 承办：江西省政务信息中心 赣ICP备15008784号-8 政府网站标识码：3600000012 赣公网安备 36010802000",
-    "reason": "页脚未列明联系电话（联系方式），所列5项中缺1项，虽然网站在页脚列明了主办单位、ICP备案号、公安备案标识和网站标识码。"
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码：3600000012；ICP备15008784；公网安备 36010802000128；主办：",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "江西",
@@ -1599,8 +673,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "标题为“江西省人民政府”，meta description为空",
-    "reason": "该网页有站点标签title但缺少内容标签meta description，未同时具备两项标签。"
+    "evidence": "meta description：（空）",
+    "reason": "网页缺少内容标签meta description，未同时具备站点标签和内容标签。"
    },
    {
     "site": "河北",
@@ -1610,19 +684,19 @@
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
     "verdict": "合规",
-    "evidence": "前三季度，河北省外贸进出口总值同比增长24.8% 2026-10-29",
-    "reason": "首页要闻、动态等栏目可见最新发布日期为2026-10-29，属近期更新，未出现连续两周无信息更新的情形。"
+    "evidence": "河北省厚植“一人公司”成长沃土 2026-10-29",
+    "reason": "首页可见稿件发布日期为2026-10-29，属于最近2周内更新。"
    },
    {
     "site": "河北",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
+    "verdict": "不合规",
+    "evidence": "网站标识码：1300000013 冀公网安备 13010202002246号 主办：河北省人民政府办公厅",
+    "reason": "页脚列明了网站标识码、ICP备案号、公安备案和主办单位，但未列明联系电话，因此缺一项。"
    },
    {
     "site": "河北",
@@ -1632,8 +706,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【标题】河北省人民政府；【meta description】（空）",
-    "reason": "页面具备站点标签（title），但缺少内容标签（meta description），不能同时满足两项要求。"
+    "evidence": "标题：河北省人民政府；meta description：（空）",
+    "reason": "页面具备站点标签（title）但缺少内容标签（meta description），不同时具备两者。"
    },
    {
     "site": "河南",
@@ -1642,9 +716,9 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-19，距今 10 天",
-    "verdict": "合规",
-    "evidence": "10月24日，省委副书记、代省长王陆进主持召开省政府常务会议……河南政务周报（2026年10月19日-10月25日）",
-    "reason": "首页要闻、动态等有近期发布日期，据此可判定其在监测时间点前2周内更新过。"
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "河南",
@@ -1652,10 +726,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "页脚内容仅为栏目与咨询链接，未见网站标识码、ICP备案号、公安备案标识、主办单位、联系电话",
-    "reason": "页面底部功能区未清晰列明指标要求的五项标识信息，五项均缺失，按规则每缺一项扣0.5分。"
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "河南",
@@ -1664,9 +738,9 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "标题：河南省人民政府门户网站；meta description：河南省人民政府门户网站由河南省人民政府办公厅主办……",
+    "reason": "该页面同时具备 title 和 meta description，符合条款要求，不扣分。"
    },
    {
     "site": "浙江",
@@ -1685,10 +759,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "our_detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格",
+    "verdict": "不合规",
+    "evidence": "页脚仅见信息公开、专题专栏等栏目链接，未见网站标识码、ICP备案号、公安备案、主办单位、联系电话",
+    "reason": "页脚未清晰列明网站标识码、ICP备案编号、公安机关备案标识、主办单位和联系电话五项，应缺项扣分。"
    },
    {
     "site": "浙江",
@@ -1698,74 +772,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【meta description】（空），页面仅有标题“浙江省人民政府”",
-    "reason": "页面缺少内容标签（meta description），不满足同时具备站点标签和内容标签的要求。"
-   },
-   {
-    "site": "海南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-23，距今 6 天",
-    "verdict": "不确定",
-    "evidence": "首页内容仅显示“海南省人民政府网”，未见任何稿件发布日期",
-    "reason": "抓取内容中无可见发布日期，无法判断首页是否在最近2周内更新过。"
-   },
-   {
-    "site": "海南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不合规",
-    "evidence": "【页脚】海南省人民政府网",
-    "reason": "页脚仅显示网站名称，网站标识码、ICP备案号、公安备案、主办单位、联系电话五项均未列明。"
-   },
-   {
-    "site": "海南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "首页 title=有，description=无",
-    "verdict": "不合规",
-    "evidence": "meta description（空）",
-    "reason": "网页有标题但缺少内容标签meta description，未同时具备站点标签和内容标签。"
-   },
-   {
-    "site": "湖南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页最近日期 2026-10-15，距今 14 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
-   },
-   {
-    "site": "湖南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "齐全",
-    "verdict": "合规",
-    "evidence": "主办单位：湖南省人民政府办公厅…网站标识码：4300000001…湘ICP备05000618号…湘公网安备：43010302000524号…联系方式：0731-",
-    "reason": "页脚已清晰列明主办单位、网站标识码、ICP备案号、公安备案标识和联系电话，五项齐全。"
-   },
-   {
-    "site": "湖南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "our_detail": "首页 title=有，description=有",
-    "verdict": "合规",
-    "evidence": "标题：欢迎光临湖南省人民政府门户网站；meta description：湖南省人民政府门户网站是由湖南省人民政府主办…",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合要求。"
+    "evidence": "【标题】浙江省人民政府；【meta description】（空）",
+    "reason": "页面有 title 但没有 meta description 内容标签，不符合同时具备两项标签的要求。"
    },
    {
     "site": "福建",
@@ -1784,10 +792,10 @@
     "rule_name": "网站标识",
     "label": "abstain",
     "ground_truth": "不确定",
-    "our_detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：公安备案",
+    "verdict": "不合规",
+    "evidence": "网站标识码：3500000049 闽公网安备：35000899002 闽ICP备15003084号 主办：福建省人民政府办公厅",
+    "reason": "页脚已列明网站标识码、ICP备案号、公安备案标识和主办单位，但未列明联系电话，每缺一项扣0.5分。"
    },
    {
     "site": "福建",
@@ -1796,9 +804,9 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "标题：福建省人民政府门户网站；meta description：中国福建，福建省人民政府官方网站……综合服务平台。",
+    "reason": "该页面同时设置了站点标签（title）和内容标签（meta description），因此不扣分。"
    },
    {
     "site": "西藏",
@@ -1807,9 +815,9 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "合规",
-    "evidence": "龚会才：全面落实“三个赋予一个有利于”总要求… 10-29",
-    "reason": "首页要闻栏目可见发布日期为10-29，属于最近两周内的更新，因此不构成“首页不更新”的单项否决。"
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "西藏",
@@ -1817,10 +825,10 @@
     "rule_name": "网站标识",
     "label": "pass",
     "ground_truth": "合规",
-    "our_detail": "齐全",
+    "our_detail": "齐全｜网站标识码：5400000040；ICP备07000001；公网安备54010202000164；主办单位：；联系电话：0891-6318179",
     "verdict": "合规",
-    "evidence": "主办单位：西藏自治区人民政府……网站标识码：5400000040 藏ICP备07000001号-1 藏公网安备54010202000164号",
-    "reason": "页脚列明了主办单位、联系电话、网站标识码、ICP备案号和公安备案标识，这五项均未缺失。"
+    "evidence": "主办单位：西藏自治区人民政府……联系电话：0891-6318179……网站标识码：5400000040 藏ICP备07000001号-1 藏公网安备540102",
+    "reason": "页脚清晰列明网站标识码、ICP备案号、公安备案号、主办单位和联系电话，五项齐备，无缺项。"
    },
    {
     "site": "西藏",
@@ -1830,8 +838,8 @@
     "ground_truth": "合规",
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
-    "evidence": "标题：西藏自治区人民政府；meta description：西藏自治区人民政府门户网站(http://www.xizang.gov.cn)由西藏自治区人民政府主",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合页面标签要求。"
+    "evidence": "标题：西藏自治区人民政府；meta description：西藏自治区人民政府门户网站……",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
    },
    {
     "site": "贵州",
@@ -1848,12 +856,12 @@
     "site": "贵州",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
-    "verdict": "合规",
-    "evidence": "主办：贵州省人民政府办公厅 联系电话：0851-86892753 政府网站标识码：5200000083 黔ICP备16004405号 贵公网安备 5201030",
-    "reason": "页脚已清晰列明网站标识码、ICP备案号、公安备案、主办单位和联系电话，所查五项齐全，无缺项。"
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：5200000083；ICP备16004405；公网安备 52010302001563；主办：；联系电话：0851-86892753",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
    },
    {
     "site": "贵州",
@@ -1864,7 +872,7 @@
     "our_detail": "首页 title=有，description=有",
     "verdict": "合规",
     "evidence": "标题：贵州省人民政府；meta description：贵州省人民政府门户网站(http://www.guizhou.gov.cn)由贵州省人民政府办公厅主办…",
-    "reason": "页面同时具备站点标签（title）和内容标签（meta description），且内容完整非空。"
+    "reason": "该页面同时具备站点标签（title）和内容标签（meta description）。"
    },
    {
     "site": "辽宁",
@@ -1873,17 +881,17 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "今日辽宁：强化服务意识 助力绿色能源产业发展壮大 2026-10-29",
+    "reason": "首页要闻栏目的更新时间为2026-10-29，属于监测期内有更新的情况。"
    },
    {
     "site": "辽宁",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：2100000037；ICP备05023109；公网安备 21010502000372；主办单位：；12345",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1896,8 +904,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "【标题】辽宁省人民政府；【meta description】（空）",
-    "reason": "页面有 title 站点标签，但 meta description 内容标签为空，不满足同时具备两项标签的要求。"
+    "evidence": "【meta description】（空）",
+    "reason": "该页面仅有站点标签（title）“辽宁省人民政府”，内容标签（meta description）为空，因此应按每个扣 0.1 分处理。"
    },
    {
     "site": "陕西",
@@ -1906,17 +914,17 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "前三季度陕西水果网络零售额174.03亿元 10-29",
+    "reason": "首页可见多条10-29发布的稿件，属于近期更新信息。"
    },
    {
     "site": "陕西",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：主办单位、联系电话",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1929,8 +937,8 @@
     "ground_truth": "不合规",
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
-    "evidence": "标题：陕西省人民政府；meta description：（空）",
-    "reason": "存在站点标签（title）但内容标签（meta description）为空，未同时具备两项标签。"
+    "evidence": "【标题】陕西省人民政府；【meta description】（空）",
+    "reason": "该网页有 title 但没有 meta description，因此未同时具备站点标签和内容标签。"
    },
    {
     "site": "黑龙江",
@@ -1939,17 +947,17 @@
     "label": "pass",
     "ground_truth": "合规",
     "our_detail": "首页最近日期 2026-10-29，距今 0 天",
-    "verdict": "不确定",
-    "evidence": "",
-    "reason": "解析失败"
+    "verdict": "合规",
+    "evidence": "关于绿色出行…2026-10-29；韩圣健会见考察团 2026-10-29",
+    "reason": "首页要闻、公告等栏目显示有近期发布日期（2026-10-29）的信息更新，可判定两周内有更新。"
    },
    {
     "site": "黑龙江",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "our_detail": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：2300000061；ICP备05008713；公网安备 23010302000360；主办：；12345",
     "verdict": "不确定",
     "evidence": "",
     "reason": "解析失败"
@@ -1963,7 +971,933 @@
     "our_detail": "首页 title=有，description=无",
     "verdict": "不合规",
     "evidence": "【标题】黑龙江省人民政府；【meta description】（空）",
+    "reason": "该页面具有 title 站点标签，但 meta description 内容标签为空，不符合同时具备两项标签的要求。"
+   }
+  ],
+  "B2": [
+   {
+    "site": "上海",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "2026-10-29 中央要闻 推动长三角基础研究协同发展 2026-10-29 今日上海",
+    "reason": "首页要闻动态栏目可见发布日期为2026-10-29，属近期更新，未出现连续2周无信息更新的情形。"
+   },
+   {
+    "site": "上海",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：3100000044；ICP备2021016245；公网安备 31010102004544；主办单位：；12345",
+    "verdict": "合规",
+    "evidence": "主办单位：上海市人民政府办公厅 联系电话：021-23111111 沪公网安备31010102004544号 沪ICP备2021016245号-1 政府网站标识",
+    "reason": "页脚在底部功能区清晰列出了主办单位、联系电话、公安备案号、ICP备案号和网站标识码这五项，没有缺项。"
+   },
+   {
+    "site": "上海",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：上海市人民政府；meta description：中国上海",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
+   },
+   {
+    "site": "云南",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-12-01，距今 -33 天",
+    "verdict": "合规",
+    "evidence": "云南省第二届职业技能大赛在昆开幕 2026-10-28；徐浩在昆明会见越南外交部副部长 2026-10-27",
+    "reason": "首页存在2026-10-28等近期更新内容，属于监测时点前2周内的信息更新，不构成首页不更新的单项否决情形。"
+   },
+   {
+    "site": "云南",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：5300000033；ICP备05000002；公网安备 53010202000476；主办单位：；12345",
+    "verdict": "合规",
+    "evidence": "主办单位：云南省人民政府办公厅 政务服务便民热线：12345 滇ICP备05000002号 政府网站标识码：5300000033 滇公网安备5301020200",
+    "reason": "页脚完整列明了主办单位、联系电话、ICP备案号、网站标识码、公安备案号，五项齐全。"
+   },
+   {
+    "site": "云南",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】云南省人民政府门户网站；【meta description】（空）",
+    "reason": "页面有站点标签（title）但内容标签meta description为空，缺失内容标签。"
+   },
+   {
+    "site": "内蒙古",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "“学习贯彻习近平总书记致中央社会主义学院建院70周年的贺信精神……座谈会召... 2026-10-29”",
+    "reason": "首页要闻动态有多条标注为2026-10-29的更新内容，在监测时点前2周内，因此不属于首页不更新。"
+   },
+   {
+    "site": "内蒙古",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：1500000001；ICP备05000248；公网安备15010502000333；主办单位：；联系电话：0471-4865916",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "内蒙古",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "【标题】内蒙古自治区人民政府；【meta description】内蒙古自治区人民政府门户网站是由内蒙古自治区人民政府主办...",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合页面标签指标要求。"
+   },
+   {
+    "site": "北京",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "北京",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "北京",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "吉林",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-28，距今 1 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "吉林",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：主办单位、联系电话｜网站标识码：2200000019；ICP备05001602；公网安备 22000002000002",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "吉林",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】吉林省人民政府；【meta description】（空）",
+    "reason": "页面有标题（title）但 meta description 为空，缺少内容标签，不符合“同时具备站点标签和内容标签”的要求。"
+   },
+   {
+    "site": "四川",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "首页 省政府 政务服务 政务公开 互动交流 走进四川（正文通篇未见发布日期）",
+    "reason": "抓取的正文中未出现任何稿件发布日期，无法判断首页是否在最近2周内更新过，因此按“稿件发布页未注明发布时间的视为不更新”的规则仍需人工核验。"
+   },
+   {
+    "site": "四川",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码5100000062；ICP备 13001288；公网安备 51010402000507；主办单位：",
+    "verdict": "不合规",
+    "evidence": "主办单位：四川省人民政府办公厅 网站标识码5100000062 蜀ICP备 13001288号 川公网安备 51010402000507号",
+    "reason": "页脚列明了网站标识码、ICP备案号、公安备案和主办单位，但未列明联系电话，缺1项。"
+   },
+   {
+    "site": "四川",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】四川省人民政府网站；【meta description】（空）",
+    "reason": "页面有站点标签（title），但内容标签（meta description）为空，故未同时具备两项标签。"
+   },
+   {
+    "site": "国务院",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "首页正文及页脚均未标注任何信息发布日期",
+    "reason": "首页内容中没有任何可见发布日期，无法按指标核实其是否在监测时间点前2周内更新过。"
+   },
+   {
+    "site": "国务院",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
+    "verdict": "不合规",
+    "evidence": "主办单位：国务院办公厅……网站标识码bm01000001 京ICP备05070218号 京公网安备11010202000001号",
+    "reason": "网站标识码、ICP备案号、公安备案、主办单位均已列明，但页脚未列明联系电话，仅设“联系我们”链接，缺少1项。"
+   },
+   {
+    "site": "国务院",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【meta description】（空）",
+    "reason": "页面虽有title，但meta description为空，未同时具备站点标签和内容标签。"
+   },
+   {
+    "site": "天津",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "天津",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：1200000052；ICP备05010518；公网安备 12010302000991；主办：；12345",
+    "verdict": "不合规",
+    "evidence": "主办：天津市人民政府办公厅 网站标识码：1200000052 津ICP备05010518号-1 津公网安备 12010302000991号",
+    "reason": "页脚列明了主办单位、网站标识码、ICP备案号和公安备案，但没有列出联系电话等联系方式，缺1项，因此扣0.5分。"
+   },
+   {
+    "site": "天津",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】天津政务网_天津市人民政府；【meta description】（空）",
+    "reason": "页面有 title 站点标签，但 meta description 内容标签为空，未同时具备两项标签。"
+   },
+   {
+    "site": "太原",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "• 精修城市 惠民提质 太原以城市更新绘就人民城市崭新图景 2026-10-29",
+    "reason": "首页政务要闻栏目有可见发布日期，且发布时间在最近2周内，因此判定为首页有更新。"
+   },
+   {
+    "site": "太原",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：1401000055；ICP备05003854；公网安备 14010002001529；主办单位：；12345",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "太原",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：太原市人民政府；meta description：负责市政府会议...",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
+   },
+   {
+    "site": "宁夏",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-23，距今 6 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "宁夏",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码6400000091；ICP备05000081；公网安备 64010402000731；主办单位：",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "宁夏",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：中国 - 宁夏；meta description：宁夏,",
+    "reason": "网页同时具备站点标签title和内容标签meta description。"
+   },
+   {
+    "site": "安徽",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "安徽",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话",
+    "verdict": "不合规",
+    "evidence": "主办单位：安徽省人民政府办公厅 承办单位：安徽省人民政府网管理中心 网站运维联系电话 皖ICP备05003657号 网站标识码：3400000001 皖公网安备",
+    "reason": "网站标识码、ICP备案号、公安备案标识、主办单位均已列明，但“网站运维联系电话”仅列标签未给出具体号码，联系方式缺失，应扣0.5分。"
+   },
+   {
+    "site": "安徽",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：安徽省人民政府；meta description：安徽省人民政府门户网站是由安徽省人民政府办公厅主办……",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合指标要求。"
+   },
+   {
+    "site": "山西",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "山西四部门协同开发农村寄递物流公共服务岗位 10/29",
+    "reason": "首页多条信息发布日期为10/29、10/28等近期日期，属2周内更新，不构成首页不更新。"
+   },
+   {
+    "site": "山西",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码：1400000045；ICP备12000773；公网安备 14010502050691；主办：",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "山西",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "【标题】山西省人民政府；【meta description】山西省人民政府网是山西省和山西省各部门…",
+    "reason": "页面同时具备站点标签（title）与内容标签（meta description），符合页面标签要求。"
+   },
+   {
+    "site": "工信部",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "工信部",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "工信部",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【meta description】（空）",
+    "reason": "页面仅有站点标签（title），内容标签（meta description）为空，未同时具备两项标签。"
+   },
+   {
+    "site": "广东",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-28，距今 1 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "广东",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "广东",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "【标题】广东省人民政府门户网站；【meta description】广东省人民政府门户网站由广东省人民政府办公厅主办……",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合要求。"
+   },
+   {
+    "site": "应急部",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-21，距今 8 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "应急部",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "应急部",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】中华人民共和国应急管理部；【meta description】（空）",
+    "reason": "站点标签(title)存在，但内容标签(meta description)为空，未同时具备两项标签，按页面标签指标应扣分。"
+   },
+   {
+    "site": "教育部",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "教育部",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码、主办单位",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "教育部",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：中华人民共和国教育部政府门户网站；meta description：教育部政府门户网站由教育部办公厅主办",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description）。"
+   },
+   {
+    "site": "新疆",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-28，距今 1 天",
+    "verdict": "合规",
+    "evidence": "2026-10-28 习近平向日本前首相福田康夫遗属致唁电",
+    "reason": "首页要闻最新发布日期为2026-10-28，多栏目均有近期更新，未见2周内无更新的情形。"
+   },
+   {
+    "site": "新疆",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：6500000034；ICP备05001680；公网安备65010202000778；主办：；12345",
+    "verdict": "合规",
+    "evidence": "主办：新疆维吾尔自治区人民政府办公厅 ICP备案号：新ICP备05001680号 政府网站标识码：6500000034 新公网安备65010202000778号",
+    "reason": "页脚清晰列明了主办单位、ICP备案号、网站标识码、公安备案号和联系电话，所问五项均未缺失。"
+   },
+   {
+    "site": "新疆",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】新疆维吾尔自治区人民政府网；【meta description】（空）",
+    "reason": "页面有站点标签（title），但内容标签（meta description）缺失，每个页面扣0.1分。"
+   },
+   {
+    "site": "江苏",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-25，距今 4 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "江苏",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格",
+    "verdict": "不合规",
+    "evidence": "页脚仅见“设立 融资信贷…专题专栏”等栏目链接，无备案标识信息",
+    "reason": "页脚未列明网站标识码、ICP备案号、公安备案、主办单位、联系电话，五项全部缺失，应扣2.5分。"
+   },
+   {
+    "site": "江苏",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】江苏省人民政府；【meta description】（空）",
+    "reason": "页面有站点标签（title）但内容标签meta description为空，未同时具备两项标签。"
+   },
+   {
+    "site": "江西",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "首页 省政府 要闻 政务公开 服务 互动 美丽江西 热门搜索",
+    "reason": "抓取内容中未出现任何稿件发布日期，无法判断首页是否在近14天内更新。"
+   },
+   {
+    "site": "江西",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码：3600000012；ICP备15008784；公网安备 36010802000128；主办：",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "江西",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】江西省人民政府；【meta description】（空）",
     "reason": "页面有站点标签（title），但内容标签（meta description）为空，未同时具备两项。"
+   },
+   {
+    "site": "河北",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "河北",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "缺少：联系电话｜网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "河北",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "标题：河北省人民政府；meta description：（空）",
+    "reason": "页面有站点标签（title），但内容标签（meta description）为空，未同时具备两项标签。"
+   },
+   {
+    "site": "河南",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-19，距今 10 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "河南",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
+    "verdict": "不合规",
+    "evidence": "页脚仅显示栏目链接（如新生儿出生、在线访谈、意见征集等），未见网站标识码、ICP备案号、公安备案、主办单位、联系电话",
+    "reason": "从提供的页脚内容看，这五项标识信息一项都没有清晰列明，按规则每缺一项扣0.5分，合计扣2.5分。"
+   },
+   {
+    "site": "河南",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：河南省人民政府门户网站；meta description：河南省人民政府门户网站由河南省人民政府办公厅主办……",
+    "reason": "页面同时提供了title站点标签和meta description内容标签。"
+   },
+   {
+    "site": "浙江",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "浙江公布首批26个复合型创新社区试点 2026-10-29；前三季度全省高技术产业投资同比增长6.9% 2026-10-29",
+    "reason": "首页“浙江要闻”等多个栏目存在2026-10-29发布的稿件，可见最新更新日期距监测时间不超过2周，未触发“首页不更新”的单项否决。"
+   },
+   {
+    "site": "浙江",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "浙江",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "标题：浙江省人民政府；meta description：（空）",
+    "reason": "站点标签（title）存在，但内容标签（meta description）为空缺失，不符合同时具备两项标签的要求。"
+   },
+   {
+    "site": "福建",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "福建",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：公安备案",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "福建",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：福建省人民政府门户网站；已提供meta description",
+    "reason": "页面同时具备站点标签title和内容标签meta description。"
+   },
+   {
+    "site": "西藏",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "西藏",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：5400000040；ICP备07000001；公网安备54010202000164；主办单位：；联系电话：0891-6318179",
+    "verdict": "合规",
+    "evidence": "主办单位：西藏自治区人民政府 联系电话：0891-6318179 网站标识码：5400000040 藏ICP备07000001号-1 藏公网安备54010202",
+    "reason": "网站标识码、ICP备案号、公安备案标识、主办单位、联系电话均在页面底部清晰列明，没有缺项。"
+   },
+   {
+    "site": "西藏",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：西藏自治区人民政府；meta description：西藏自治区人民政府门户网站…由西藏自治区人民政府主办",
+    "reason": "页面同时具备title站点标签和meta description内容标签，符合页面标签要求。"
+   },
+   {
+    "site": "贵州",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-23，距今 6 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "贵州",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：5200000083；ICP备16004405；公网安备 52010302001563；主办：；联系电话：0851-86892753",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "贵州",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "合规",
+    "evidence": "标题：贵州省人民政府；meta description：贵州省人民政府门户网站(http://www.guizhou.gov.cn)由贵州省人民政府办公厅主办",
+    "reason": "页面同时具备站点标签（title）和内容标签（meta description），符合要求。"
+   },
+   {
+    "site": "辽宁",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "强化服务意识 助力绿色能源产业发展壮大 2026-10-29",
+    "reason": "首页要闻区可见2026-10-29等近期发布日期，明显处于监测时间点前2周内，因此不构成“首页不更新”的单项否决情形。"
+   },
+   {
+    "site": "辽宁",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：2100000037；ICP备05023109；公网安备 21010502000372；主办单位：；12345",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "辽宁",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【meta description】（空）",
+    "reason": "页面有title站点标签，但meta description内容标签为空，未同时具备两项标签。"
+   },
+   {
+    "site": "陕西",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "陕西",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
+    "verdict": "合规",
+    "evidence": "陕ICP备10004160号 网站标识码6100000017 陕公网安备 61010202000169号 陕西省人民政府办公厅主办 技术支持：029-63912",
+    "reason": "页脚已列明网站标识码、ICP备案号、公安备案号、主办单位和联系电话，五项齐全，不扣分。"
+   },
+   {
+    "site": "陕西",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】陕西省人民政府；【meta description】（空）",
+    "reason": "页面仅有站点标签title，内容标签meta description为空，未同时具备两项标签。"
+   },
+   {
+    "site": "黑龙江",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页最近日期 2026-10-29，距今 0 天",
+    "verdict": "合规",
+    "evidence": "【人民日报】寒地水稻… 2026-10-29；关于绿色出行… 2026-10-29",
+    "reason": "首页存在多个可见的近期发布日期，首页并非无信息更新。"
+   },
+   {
+    "site": "黑龙江",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "齐全｜网站标识码：2300000061；ICP备05008713；公网安备 23010302000360；主办：；12345",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "解析失败"
+   },
+   {
+    "site": "黑龙江",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不合规",
+    "evidence": "【标题】黑龙江省人民政府；【meta description】（空）",
+    "reason": "页面有站点标签（title），但内容标签（meta description）为空，未同时具备两项标签。"
    }
   ],
   "B3": [
@@ -1984,7 +1918,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
     "reason": ""
    },
    {
@@ -2014,7 +1948,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
     "reason": ""
    },
    {
@@ -2041,10 +1975,10 @@
     "site": "天津",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：1200000052；ICP备05010518；公网安备 12010302000991；主办：；12345",
     "reason": ""
    },
    {
@@ -2071,10 +2005,10 @@
     "site": "河北",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "缺少：联系电话｜网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
     "reason": ""
    },
    {
@@ -2101,10 +2035,10 @@
     "site": "山西",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "缺少：联系电话｜网站标识码：1400000045；ICP备12000773；公网安备 14010502050691；主办：",
     "reason": ""
    },
    {
@@ -2131,10 +2065,10 @@
     "site": "内蒙古",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：1500000001；ICP备05000248；公网安备15010502000333；主办单位：；联系电话：0471-4865916",
     "reason": ""
    },
    {
@@ -2161,10 +2095,10 @@
     "site": "辽宁",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：2100000037；ICP备05023109；公网安备 21010502000372；主办单位：；12345",
     "reason": ""
    },
    {
@@ -2178,6 +2112,36 @@
     "reason": ""
    },
    {
+    "site": "吉林",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "首页最近日期 2026-10-28，距今 1 天",
+    "reason": ""
+   },
+   {
+    "site": "吉林",
+    "rule": "R5",
+    "rule_name": "网站标识",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "缺少：主办单位、联系电话｜网站标识码：2200000019；ICP备05001602；公网安备 22000002000002",
+    "reason": ""
+   },
+   {
+    "site": "吉林",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "首页 title=有，description=无",
+    "reason": ""
+   },
+   {
     "site": "黑龙江",
     "rule": "R2",
     "rule_name": "首页 2 周内更新",
@@ -2191,10 +2155,10 @@
     "site": "黑龙江",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：2300000061；ICP备05008713；公网安备 23010302000360；主办：；12345",
     "reason": ""
    },
    {
@@ -2224,7 +2188,7 @@
     "label": "pass",
     "ground_truth": "合规",
     "verdict": "合规",
-    "evidence": "齐全",
+    "evidence": "齐全｜网站标识码：3100000044；ICP备2021016245；公网安备 31010102004544；主办单位：；12345",
     "reason": ""
    },
    {
@@ -2254,7 +2218,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格",
     "reason": ""
    },
    {
@@ -2284,7 +2248,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "页脚只取到 0/5 项标识（可能由脚本/iframe 注入），证据不足，不判不合格",
     "reason": ""
    },
    {
@@ -2314,7 +2278,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话",
     "reason": ""
    },
    {
@@ -2344,7 +2308,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：公安备案",
     "reason": ""
    },
    {
@@ -2371,10 +2335,10 @@
     "site": "江西",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "缺少：联系电话｜网站标识码：3600000012；ICP备15008784；公网安备 36010802000128；主办：",
     "reason": ""
    },
    {
@@ -2404,41 +2368,11 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
     "reason": ""
    },
    {
     "site": "河南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "pass",
-    "ground_truth": "合规",
-    "verdict": "合规",
-    "evidence": "首页 title=有，description=有",
-    "reason": ""
-   },
-   {
-    "site": "湖南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "verdict": "合规",
-    "evidence": "首页最近日期 2026-10-15，距今 14 天",
-    "reason": ""
-   },
-   {
-    "site": "湖南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "verdict": "合规",
-    "evidence": "齐全",
-    "reason": ""
-   },
-   {
-    "site": "湖南",
     "rule": "R8",
     "rule_name": "页面标签",
     "label": "pass",
@@ -2461,10 +2395,10 @@
     "site": "广东",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "pass",
-    "ground_truth": "合规",
-    "verdict": "合规",
-    "evidence": "齐全",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "verdict": "不确定",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：联系电话",
     "reason": ""
    },
    {
@@ -2475,36 +2409,6 @@
     "ground_truth": "合规",
     "verdict": "合规",
     "evidence": "首页 title=有，description=有",
-    "reason": ""
-   },
-   {
-    "site": "海南",
-    "rule": "R2",
-    "rule_name": "首页 2 周内更新",
-    "label": "pass",
-    "ground_truth": "合规",
-    "verdict": "合规",
-    "evidence": "首页最近日期 2026-10-23，距今 6 天",
-    "reason": ""
-   },
-   {
-    "site": "海南",
-    "rule": "R5",
-    "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-    "reason": ""
-   },
-   {
-    "site": "海南",
-    "rule": "R8",
-    "rule_name": "页面标签",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "首页 title=有，description=无",
     "reason": ""
    },
    {
@@ -2524,7 +2428,7 @@
     "label": "fail",
     "ground_truth": "不合规",
     "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "evidence": "缺少：联系电话｜网站标识码5100000062；ICP备 13001288；公网安备 51010402000507；主办单位：",
     "reason": ""
    },
    {
@@ -2551,10 +2455,10 @@
     "site": "贵州",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：5200000083；ICP备16004405；公网安备 52010302001563；主办：；联系电话：0851-86892753",
     "reason": ""
    },
    {
@@ -2581,10 +2485,10 @@
     "site": "云南",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：5300000033；ICP备05000002；公网安备 53010202000476；主办单位：；12345",
     "reason": ""
    },
    {
@@ -2614,7 +2518,7 @@
     "label": "pass",
     "ground_truth": "合规",
     "verdict": "合规",
-    "evidence": "齐全",
+    "evidence": "齐全｜网站标识码：5400000040；ICP备07000001；公网安备54010202000164；主办单位：；联系电话：0891-6318179",
     "reason": ""
    },
    {
@@ -2641,10 +2545,10 @@
     "site": "陕西",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：主办单位、联系电话",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "verdict": "不确定",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
     "reason": ""
    },
    {
@@ -2671,10 +2575,10 @@
     "site": "宁夏",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "abstain",
-    "ground_truth": "不确定",
-    "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "缺少：联系电话｜网站标识码6400000091；ICP备05000081；公网安备 64010402000731；主办单位：",
     "reason": ""
    },
    {
@@ -2701,10 +2605,10 @@
     "site": "新疆",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：6500000034；ICP备05001680；公网安备65010202000778；主办：；12345",
     "reason": ""
    },
    {
@@ -2731,10 +2635,10 @@
     "site": "太原",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：联系电话",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "齐全｜网站标识码：1401000055；ICP备05003854；公网安备 14010002001529；主办单位：；12345",
     "reason": ""
    },
    {
@@ -2761,10 +2665,10 @@
     "site": "教育部",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：主办单位、联系电话",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "verdict": "不确定",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码、主办单位",
     "reason": ""
    },
    {
@@ -2791,10 +2695,10 @@
     "site": "工信部",
     "rule": "R5",
     "rule_name": "网站标识",
-    "label": "fail",
-    "ground_truth": "不合规",
-    "verdict": "不合规",
-    "evidence": "缺少：网站标识码、ICP 备案号、公安备案、主办单位",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "verdict": "不确定",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
     "reason": ""
    },
    {
@@ -2824,7 +2728,7 @@
     "label": "abstain",
     "ground_truth": "不确定",
     "verdict": "不确定",
-    "evidence": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+    "evidence": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
     "reason": ""
    },
    {

@@ -25,6 +25,8 @@ SUB = os.path.join(ROOT, "submission")
 CURRENT_DOCS = [
     "00-先读我-评委入口.md",
     "开发设计文档-六节版.md",
+    "开发设计文档-模板版.md",
+    "Nexent智能体说明.md",
     "知识图谱构建方案.md",
     "平台核验记录-20261021.md",
     "新行业迁移手册.md",
@@ -81,7 +83,7 @@ def main() -> int:
     rows = [check_doc(n, issues) for n in CURRENT_DOCS]
 
     # docx 结构
-    docx_path = os.path.join(SUB, "开发设计文档-六节版.docx")
+    docx_path = os.path.join(SUB, "开发设计文档-模板版.docx")
     docx_info = {"exists": os.path.exists(docx_path)}
     if docx_info["exists"]:
         try:

@@ -9,7 +9,7 @@
 用法：
     cd 项目
     python tools/make_package.py
-    python tools/make_package.py --out ..\ICT自进化-初赛包.zip
+    python tools/make_package.py --out ../ICT自进化-初赛包.zip
 """
 from __future__ import annotations
 
@@ -27,13 +27,13 @@ SUB = os.path.join(ROOT, "submission")
 # 包内清单：只放**当前口径**的材料；历史版本留在工作区，不进包
 CURRENT_FILES = [
     "00-先读我-评委入口.md",
-    "开发设计文档-六节版.md",
-    "开发设计文档-六节版.docx",
+    "开发设计文档-模板版.md",
+    "开发设计文档-模板版.docx",
+    "Nexent智能体说明.md",
+    "Nexent智能体说明.docx",
+    "agent-config.json",
     "知识图谱构建方案.md",
-    "平台核验记录-20261021.md",
-    "开源发布说明.md",
-    "演示视频脚本-3分钟.md",
-    "答辩问答准备.md",
+    "平台核验证据.md",
     "新行业迁移手册.md",
     "数字对账.json",
     "成本基准.json",
@@ -44,9 +44,18 @@ CURRENT_DIRS = [
     ("screenshots", ("*.png",)),
     ("kg", ("*.json", "*.dot", "*.svg", "*.png")),
     ("kg-gov", ("*.json", "*.dot", "*.svg", "*.png")),
-    ("videos", ("*.webm", "*.mp4")),
+    ("videos", ("*.mp4",)),
 ]
 # 明确不打包的（历史口径 / 含联系方式 / 过时）
+INTERNAL = [
+    "答辩问答准备.md",           # 队内答辩准备
+    "演示视频脚本-3分钟.md",      # 录制脚本（成片视频在包里）
+    "开源发布说明.md",           # 内部发布流程与凭据操作记录
+    "平台核验记录-20261021.md",  # 过程工作日志（事实已抽到 平台核验证据.md）
+    "演示PPT.pptx",             # 录制视频用 / 总决赛答辩用
+    "讲解稿-3分钟.md",           # 讲解提示稿
+]
+# 历史口径 / 含联系方式 / 过时：明确不打包
 EXCLUDED = [
     "02-Agent配置详情.md", "03-需要同步提交的文件说明.md", "04-示例问答.md",
     "05-截图清单.md", "README.md", "开发设计文档.md",
@@ -74,7 +83,7 @@ def main() -> int:
         return 1
 
     stamp = dt.date.today().strftime("%Y%m%d")
-    out = args.out or os.path.join(os.path.dirname(ROOT), f"ICT自进化-初赛包-{stamp}.zip")
+    out = args.out or os.path.join(os.path.dirname(ROOT), f"ICT自进化-初赛包-{stamp}-{dt.datetime.now():%H%M}.zip")
     out = os.path.abspath(out)
 
     manifest = []
@@ -113,9 +122,12 @@ def main() -> int:
             "ICT 自进化 · 初赛提交包\n"
             f"生成时间：{dt.datetime.now().isoformat(timespec='seconds')}\n\n"
             "目录：\n"
-            "  提交材料/   设计文档、知识图谱方案、平台核验、开源说明、视频脚本、对账与成本\n"
+            "  提交材料/   设计文档、知识图谱方案、平台核验证据、迁移手册、对账与成本、截图与视频\n"
             "  代码/       可复现源码（src / tools / skills）\n\n"
-            "不包含（历史口径或含联系方式）：\n  " + "\n  ".join(EXCLUDED) + "\n\n"
+            "不包含（历史口径）：\n  " + "\n  ".join(EXCLUDED) + "\n"
+            "内部材料（留工作区，不提交）：\n  " + "\n  ".join(INTERNAL) + "\n\n"
+            "注意：提交材料内页含队伍联系方式（设计文档首页），仅用于赛事提交；\n"
+            "公开仓库已排除 项目/submission/，不会包含这些信息。\n\n"
             "复算：\n"
             "  cd 代码/src && set EVOSTD_NOW=2026-10-21\n"
             "  python ../tools/verify_numbers.py --strict   # 需要先补回 submission/ 产物\n"
@@ -132,6 +144,9 @@ def main() -> int:
         print(f"  …… 其余 {len(manifest)-20} 个文件")
     print("\n== 未打包（历史/含联系方式）==")
     for name in EXCLUDED:
+        print(f"  - {name}")
+    print("\n== 内部材料（留工作区，不进包）==")
+    for name in INTERNAL:
         print(f"  - {name}")
     return 0
 

@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-29T12:29:09",
+ "generated_at": "2026-10-29T12:38:28",
  "sites": 10,
  "pages_fetched": 46,
  "rules_per_site": 14,
  "status_count": {
-  "pass": 74,
-  "fail": 12,
-  "abstain": 54
+  "pass": 78,
+  "fail": 13,
+  "abstain": 49
  },
  "results": [
   {
@@ -16,7 +16,7 @@
     {
      "url": "https://www.gov.cn/",
      "status": 200,
-     "elapsed": 0.34,
+     "elapsed": 0.32,
      "title": "中国政府网_中央人民政府门户网站",
      "error": ""
     },
@@ -30,21 +30,21 @@
     {
      "url": "https://www.gov.cn/zhengce/jiedu/",
      "status": 200,
-     "elapsed": 0.01,
+     "elapsed": 0.03,
      "title": "",
      "error": ""
     },
     {
      "url": "https://www.gov.cn/zhengce/xxgk/",
      "status": 200,
-     "elapsed": 0.07,
+     "elapsed": 0.02,
      "title": "政府信息公开平台_中国政府网",
      "error": ""
     },
     {
      "url": "https://tousu.www.gov.cn/zwfw/index.htm",
      "status": 200,
-     "elapsed": 0.32,
+     "elapsed": 0.22,
      "title": "​",
      "error": ""
     }
@@ -55,7 +55,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.34s",
+     "detail": "HTTP 200，0.32s",
      "evidence": "",
      "points": 0.0
     },
@@ -91,7 +91,7 @@
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
      "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：网站标识码",
      "evidence": "",
      "points": 0.0
     },
@@ -185,35 +185,35 @@
     {
      "url": "https://www.beijing.gov.cn/",
      "status": 200,
-     "elapsed": 0.32,
+     "elapsed": 0.26,
      "title": "北京市人民政府门户网站",
      "error": ""
     },
     {
      "url": "http://www.beijing.gov.cn/zhengce/zfwj/",
      "status": 200,
-     "elapsed": 0.15,
+     "elapsed": 0.08,
      "title": "政府文件_首都之窗_北京市人民政府门户网站",
      "error": ""
     },
     {
      "url": "https://www.beijing.gov.cn/so/zcdh/zcjd",
      "status": 200,
-     "elapsed": 0.27,
+     "elapsed": 0.26,
      "title": "政策解读_首都之窗_北京市人民政府门户网站",
      "error": ""
     },
     {
      "url": "https://www.beijing.gov.cn/gongkai/",
      "status": 200,
-     "elapsed": 0.05,
+     "elapsed": 0.04,
      "title": "政务公开_北京市人民政府门户网站",
      "error": ""
     },
     {
      "url": "http://www.beijing.gov.cn/so/zcdh/yshj?channelId=38677",
      "status": 200,
-     "elapsed": 0.09,
+     "elapsed": 0.1,
      "title": "政务服务便利化_首都之窗_北京市人民政府门户网站",
      "error": ""
     }
@@ -224,7 +224,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.32s",
+     "detail": "HTTP 200，0.26s",
      "evidence": "",
      "points": 0.0
     },
@@ -260,7 +260,7 @@
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
      "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "detail": "HTML 中存在但正文不可见（可能脚本/隐藏元素）：主办单位",
      "evidence": "",
      "points": 0.0
     },
@@ -354,42 +354,42 @@
     {
      "url": "https://www.tj.gov.cn/",
      "status": 200,
-     "elapsed": 1.12,
+     "elapsed": 0.84,
      "title": "天津政务网_天津市人民政府",
      "error": ""
     },
     {
      "url": "https://www.tj.gov.cn/zwgk/szfwj/",
      "status": 200,
-     "elapsed": 0.69,
+     "elapsed": 0.42,
      "title": "政府文件_天津政务网",
      "error": ""
     },
     {
      "url": "https://www.tj.gov.cn/zwgk/zcjd/",
      "status": 200,
-     "elapsed": 0.58,
+     "elapsed": 0.44,
      "title": "政策解读_天津政务网",
      "error": ""
     },
     {
      "url": "https://www.tj.gov.cn/zwgk/",
      "status": 200,
-     "elapsed": 0.79,
+     "elapsed": 0.68,
      "title": "政务公开_天津政务网",
      "error": ""
     },
     {
      "url": "https://www.tj.gov.cn/zmhd/zwft/zwft/202609/t20260921_7378802.html",
      "status": 200,
-     "elapsed": 0.64,
+     "elapsed": 0.45,
      "title": "访谈回放｜《天津市健全“高效办成一件事”重点事项常态化推进机制提升政务服务效能若干措施》解读_政务访谈_天津政务网",
      "error": ""
     },
     {
      "url": "https://zwfw.tj.gov.cn/",
      "status": 200,
-     "elapsed": 0.31,
+     "elapsed": 0.28,
      "title": "天津网上办事大厅",
      "error": ""
     }
@@ -400,7 +400,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，1.12s",
+     "detail": "HTTP 200，0.84s",
      "evidence": "",
      "points": 0.0
     },
@@ -435,10 +435,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-     "evidence": "",
-     "points": 0.0
+     "status": "pass",
+     "detail": "齐全｜网站标识码：1200000052；ICP备05010518；公网安备 12010302000991；主办：；12345",
+     "evidence": "网站标识码：1200000052；ICP备05010518；公网安备 12010302000991；主办：；12345",
+     "points": -0.0
     },
     {
      "id": "R6",
@@ -530,7 +530,7 @@
     {
      "url": "https://www.hebei.gov.cn/",
      "status": 200,
-     "elapsed": 0.45,
+     "elapsed": 0.36,
      "title": "河北省人民政府",
      "error": ""
     },
@@ -544,14 +544,14 @@
     {
      "url": "https://www.hebei.gov.cn/columns/b4515201-74c2-4866-ba74-70199fee1a67/index.html",
      "status": 200,
-     "elapsed": 0.06,
+     "elapsed": 0.05,
      "title": "政策解读",
      "error": ""
     },
     {
      "url": "https://www.hebei.gov.cn/columns/7b96ca20-882f-436c-9d13-7c91d82ccd55/index.html",
      "status": 200,
-     "elapsed": 0.09,
+     "elapsed": 0.06,
      "title": "政府信息公开指南",
      "error": ""
     }
@@ -562,7 +562,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.45s",
+     "detail": "HTTP 200，0.36s",
      "evidence": "",
      "points": 0.0
     },
@@ -597,10 +597,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-     "evidence": "",
-     "points": 0.0
+     "status": "fail",
+     "detail": "缺少：联系电话｜网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
+     "evidence": "网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
+     "points": -0.5
     },
     {
      "id": "R6",
@@ -692,7 +692,7 @@
     {
      "url": "https://www.shanxi.gov.cn/",
      "status": 200,
-     "elapsed": 0.27,
+     "elapsed": 0.28,
      "title": "山西省人民政府",
      "error": ""
     },
@@ -706,28 +706,28 @@
     {
      "url": "http://www.shanxi.gov.cn/ywdt/zcjd/",
      "status": 200,
-     "elapsed": 0.04,
+     "elapsed": 0.05,
      "title": "政策解读 - 山西省人民政府",
      "error": ""
     },
     {
      "url": "http://www.shanxi.gov.cn/zfxxgk/",
      "status": 200,
-     "elapsed": 0.2,
+     "elapsed": 0.38,
      "title": "政务公开 - 山西省人民政府",
      "error": ""
     },
     {
      "url": "http://www.shanxi.gov.cn/zwfw/",
      "status": 200,
-     "elapsed": 0.07,
+     "elapsed": 0.05,
      "title": "政务服务 - 山西省人民政府",
      "error": ""
     },
     {
      "url": "http://www.shanxi.gov.cn/zfxxgk/zfxxgkzl/zfxxgkzn/",
      "status": 200,
-     "elapsed": 0.07,
+     "elapsed": 0.42,
      "title": "信息公开专栏 - 山西省人民政府",
      "error": ""
     }
@@ -738,7 +738,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.27s",
+     "detail": "HTTP 200，0.28s",
      "evidence": "",
      "points": 0.0
     },
@@ -773,10 +773,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-     "evidence": "",
-     "points": 0.0
+     "status": "fail",
+     "detail": "缺少：联系电话｜网站标识码：1400000045；ICP备12000773；公网安备 14010502050691；主办：",
+     "evidence": "网站标识码：1400000045；ICP备12000773；公网安备 14010502050691；主办：",
+     "points": -0.5
     },
     {
      "id": "R6",
@@ -868,21 +868,21 @@
     {
      "url": "https://www.nmg.gov.cn/",
      "status": 200,
-     "elapsed": 0.38,
+     "elapsed": 0.37,
      "title": "内蒙古自治区人民政府",
      "error": ""
     },
     {
      "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/?gk=3&cid=3696",
      "status": 200,
-     "elapsed": 0.14,
+     "elapsed": 0.11,
      "title": "法定主动公开内容_\n        内蒙古自治区人民政府",
      "error": ""
     },
     {
      "url": "https://www.nmg.gov.cn/zwgk/zcjd/",
      "status": 200,
-     "elapsed": 0.1,
+     "elapsed": 0.08,
      "title": "政策解读_\n        内蒙古自治区人民政府",
      "error": ""
     },
@@ -896,7 +896,7 @@
     {
      "url": "https://www.nmg.gov.cn/zwfw/",
      "status": 200,
-     "elapsed": 0.08,
+     "elapsed": 0.1,
      "title": "政务服务_\n        内蒙古自治区人民政府",
      "error": ""
     }
@@ -907,7 +907,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.38s",
+     "detail": "HTTP 200，0.37s",
      "evidence": "",
      "points": 0.0
     },
@@ -942,10 +942,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-     "evidence": "",
-     "points": 0.0
+     "status": "pass",
+     "detail": "齐全｜网站标识码：1500000001；ICP备05000248；公网安备15010502000333；主办单位：；联系电话：0471-4865916",
+     "evidence": "网站标识码：1500000001；ICP备05000248；公网安备15010502000333；主办单位：；联系电话：0471-4865916",
+     "points": -0.0
     },
     {
      "id": "R6",
@@ -1037,44 +1037,44 @@
     {
      "url": "https://www.ln.gov.cn/",
      "status": 200,
-     "elapsed": 0.33,
+     "elapsed": 0.44,
      "title": "辽宁省人民政府",
      "error": ""
     },
     {
      "url": "https://www.ln.gov.cn/web/zwgkx/zfwj/index.shtml",
      "status": 200,
-     "elapsed": 0.05,
+     "elapsed": 0.07,
      "title": "辽宁省人民政府",
      "error": ""
     },
     {
      "url": "https://www.ln.gov.cn/web/zwgkx/zcjd/index.shtml",
      "status": 200,
-     "elapsed": 0.08,
+     "elapsed": 0.11,
      "title": "辽宁省人民政府",
      "error": ""
     },
     {
      "url": "https://www.ln.gov.cn/web/zwgkx/index.shtml",
      "status": 200,
-     "elapsed": 0.08,
+     "elapsed": 0.09,
      "title": "辽宁省人民政府",
      "error": ""
     },
     {
      "url": "https://www.ln.gov.cn/web/ywdt/zymtkln/2026102808503492556/index.shtml",
      "status": 200,
-     "elapsed": 0.07,
+     "elapsed": 0.11,
      "title": "辽宁铁岭探索政务服务“一窗通办”：一个窗口更便民",
      "error": ""
     },
     {
      "url": "https://www.lnzwfw.gov.cn/?aisiteOutPageId=8337b8b804444c56b4838f3dbfe15203",
      "status": 0,
-     "elapsed": 0.33,
+     "elapsed": 0.23,
      "title": "",
-     "error": "SSLError: HTTPSConnectionPool(host='www.lnzwfw.gov.cn', port=443): Max retries exceeded with url: /?aisiteOutPageId=8337b8b804444c56b4838f3dbfe15203 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1020)')))"
+     "error": "SSLError: HTTPSConnectionPool(host='www.lnzwfw.gov.cn', port=443): Max retries exceeded with url: /?aisiteOutPageId=8337b8b804444c56b4838f3dbfe15203 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1020)')))"
     }
    ],
    "rules": [
@@ -1083,7 +1083,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.33s",
+     "detail": "HTTP 200，0.44s",
      "evidence": "",
      "points": 0.0
     },
@@ -1118,10 +1118,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "fail",
-     "detail": "缺少：联系电话",
-     "evidence": "",
-     "points": -0.5
+     "status": "pass",
+     "detail": "齐全｜网站标识码：2100000037；ICP备05023109；公网安备 21010502000372；主办单位：；12345",
+     "evidence": "网站标识码：2100000037；ICP备05023109；公网安备 21010502000372；主办单位：；12345",
+     "points": -0.0
     },
     {
      "id": "R6",
@@ -1213,14 +1213,14 @@
     {
      "url": "https://www.jl.gov.cn/",
      "status": 200,
-     "elapsed": 1.37,
+     "elapsed": 0.59,
      "title": "吉林省人民政府",
      "error": ""
     },
     {
      "url": "https://www.jl.gov.cn/zcjd/",
      "status": 200,
-     "elapsed": 0.75,
+     "elapsed": 0.27,
      "title": "吉林省人民政府_政策解读",
      "error": ""
     }
@@ -1231,7 +1231,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，1.37s",
+     "detail": "HTTP 200，0.59s",
      "evidence": "",
      "points": 0.0
     },
@@ -1266,10 +1266,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "abstain",
-     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
-     "evidence": "",
-     "points": 0.0
+     "status": "fail",
+     "detail": "缺少：主办单位、联系电话｜网站标识码：2200000019；ICP备05001602；公网安备 22000002000002",
+     "evidence": "网站标识码：2200000019；ICP备05001602；公网安备 22000002000002",
+     "points": -1.0
     },
     {
      "id": "R6",
@@ -1361,28 +1361,28 @@
     {
      "url": "https://www.hlj.gov.cn/",
      "status": 200,
-     "elapsed": 0.43,
+     "elapsed": 0.49,
      "title": "黑龙江省人民政府",
      "error": ""
     },
     {
      "url": "https://www.hlj.gov.cn/hlj/c108371/zfxxgk_search.shtml",
      "status": 200,
-     "elapsed": 0.16,
+     "elapsed": 0.15,
      "title": "政府信息公开_黑龙江省人民政府",
      "error": ""
     },
     {
      "url": "https://www.hlj.gov.cn/hlj/c108385/zcjd_ts.shtml",
      "status": 200,
-     "elapsed": 0.13,
+     "elapsed": 0.18,
      "title": "政策解读_黑龙江省人民政府",
      "error": ""
     },
     {
      "url": "https://www.hlj.gov.cn/hlj/c108368/zwgk.shtml",
      "status": 200,
-     "elapsed": 0.15,
+     "elapsed": 0.16,
      "title": "政务公开_黑龙江省人民政府",
      "error": ""
     }
@@ -1393,7 +1393,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.43s",
+     "detail": "HTTP 200，0.49s",
      "evidence": "",
      "points": 0.0
     },
@@ -1428,10 +1428,10 @@
      "id": "R5",
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
-     "status": "fail",
-     "detail": "缺少：联系电话",
-     "evidence": "",
-     "points": -0.5
+     "status": "pass",
+     "detail": "齐全｜网站标识码：2300000061；ICP备05008713；公网安备 23010302000360；主办：；12345",
+     "evidence": "网站标识码：2300000061；ICP备05008713；公网安备 23010302000360；主办：；12345",
+     "points": -0.0
     },
     {
      "id": "R6",
@@ -1523,14 +1523,14 @@
     {
      "url": "https://www.sh.gov.cn/",
      "status": 200,
-     "elapsed": 0.78,
+     "elapsed": 0.77,
      "title": "上海市人民政府",
      "error": ""
     },
     {
      "url": "https://www.sh.gov.cn/#policy-platform-panel-1",
      "status": 200,
-     "elapsed": 0.12,
+     "elapsed": 0.13,
      "title": "上海市人民政府",
      "error": ""
     },
@@ -1548,7 +1548,7 @@
      "name": "站点可访问",
      "clause": "单项否决：超过 15 秒打不开",
      "status": "pass",
-     "detail": "HTTP 200，0.78s",
+     "detail": "HTTP 200，0.77s",
      "evidence": "",
      "points": 0.0
     },
@@ -1584,8 +1584,8 @@
      "name": "网站标识",
      "clause": "每缺一项扣 0.5 分",
      "status": "pass",
-     "detail": "齐全",
-     "evidence": "",
+     "detail": "齐全｜网站标识码：3100000044；ICP备2021016245；公网安备 31010102004544；主办单位：；12345",
+     "evidence": "网站标识码：3100000044；ICP备2021016245；公网安备 31010102004544；主办单位：；12345",
      "points": -0.0
     },
     {
