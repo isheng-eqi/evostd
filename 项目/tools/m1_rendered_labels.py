@@ -21,11 +21,11 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 from gov_audit_probe import parse_dates  # noqa: E402
 
 PATS = {
-    "网站标识码": r"网站标识码[:：]?\s*\d{6,}",
+    "网站标识码": r"网站标识码[:：]?\s*[A-Za-z0-9]{6,}",
     "ICP 备案号": r"ICP\s*备?\s*\d{6,}",
-    "公安备案": r"公网安备\s*\d{6,}|公安备案",
-    "主办单位": r"主办(单位)?[:：]",
-    "联系电话": r"(联系电话|联系方式|服务热线|热线|电话)[:：]?\s*[\d\-]{7,}|12345",
+    "公安备案": r"公网安备\s*[:：]?\s*\d{6,}|公备\s*[:：]?\s*\d{6,}|公安备案",
+    "主办单位": r"主\s*办",
+    "联系方式": r"(联系电话|联系方式|服务热线|热线|电话|地址|技术支持)[:：]?\s*[\d\-]{7,}|12345|12350|(?<!\d)1[3-9]\d{9}(?!\d)|[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}",
 }
 
 
@@ -41,12 +41,13 @@ def label_site(name: str) -> dict:
     meta = soup.find("meta", attrs={"name": re.compile(r"^\s*description\s*$", re.I)})
     desc = bool(meta and (meta.get("content") or "").strip())
 
-    footer = re.sub(r"\s+", " ", text)[-3000:]
+    footer = re.sub(r"\s+", " ", text)[-600:]
     flags = {k: bool(re.search(p, footer)) for k, p in PATS.items()}
     found = sum(flags.values())
 
     today = date.today()
-    dates = parse_dates(re.sub(r"\s+", " ", text)[:8000])
+    dates = [d for d in parse_dates(re.sub(r"\s+", " ", text))
+             if date(2024, 1, 1) <= d <= today]
     if dates:
         days = (today - max(dates)).days
         r2 = "pass" if days <= 14 else "fail"

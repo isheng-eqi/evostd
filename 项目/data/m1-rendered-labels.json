@@ -11,7 +11,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：网站标识码、联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "北京": {
@@ -53,7 +53,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "山西": {
@@ -67,7 +67,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "内蒙古": {
@@ -109,7 +109,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：主办单位、联系电话"
+    "detail": "缺少：主办单位、联系方式"
    }
   },
   "黑龙江": {
@@ -119,11 +119,11 @@
    },
    "R2": {
     "status": "pass",
-    "detail": "最近日期 2026-10-31，距今 -2 天"
+    "detail": "最近日期 2026-10-24，距今 5 天"
    },
    "R5": {
-    "status": "pass",
-    "detail": "齐全"
+    "status": "fail",
+    "detail": "缺少：联系方式"
    }
   },
   "上海": {
@@ -151,52 +151,10 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：主办单位、联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "浙江": {
-   "R8": {
-    "status": "fail",
-    "detail": "title=True desc=False"
-   },
-   "R2": {
-    "status": "pass",
-    "detail": "最近日期 2026-10-29，距今 0 天"
-   },
-   "R5": {
-    "status": "fail",
-    "detail": "缺少：主办单位"
-   }
-  },
-  "安徽": {
-   "R8": {
-    "status": "pass",
-    "detail": "title=True desc=True"
-   },
-   "R2": {
-    "status": "fail",
-    "detail": "最近日期 2026-10-14，距今 15 天"
-   },
-   "R5": {
-    "status": "fail",
-    "detail": "缺少：联系电话"
-   }
-  },
-  "福建": {
-   "R8": {
-    "status": "pass",
-    "detail": "title=True desc=True"
-   },
-   "R2": {
-    "status": "pass",
-    "detail": "最近日期 2026-10-29，距今 0 天"
-   },
-   "R5": {
-    "status": "fail",
-    "detail": "缺少：公安备案"
-   }
-  },
-  "江西": {
    "R8": {
     "status": "fail",
     "detail": "title=True desc=False"
@@ -210,6 +168,48 @@
     "detail": "齐全"
    }
   },
+  "安徽": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "fail",
+    "detail": "最近日期 2026-10-14，距今 15 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系方式"
+   }
+  },
+  "福建": {
+   "R8": {
+    "status": "pass",
+    "detail": "title=True desc=True"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "pass",
+    "detail": "齐全"
+   }
+  },
+  "江西": {
+   "R8": {
+    "status": "fail",
+    "detail": "title=True desc=False"
+   },
+   "R2": {
+    "status": "pass",
+    "detail": "最近日期 2026-10-29，距今 0 天"
+   },
+   "R5": {
+    "status": "fail",
+    "detail": "缺少：联系方式"
+   }
+  },
   "河南": {
    "R8": {
     "status": "pass",
@@ -221,7 +221,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：公安备案、联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "湖南": {
@@ -234,8 +234,8 @@
     "detail": "最近日期 2026-10-08，距今 21 天"
    },
    "R5": {
-    "status": "fail",
-    "detail": "缺少：公安备案"
+    "status": "pass",
+    "detail": "齐全"
    }
   },
   "广东": {
@@ -248,8 +248,8 @@
     "detail": "最近日期 2026-10-28，距今 1 天"
    },
    "R5": {
-    "status": "fail",
-    "detail": "缺少：联系电话"
+    "status": "pass",
+    "detail": "齐全"
    }
   },
   "海南": {
@@ -266,7 +266,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "贵州": {
@@ -290,7 +290,7 @@
    },
    "R2": {
     "status": "pass",
-    "detail": "最近日期 2026-12-01，距今 -33 天"
+    "detail": "最近日期 2026-10-28，距今 1 天"
    },
    "R5": {
     "status": "pass",
@@ -321,8 +321,8 @@
     "detail": "最近日期 2026-10-29，距今 0 天"
    },
    "R5": {
-    "status": "fail",
-    "detail": "缺少：主办单位、联系电话"
+    "status": "pass",
+    "detail": "齐全"
    }
   },
   "宁夏": {
@@ -336,7 +336,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "新疆": {
@@ -363,8 +363,8 @@
     "detail": "最近日期 2026-10-29，距今 0 天"
    },
    "R5": {
-    "status": "pass",
-    "detail": "齐全"
+    "status": "fail",
+    "detail": "缺少：联系方式"
    }
   },
   "教育部": {
@@ -377,8 +377,8 @@
     "detail": "最近日期 2026-10-26，距今 3 天"
    },
    "R5": {
-    "status": "abstain",
-    "detail": "页脚只取到 2/5 项"
+    "status": "fail",
+    "detail": "缺少：主办单位、联系方式"
    }
   },
   "工信部": {
@@ -392,7 +392,7 @@
    },
    "R5": {
     "status": "fail",
-    "detail": "缺少：网站标识码、联系电话"
+    "detail": "缺少：联系方式"
    }
   },
   "应急部": {
@@ -405,8 +405,8 @@
     "detail": "最近日期 2026-10-29，距今 0 天"
    },
    "R5": {
-    "status": "fail",
-    "detail": "缺少：网站标识码、联系电话"
+    "status": "pass",
+    "detail": "齐全"
    }
   }
  }

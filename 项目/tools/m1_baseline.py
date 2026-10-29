@@ -77,6 +77,24 @@ def fetch_page(url: str) -> dict:
     }
 
 
+def load_rendered(sites: dict, rendered_dir: str) -> dict:
+    out = {}
+    for name, url in sites.items():
+        hp = os.path.join(rendered_dir, f"{name}.html")
+        tp = os.path.join(rendered_dir, f"{name}.txt")
+        if not (os.path.exists(hp) and os.path.exists(tp)):
+            continue
+        html = open(hp, encoding="utf-8").read()
+        text = re.sub(r"\s+", " ", open(tp, encoding="utf-8").read())
+        soup = BeautifulSoup(html, "lxml")
+        title = soup.title.get_text(strip=True) if soup.title else ""
+        meta = soup.find("meta", attrs={"name": re.compile(r"^\s*description\s*$", re.I)})
+        desc = (meta.get("content") or "").strip() if meta else ""
+        out[name] = {"url": url, "html": html, "title": title, "desc": desc,
+                     "text": text[:6000], "footer": text[-1200:], "status": 200}
+    return out
+
+
 def representation(p: dict) -> str:
     return (f"【URL】{p['url']}\n【标题】{p['title'] or '（空）'}\n"
             f"【meta description】{p['desc'] or '（空）'}\n"
@@ -141,9 +159,9 @@ def build_samples(judgments: dict, site_pages: dict, r8_truth: dict | None = Non
             cfg = RULES[rid]
             label = rule["status"]
             truth_src = "probe"
-            if rid == "R8" and r8_truth and name in r8_truth and "lxml" in r8_truth[name]:
-                label = "pass" if r8_truth[name]["lxml"] else "fail"
-                truth_src = "lxml"
+            if r8_truth and name in r8_truth and rid in r8_truth[name]:
+                label = r8_truth[name][rid]["status"]
+                truth_src = "rendered"
             samples.append({
                 "site": name,
                 "rule": rid,
@@ -222,7 +240,8 @@ def main() -> int:
     ap.add_argument("--sites", default=os.path.join(ROOT, "data", "gov-sites-30.json"))
     ap.add_argument("--out", default=os.path.join(ROOT, "data", "m1-baseline-results.json"))
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--r8-labels", default=os.path.join(ROOT, "data", "m1-r8-labels.json"))
+    ap.add_argument("--r8-labels", default=os.path.join(ROOT, "data", "m1-rendered-labels.json"))
+    ap.add_argument("--rendered-dir", default=os.path.join(ROOT, "data", "rendered"))
     args = ap.parse_args()
 
     key = os.environ.get("DS_KEY", "")
@@ -234,21 +253,13 @@ def main() -> int:
     sites = json.load(open(args.sites, encoding="utf-8"))
     indicator = open(os.path.join(ROOT, "data", "indicator-2021.txt"), encoding="utf-8").read()
 
-    print("== 抓取网页 ==")
-    pages = {}
-    with ThreadPoolExecutor(max_workers=6) as ex:
-        futs = {ex.submit(fetch_page, url): name for name, url in sites.items()}
-        for f in as_completed(futs):
-            name = futs[f]
-            try:
-                pages[name] = f.result()
-                print(f"   ✓ {name}")
-            except Exception as e:  # noqa: BLE001
-                print(f"   ✗ {name}: {e}")
+    pages = load_rendered(sites, args.rendered_dir)
+    print(f"== 渲染页 {len(pages)} 个（缺失的跳过） ==")
 
     r8_truth = None
     if os.path.exists(args.r8_labels):
-        r8_truth = json.load(open(args.r8_labels, encoding="utf-8"))
+        raw = json.load(open(args.r8_labels, encoding="utf-8"))
+        r8_truth = raw.get("labels", raw)
     samples = build_samples(judgments, pages, r8_truth)
     if args.limit:
         samples = samples[:args.limit]
