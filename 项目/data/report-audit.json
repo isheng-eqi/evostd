@@ -1,0 +1,554 @@
+{
+ "generated_at": "2026-10-29T12:48:26",
+ "results": [
+  {
+   "name": "汾阳",
+   "url": "http://fenyang.gov.cn/zwgk/xxgknb/zfnb/202602/P020260209414304911834.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 7,
+   "chars": 2820,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(880字)；主动公开(184字)；依申请公开(104字)；复议诉讼(158字)；存在问题(303字)；其他事项(49字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "pass",
+     "detail": "2025-01-01 至 2025-12-31",
+     "evidence": "2025年1月1日至2025年12月31日"
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "287 字",
+     "evidence": "（一）主要问题一是部分单位对政务公开重视程度不足，主动公开意识有待增强，存在“重结果、轻过程”现象；二是政策解读形式较为单一，多以文字为主，图表、视频等可视化解"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "pass",
+     "detail": "引用了国办公开办函〔2021〕30 号",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 880,
+    "主动公开": 184,
+    "依申请公开": 104,
+    "复议诉讼": 158,
+    "存在问题": 303,
+    "其他事项": 49
+   }
+  },
+  {
+   "name": "寿光",
+   "url": "https://www.shouguang.gov.cn/zwgk/XXGK/XXGKNB/SKZ/202601/P020260129397967391838.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 6,
+   "chars": 1417,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(453字)；主动公开(0字)；依申请公开(0字)；复议诉讼(0字)；存在问题(235字)；其他事项(374字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "pass",
+     "detail": "2025-01-01 至 2025-12-31",
+     "evidence": "2025年1月1日到2025年12月31日"
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "226 字",
+     "evidence": "我镇政务信息公开还存在部分问题：一是公开内容精准性不足，部分领域信息公开存在“大水漫灌”现象；二是基层政务公开延伸不够，基层群众获取信息的便捷性有待提升；三是政"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "pass",
+     "detail": "引用了国办公开办函〔2021〕30 号",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 453,
+    "主动公开": 0,
+    "依申请公开": 0,
+    "复议诉讼": 0,
+    "存在问题": 235,
+    "其他事项": 374
+   }
+  },
+  {
+   "name": "潍坊高新",
+   "url": "http://wfgx.gov.cn/GK/GKNB/dwxxgknb/2025n/202601/W020260129601707098343.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 7,
+   "chars": 3435,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(833字)；主动公开(166字)；依申请公开(90字)；复议诉讼(138字)；存在问题(194字)；其他事项(876字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "pass",
+     "detail": "2025 年度",
+     "evidence": "2025年1月1日到12月31日"
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "187 字",
+     "evidence": "一部分领域信息公开的深度和精细程度有待加强，对群众关切的个性化问题回应可进一步提速，政策解读的通俗性、可及性仍需增强。在依申请公开方面，答复的规范水平仍有提升空"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "pass",
+     "detail": "引用了国办公开办函〔2021〕30 号",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 833,
+    "主动公开": 166,
+    "依申请公开": 90,
+    "复议诉讼": 138,
+    "存在问题": 194,
+    "其他事项": 876
+   }
+  },
+  {
+   "name": "蚌埠",
+   "url": "https://www.bengbu.gov.cn/group1/M00/1D/A1/wKgQFmPt6NiAYObZAACWk-LfhLs79.docx",
+   "ok": true,
+   "format": "docx",
+   "pages": 0,
+   "chars": 1148,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "fail",
+     "detail": "缺少：总体情况、存在问题",
+     "evidence": "主动公开(0字)；依申请公开(0字)；复议诉讼(268字)；其他事项(122字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "fail",
+     "detail": "未找到统计期限表述",
+     "evidence": ""
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "abstain",
+     "detail": "0 字，未找到该部分",
+     "evidence": ""
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "pass",
+     "detail": "引用了国办公开办函〔2021〕30 号",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "主动公开": 0,
+    "依申请公开": 0,
+    "复议诉讼": 268,
+    "其他事项": 122
+   }
+  },
+  {
+   "name": "灵石",
+   "url": "http://lingshi.gov.cn/Upload/main/InfoPublicity/PublicInformation/File/2026/01/04/%e7%81%b5%e7%9f%b3%e5%8e%bf%e8%90%a5%e5%95%86%e7%8e%af%e5%a2%83%e5%b1%802025%e5%b9%b4%e6%94%bf%e5%ba%9c%e4%bf%a1%e6%81%af%e5%85%ac%e5%bc%80%e5%b7%a5%e4%bd%9c%e5%b9%b4%e5%ba%a6%e6%8a%a5%e5%91%8a(1).pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 4,
+   "chars": 2437,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(553字)；主动公开(170字)；依申请公开(90字)；复议诉讼(135字)；存在问题(265字)；其他事项(26字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "fail",
+     "detail": "未找到统计期限表述",
+     "evidence": ""
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "254 字",
+     "evidence": "2025年，我局在政府信息公开工作方面，虽然取得了一定的成效，但也存在一些需要改进和提升的地方，包括对政务公开要求把握不够精准，在公开信息制度体系、公开信息精准"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "abstain",
+     "detail": "未引用模板文号（不必然违规）",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 553,
+    "主动公开": 170,
+    "依申请公开": 90,
+    "复议诉讼": 135,
+    "存在问题": 265,
+    "其他事项": 26
+   }
+  },
+  {
+   "name": "原平",
+   "url": "http://yuanping.gov.cn/zwgk/xxgk/zfxxgknb/202601/P020260126583824862563.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 6,
+   "chars": 3088,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(969字)；主动公开(162字)；依申请公开(90字)；复议诉讼(196字)；存在问题(416字)；其他事项(28字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "fail",
+     "detail": "未找到统计期限表述",
+     "evidence": ""
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "pass",
+     "detail": "命中数字 2 个",
+     "evidence": "0 件、1 件"
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "396 字",
+     "evidence": "本年度政府信息公开工作虽然取得了明显成效，但仍然存在一些问题和不足：一是思想认识有差距。《政府信息公开条例》等文件精神领会不够，对开展政府信息工作的认识不到位。"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "pass",
+     "detail": "引用了国办公开办函〔2021〕30 号",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 969,
+    "主动公开": 162,
+    "依申请公开": 90,
+    "复议诉讼": 196,
+    "存在问题": 416,
+    "其他事项": 28
+   }
+  },
+  {
+   "name": "玉泉",
+   "url": "https://120.194.229.141/zwgk/zfxxgk/zfxxgknb/2025year/kfqjiedao/P020260116574778332661.pdf",
+   "ok": false,
+   "format": "",
+   "pages": 0,
+   "chars": 0,
+   "rules": [],
+   "parts": {},
+   "error": "ConnectionError: ('Connection aborted.', ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None))"
+  },
+  {
+   "name": "太康",
+   "url": "http://taikang.gov.cn/sitesources/tkx/upload/a982b6e9164749a7bb314b19117f6519/1770375229954.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 4,
+   "chars": 2364,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(763字)；主动公开(166字)；依申请公开(90字)；复议诉讼(135字)；存在问题(229字)；其他事项(86字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "fail",
+     "detail": "未找到统计期限表述",
+     "evidence": ""
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "223 字",
+     "evidence": "当前，太康县信访局政府信息公开工作仍存在一些不足：一是政府信息公开的深度和广度有待进一步拓展，部分重点领域信息公开不够全面；二是政府信息公开工作人员的专业素养和"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "abstain",
+     "detail": "未引用模板文号（不必然违规）",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 763,
+    "主动公开": 166,
+    "依申请公开": 90,
+    "复议诉讼": 135,
+    "存在问题": 229,
+    "其他事项": 86
+   }
+  },
+  {
+   "name": "凤城",
+   "url": "https://xxgk.yczf.gov.cn/xzzf/ycfcz/zfxxgknb/202601/P020260226392385547762.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 5,
+   "chars": 2371,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(643字)；主动公开(165字)；依申请公开(90字)；复议诉讼(135字)；存在问题(202字)；其他事项(68字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "fail",
+     "detail": "未找到统计期限表述",
+     "evidence": ""
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "193 字",
+     "evidence": "（一）主要问题1.公开内容与群众的需求的契合度还有待提升，部分重点领域信息细化程度不够。2.工作队伍专业能力还有待提升，校对核验、信息分类、更新及时等业务水平还"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "abstain",
+     "detail": "未引用模板文号（不必然违规）",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 643,
+    "主动公开": 165,
+    "依申请公开": 90,
+    "复议诉讼": 135,
+    "存在问题": 202,
+    "其他事项": 68
+   }
+  },
+  {
+   "name": "枣强",
+   "url": "http://121.17.30.214:8080/eportal/fileDir/hsszqx/resource/cms/article/2580033/3147388/2026010610085572331.pdf",
+   "ok": true,
+   "format": "pdf",
+   "pages": 5,
+   "chars": 2540,
+   "rules": [
+    {
+     "id": "R1",
+     "name": "六部分齐全",
+     "status": "pass",
+     "detail": "六部分齐全",
+     "evidence": "总体情况(654字)；主动公开(173字)；依申请公开(90字)；复议诉讼(135字)；存在问题(168字)；其他事项(127字)"
+    },
+    {
+     "id": "R2",
+     "name": "统计期限明确",
+     "status": "fail",
+     "detail": "未找到统计期限表述",
+     "evidence": ""
+    },
+    {
+     "id": "R3",
+     "name": "依申请公开数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R4",
+     "name": "复议诉讼数据",
+     "status": "fail",
+     "detail": "该部分未出现数量",
+     "evidence": ""
+    },
+    {
+     "id": "R5",
+     "name": "存在问题及改进",
+     "status": "pass",
+     "detail": "161 字",
+     "evidence": "存在的问题：2025年，我局信息公开工作虽取得一定成绩，但也存在一些不足，一是主动公开的意识不强烈；二是信息公开的形式不够丰富。改进措施：我们将进一步强化组织领"
+    },
+    {
+     "id": "R6",
+     "name": "国办模板引用",
+     "status": "abstain",
+     "detail": "未引用模板文号（不必然违规）",
+     "evidence": ""
+    }
+   ],
+   "parts": {
+    "总体情况": 654,
+    "主动公开": 173,
+    "依申请公开": 90,
+    "复议诉讼": 135,
+    "存在问题": 168,
+    "其他事项": 127
+   }
+  }
+ ]
+}
