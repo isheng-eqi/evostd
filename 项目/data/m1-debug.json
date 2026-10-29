@@ -1,0 +1,185 @@
+{
+ "generated_at": "2026-10-29T12:23:32",
+ "samples": 4,
+ "rules": [
+  "R2",
+  "R8"
+ ],
+ "scores": {
+  "B1_raw": {
+   "n": 2,
+   "correct": 0,
+   "accuracy": 0.0,
+   "abstain": 2,
+   "abstain_rate": 1.0,
+   "false_positive": 0,
+   "false_negative": 0,
+   "specificity": 1.0,
+   "n_unverifiable": 2,
+   "overclaim": 0,
+   "overclaim_rate": 0.0
+  },
+  "B2_rag": {
+   "n": 2,
+   "correct": 0,
+   "accuracy": 0.0,
+   "abstain": 2,
+   "abstain_rate": 1.0,
+   "false_positive": 0,
+   "false_negative": 0,
+   "specificity": 1.0,
+   "n_unverifiable": 2,
+   "overclaim": 0,
+   "overclaim_rate": 0.0
+  },
+  "B3_ours": {
+   "n": 2,
+   "correct": 2,
+   "accuracy": 1.0,
+   "abstain": 0,
+   "abstain_rate": 0.0,
+   "false_positive": 0,
+   "false_negative": 0,
+   "specificity": 1.0,
+   "n_unverifiable": 2,
+   "overclaim": 0,
+   "overclaim_rate": 0.0
+  }
+ },
+ "rows": {
+  "B1": [
+   {
+    "site": "北京",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   },
+   {
+    "site": "北京",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   },
+   {
+    "site": "国务院",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   },
+   {
+    "site": "国务院",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   }
+  ],
+  "B2": [
+   {
+    "site": "北京",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   },
+   {
+    "site": "北京",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "our_detail": "首页 title=有，description=有",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   },
+   {
+    "site": "国务院",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "our_detail": "首页未解析到发布日期，需人工核对",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   },
+   {
+    "site": "国务院",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "our_detail": "首页 title=有，description=无",
+    "verdict": "不确定",
+    "evidence": "",
+    "reason": "调用失败"
+   }
+  ],
+  "B3": [
+   {
+    "site": "国务院",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "verdict": "不确定",
+    "evidence": "首页未解析到发布日期，需人工核对",
+    "reason": ""
+   },
+   {
+    "site": "国务院",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "fail",
+    "ground_truth": "不合规",
+    "verdict": "不合规",
+    "evidence": "首页 title=有，description=无",
+    "reason": ""
+   },
+   {
+    "site": "北京",
+    "rule": "R2",
+    "rule_name": "首页 2 周内更新",
+    "label": "abstain",
+    "ground_truth": "不确定",
+    "verdict": "不确定",
+    "evidence": "首页未解析到发布日期，需人工核对",
+    "reason": ""
+   },
+   {
+    "site": "北京",
+    "rule": "R8",
+    "rule_name": "页面标签",
+    "label": "pass",
+    "ground_truth": "合规",
+    "verdict": "合规",
+    "evidence": "首页 title=有，description=有",
+    "reason": ""
+   }
+  ]
+ }
+}

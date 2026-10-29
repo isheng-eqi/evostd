@@ -1,0 +1,179 @@
+{
+ "国务院": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "北京": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "天津": {
+  "soup": true,
+  "lxml": false,
+  "agree": false,
+  "title": true
+ },
+ "河北": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "山西": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "内蒙古": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "辽宁": {
+  "soup": true,
+  "lxml": false,
+  "agree": false,
+  "title": true
+ },
+ "吉林": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "黑龙江": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "上海": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "江苏": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "浙江": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "安徽": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "福建": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "江西": {
+  "error": "HTTPSConnectionPool(host='www.jiangxi.gov.cn', port=443): Max retries exceeded w"
+ },
+ "河南": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "湖南": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "广东": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "海南": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "四川": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "贵州": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "云南": {
+  "soup": true,
+  "lxml": false,
+  "agree": false,
+  "title": true
+ },
+ "西藏": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "陕西": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "宁夏": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "新疆": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ },
+ "太原": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "教育部": {
+  "soup": true,
+  "lxml": true,
+  "agree": true,
+  "title": true
+ },
+ "工信部": {
+  "soup": true,
+  "lxml": false,
+  "agree": false,
+  "title": true
+ },
+ "应急部": {
+  "soup": false,
+  "lxml": false,
+  "agree": true,
+  "title": true
+ }
+}

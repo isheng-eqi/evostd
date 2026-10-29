@@ -19,6 +19,7 @@ import json
 import os
 import re
 import socket
+import threading
 import sys
 import time
 from dataclasses import dataclass, field
@@ -30,8 +31,9 @@ from bs4 import BeautifulSoup
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
-TIMEOUT = 15
+TIMEOUT = 10
 DATE_RE = re.compile(r"(20\d{2})\s*[-/年.]\s*(\d{1,2})\s*[-/月.]\s*(\d{1,2})")
+SHORT_RE = re.compile(r"(?<![\d\-/])(\d{1,2})\s*[-/]\s*(\d{1,2})(?![\d\-/])")
 
 SITES = [
     ("国务院", "https://www.gov.cn/"),
@@ -79,7 +81,7 @@ def fetch(url: str, session: requests.Session) -> Page:
             tag.decompose()
         p.text = re.sub(r"\s+", " ", soup.get_text(" "))
         p.title = (soup.title.get_text(strip=True) if soup.title else "")
-        meta = soup.find("meta", attrs={"name": re.compile("description", re.I)})
+        meta = soup.find("meta", attrs={"name": re.compile(r"^\s*description\s*$", re.I)})
         p.meta_desc = meta.get("content", "").strip() if meta else ""
         for a in soup.find_all("a", href=True):
             p.links.append((a.get_text(" ", strip=True)[:40], urljoin(url, a["href"])))
@@ -91,12 +93,27 @@ def fetch(url: str, session: requests.Session) -> Page:
 
 
 def parse_dates(text: str) -> list[date]:
+    today = date.today()
     out = []
     for m in DATE_RE.finditer(text):
         try:
             y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
-            if 2000 <= y <= date.today().year and 1 <= mo <= 12 and 1 <= d <= 31:
-                out.append(date(y, mo, d))
+            if 2000 <= y <= today.year and 1 <= mo <= 12 and 1 <= d <= 31:
+                dd = date(y, mo, d)
+                if (today - dd).days <= 1200:
+                    out.append(dd)
+        except ValueError:
+            continue
+    # 列表里常见 "10-21" 这种不带年份的日期
+    for m in SHORT_RE.finditer(text[:8000]):
+        try:
+            mo, d = int(m.group(1)), int(m.group(2))
+            if not (1 <= mo <= 12 and 1 <= d <= 31):
+                continue
+            y = today.year if mo <= today.month else today.year - 1
+            dd = date(y, mo, d)
+            if 0 <= (today - dd).days <= 400:
+                out.append(dd)
         except ValueError:
             continue
     return out
@@ -245,13 +262,13 @@ def audit_site(name: str, home_url: str, session: requests.Session) -> dict:
                       points=0 if tagged else -0.2))
 
     # R9 链接可用性（抽 8 条）
-    sample = [(t, h) for t, h in home.links if h.startswith("http")][:8]
+    sample = [(t, h) for t, h in home.links if h.startswith("http")][:5]
     bad = 0
     for _, href in sample:
         try:
-            r = session.head(href, timeout=8, headers={"User-Agent": UA}, allow_redirects=True)
+            r = session.head(href, timeout=5, headers={"User-Agent": UA}, allow_redirects=True)
             if r.status_code in (403, 405, 501):
-                r = session.get(href, timeout=8, headers={"User-Agent": UA}, allow_redirects=True)
+                r = session.get(href, timeout=5, headers={"User-Agent": UA}, allow_redirects=True)
             if r.status_code >= 400:
                 bad += 1
         except Exception:  # noqa: BLE001
@@ -314,16 +331,30 @@ def audit_site(name: str, home_url: str, session: requests.Session) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join("submission", "可行性-M0-数据.json"))
+    ap.add_argument("--sites-file", default="", help="JSON: {名称: 首页URL}")
     args = ap.parse_args()
 
+    socket.setdefaulttimeout(20)
     session = requests.Session()
     results = []
-    for name, url in SITES:
+    sites = SITES
+    if args.sites_file:
+        with open(args.sites_file, encoding="utf-8") as f:
+            sites = list(json.load(f).items())
+    for name, url in sites:
         print(f"== {name} {url}")
-        try:
-            r = audit_site(name, url, session)
-        except Exception as e:  # noqa: BLE001
-            print(f"   ERR {e}")
+        box = {}
+        def work(n=name, u=url):
+            box["r"] = audit_site(n, u, session)
+        th = threading.Thread(target=work, daemon=True)
+        th.start()
+        th.join(timeout=75)
+        if th.is_alive():
+            print("   TIMEOUT 跳过（单站超过 75 秒）")
+            continue
+        r = box.get("r")
+        if not r:
+            print("   ERR 无结果")
             continue
         results.append(r)
         for x in r["rules"]:

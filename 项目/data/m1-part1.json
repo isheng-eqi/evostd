@@ -1,0 +1,1675 @@
+{
+ "generated_at": "2026-10-29T12:29:09",
+ "sites": 10,
+ "pages_fetched": 46,
+ "rules_per_site": 14,
+ "status_count": {
+  "pass": 74,
+  "fail": 12,
+  "abstain": 54
+ },
+ "results": [
+  {
+   "site": "国务院",
+   "url": "https://www.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.gov.cn/",
+     "status": 200,
+     "elapsed": 0.34,
+     "title": "中国政府网_中央人民政府门户网站",
+     "error": ""
+    },
+    {
+     "url": "https://sousuo.www.gov.cn/zcwjk/policyDocumentLibrary?q=&t=zhengcelibrary&orpro=",
+     "status": 200,
+     "elapsed": 0.22,
+     "title": "国务院政策文件库",
+     "error": ""
+    },
+    {
+     "url": "https://www.gov.cn/zhengce/jiedu/",
+     "status": 200,
+     "elapsed": 0.01,
+     "title": "",
+     "error": ""
+    },
+    {
+     "url": "https://www.gov.cn/zhengce/xxgk/",
+     "status": 200,
+     "elapsed": 0.07,
+     "title": "政府信息公开平台_中国政府网",
+     "error": ""
+    },
+    {
+     "url": "https://tousu.www.gov.cn/zwfw/index.htm",
+     "status": 200,
+     "elapsed": 0.32,
+     "title": "​",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.34s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "abstain",
+     "detail": "首页未解析到发布日期，需人工核对",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "abstain",
+     "detail": "栏目已找到，但列表页未解析到日期",
+     "evidence": "https://sousuo.www.gov.cn/zcwjk/policyDocumentLibrary?q=&t=zhengcelibrary&orpro=",
+     "points": 0.0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "abstain",
+     "detail": "栏目已找到，但列表页未解析到日期",
+     "evidence": "https://www.gov.cn/zhengce/jiedu/",
+     "points": 0.0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "北京",
+   "url": "https://www.beijing.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.beijing.gov.cn/",
+     "status": 200,
+     "elapsed": 0.32,
+     "title": "北京市人民政府门户网站",
+     "error": ""
+    },
+    {
+     "url": "http://www.beijing.gov.cn/zhengce/zfwj/",
+     "status": 200,
+     "elapsed": 0.15,
+     "title": "政府文件_首都之窗_北京市人民政府门户网站",
+     "error": ""
+    },
+    {
+     "url": "https://www.beijing.gov.cn/so/zcdh/zcjd",
+     "status": 200,
+     "elapsed": 0.27,
+     "title": "政策解读_首都之窗_北京市人民政府门户网站",
+     "error": ""
+    },
+    {
+     "url": "https://www.beijing.gov.cn/gongkai/",
+     "status": 200,
+     "elapsed": 0.05,
+     "title": "政务公开_北京市人民政府门户网站",
+     "error": ""
+    },
+    {
+     "url": "http://www.beijing.gov.cn/so/zcdh/yshj?channelId=38677",
+     "status": 200,
+     "elapsed": 0.09,
+     "title": "政务服务便利化_首都之窗_北京市人民政府门户网站",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.32s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-28，距今 1 天",
+     "evidence": "http://www.beijing.gov.cn/zhengce/zfwj/",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "abstain",
+     "detail": "栏目已找到，但列表页未解析到日期",
+     "evidence": "https://www.beijing.gov.cn/so/zcdh/zcjd",
+     "points": 0.0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "abstain",
+     "detail": "静态页面未见入口，可能由脚本注入",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "pass",
+     "detail": "首页 title=有，description=有",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "天津",
+   "url": "https://www.tj.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.tj.gov.cn/",
+     "status": 200,
+     "elapsed": 1.12,
+     "title": "天津政务网_天津市人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.tj.gov.cn/zwgk/szfwj/",
+     "status": 200,
+     "elapsed": 0.69,
+     "title": "政府文件_天津政务网",
+     "error": ""
+    },
+    {
+     "url": "https://www.tj.gov.cn/zwgk/zcjd/",
+     "status": 200,
+     "elapsed": 0.58,
+     "title": "政策解读_天津政务网",
+     "error": ""
+    },
+    {
+     "url": "https://www.tj.gov.cn/zwgk/",
+     "status": 200,
+     "elapsed": 0.79,
+     "title": "政务公开_天津政务网",
+     "error": ""
+    },
+    {
+     "url": "https://www.tj.gov.cn/zmhd/zwft/zwft/202609/t20260921_7378802.html",
+     "status": 200,
+     "elapsed": 0.64,
+     "title": "访谈回放｜《天津市健全“高效办成一件事”重点事项常态化推进机制提升政务服务效能若干措施》解读_政务访谈_天津政务网",
+     "error": ""
+    },
+    {
+     "url": "https://zwfw.tj.gov.cn/",
+     "status": 200,
+     "elapsed": 0.31,
+     "title": "天津网上办事大厅",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，1.12s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-28，距今 1 天",
+     "evidence": "https://www.tj.gov.cn/zwgk/szfwj/",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-09-03，距今 56 天",
+     "evidence": "https://www.tj.gov.cn/zwgk/zcjd/",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "页面仅命中 0/10 个要素，疑似栏目页而非事项详情页",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "河北",
+   "url": "https://www.hebei.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.hebei.gov.cn/",
+     "status": 200,
+     "elapsed": 0.45,
+     "title": "河北省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html",
+     "status": 200,
+     "elapsed": 0.06,
+     "title": "政策",
+     "error": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/b4515201-74c2-4866-ba74-70199fee1a67/index.html",
+     "status": 200,
+     "elapsed": 0.06,
+     "title": "政策解读",
+     "error": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/7b96ca20-882f-436c-9d13-7c91d82ccd55/index.html",
+     "status": 200,
+     "elapsed": 0.09,
+     "title": "政府信息公开指南",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.45s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-19，距今 10 天",
+     "evidence": "https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-19，距今 10 天",
+     "evidence": "https://www.hebei.gov.cn/columns/b4515201-74c2-4866-ba74-70199fee1a67/index.html",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "山西",
+   "url": "https://www.shanxi.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.shanxi.gov.cn/",
+     "status": 200,
+     "elapsed": 0.27,
+     "title": "山西省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.shanxi.gov.cn/zfxxgk/zfxxgkzl/fdzdgknr/lzyj/",
+     "status": 200,
+     "elapsed": 0.02,
+     "title": "履职依据 - 山西省人民政府",
+     "error": ""
+    },
+    {
+     "url": "http://www.shanxi.gov.cn/ywdt/zcjd/",
+     "status": 200,
+     "elapsed": 0.04,
+     "title": "政策解读 - 山西省人民政府",
+     "error": ""
+    },
+    {
+     "url": "http://www.shanxi.gov.cn/zfxxgk/",
+     "status": 200,
+     "elapsed": 0.2,
+     "title": "政务公开 - 山西省人民政府",
+     "error": ""
+    },
+    {
+     "url": "http://www.shanxi.gov.cn/zwfw/",
+     "status": 200,
+     "elapsed": 0.07,
+     "title": "政务服务 - 山西省人民政府",
+     "error": ""
+    },
+    {
+     "url": "http://www.shanxi.gov.cn/zfxxgk/zfxxgkzl/zfxxgkzn/",
+     "status": 200,
+     "elapsed": 0.07,
+     "title": "信息公开专栏 - 山西省人民政府",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.27s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-08，距今 21 天",
+     "evidence": "https://www.shanxi.gov.cn/zfxxgk/zfxxgkzl/fdzdgknr/lzyj/",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-28，距今 1 天",
+     "evidence": "http://www.shanxi.gov.cn/ywdt/zcjd/",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "pass",
+     "detail": "首页 title=有，description=有",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "页面仅命中 1/10 个要素，疑似栏目页而非事项详情页",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "内蒙古",
+   "url": "https://www.nmg.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.nmg.gov.cn/",
+     "status": 200,
+     "elapsed": 0.38,
+     "title": "内蒙古自治区人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/?gk=3&cid=3696",
+     "status": 200,
+     "elapsed": 0.14,
+     "title": "法定主动公开内容_\n        内蒙古自治区人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.nmg.gov.cn/zwgk/zcjd/",
+     "status": 200,
+     "elapsed": 0.1,
+     "title": "政策解读_\n        内蒙古自治区人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.nmg.gov.cn/zwgk/",
+     "status": 200,
+     "elapsed": 0.08,
+     "title": "政务公开_\n            内蒙古自治区人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.nmg.gov.cn/zwfw/",
+     "status": 200,
+     "elapsed": 0.08,
+     "title": "政务服务_\n        内蒙古自治区人民政府",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.38s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "abstain",
+     "detail": "栏目已找到，但列表页未解析到日期",
+     "evidence": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/?gk=3&cid=3696",
+     "points": 0.0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-29，距今 0 天",
+     "evidence": "https://www.nmg.gov.cn/zwgk/zcjd/",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "fail",
+     "detail": "未找到",
+     "evidence": "",
+     "points": -4
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "pass",
+     "detail": "首页 title=有，description=有",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "辽宁",
+   "url": "https://www.ln.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.ln.gov.cn/",
+     "status": 200,
+     "elapsed": 0.33,
+     "title": "辽宁省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.ln.gov.cn/web/zwgkx/zfwj/index.shtml",
+     "status": 200,
+     "elapsed": 0.05,
+     "title": "辽宁省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.ln.gov.cn/web/zwgkx/zcjd/index.shtml",
+     "status": 200,
+     "elapsed": 0.08,
+     "title": "辽宁省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.ln.gov.cn/web/zwgkx/index.shtml",
+     "status": 200,
+     "elapsed": 0.08,
+     "title": "辽宁省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.ln.gov.cn/web/ywdt/zymtkln/2026102808503492556/index.shtml",
+     "status": 200,
+     "elapsed": 0.07,
+     "title": "辽宁铁岭探索政务服务“一窗通办”：一个窗口更便民",
+     "error": ""
+    },
+    {
+     "url": "https://www.lnzwfw.gov.cn/?aisiteOutPageId=8337b8b804444c56b4838f3dbfe15203",
+     "status": 0,
+     "elapsed": 0.33,
+     "title": "",
+     "error": "SSLError: HTTPSConnectionPool(host='www.lnzwfw.gov.cn', port=443): Max retries exceeded with url: /?aisiteOutPageId=8337b8b804444c56b4838f3dbfe15203 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1020)')))"
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.33s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-09-30，距今 29 天",
+     "evidence": "https://www.ln.gov.cn/web/zwgkx/zfwj/index.shtml",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "abstain",
+     "detail": "栏目已找到，但列表页未解析到日期",
+     "evidence": "https://www.ln.gov.cn/web/zwgkx/zcjd/index.shtml",
+     "points": 0.0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "fail",
+     "detail": "缺少：联系电话",
+     "evidence": "",
+     "points": -0.5
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "页面仅命中 0/10 个要素，疑似栏目页而非事项详情页",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "吉林",
+   "url": "https://www.jl.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.jl.gov.cn/",
+     "status": 200,
+     "elapsed": 1.37,
+     "title": "吉林省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.jl.gov.cn/zcjd/",
+     "status": 200,
+     "elapsed": 0.75,
+     "title": "吉林省人民政府_政策解读",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，1.37s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-28，距今 1 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "fail",
+     "detail": "未找到政策文件栏目入口",
+     "evidence": "",
+     "points": -5
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-22，距今 7 天",
+     "evidence": "https://www.jl.gov.cn/zcjd/",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "abstain",
+     "detail": "页脚未取到任何标识信息（可能由脚本/iframe 注入），静态抓取无法确认",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "黑龙江",
+   "url": "https://www.hlj.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.hlj.gov.cn/",
+     "status": 200,
+     "elapsed": 0.43,
+     "title": "黑龙江省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.hlj.gov.cn/hlj/c108371/zfxxgk_search.shtml",
+     "status": 200,
+     "elapsed": 0.16,
+     "title": "政府信息公开_黑龙江省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.hlj.gov.cn/hlj/c108385/zcjd_ts.shtml",
+     "status": 200,
+     "elapsed": 0.13,
+     "title": "政策解读_黑龙江省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.hlj.gov.cn/hlj/c108368/zwgk.shtml",
+     "status": 200,
+     "elapsed": 0.15,
+     "title": "政务公开_黑龙江省人民政府",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.43s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-26，距今 3 天",
+     "evidence": "https://www.hlj.gov.cn/hlj/c108371/zfxxgk_search.shtml",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-20，距今 9 天",
+     "evidence": "https://www.hlj.gov.cn/hlj/c108385/zcjd_ts.shtml",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "fail",
+     "detail": "缺少：联系电话",
+     "evidence": "",
+     "points": -0.5
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "fail",
+     "detail": "抽查 5 条，坏链 1 条",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  },
+  {
+   "site": "上海",
+   "url": "https://www.sh.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.sh.gov.cn/",
+     "status": 200,
+     "elapsed": 0.78,
+     "title": "上海市人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.sh.gov.cn/#policy-platform-panel-1",
+     "status": 200,
+     "elapsed": 0.12,
+     "title": "上海市人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.sh.gov.cn/nw2319/index.html",
+     "status": 200,
+     "elapsed": 0.11,
+     "title": "信息公开_上海市人民政府",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.78s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-29，距今 0 天",
+     "evidence": "https://www.sh.gov.cn/#policy-platform-panel-1",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "fail",
+     "detail": "未找到政策解读栏目入口",
+     "evidence": "",
+     "points": -5
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "pass",
+     "detail": "齐全",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "pass",
+     "detail": "首页 title=有，description=有",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  }
+ ]
+}
