@@ -1,0 +1,175 @@
+{
+ "generated_at": "2026-10-29T13:05:35",
+ "sites": 1,
+ "pages_fetched": 4,
+ "rules_per_site": 14,
+ "status_count": {
+  "pass": 9,
+  "fail": 1,
+  "abstain": 4
+ },
+ "results": [
+  {
+   "site": "河北",
+   "url": "https://www.hebei.gov.cn/",
+   "pages": [
+    {
+     "url": "https://www.hebei.gov.cn/",
+     "status": 200,
+     "elapsed": 0.39,
+     "title": "河北省人民政府",
+     "error": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html",
+     "status": 200,
+     "elapsed": 0.07,
+     "title": "政策",
+     "error": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/b4515201-74c2-4866-ba74-70199fee1a67/index.html",
+     "status": 200,
+     "elapsed": 0.06,
+     "title": "政策解读",
+     "error": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/7b96ca20-882f-436c-9d13-7c91d82ccd55/index.html",
+     "status": 200,
+     "elapsed": 0.06,
+     "title": "政府信息公开指南",
+     "error": ""
+    }
+   ],
+   "rules": [
+    {
+     "id": "R1",
+     "name": "站点可访问",
+     "clause": "单项否决：超过 15 秒打不开",
+     "status": "pass",
+     "detail": "HTTP 200，0.39s",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R2",
+     "name": "首页 2 周内更新",
+     "clause": "单项否决：监测前 2 周首页无更新",
+     "status": "pass",
+     "detail": "首页最近日期 2026-10-29，距今 0 天",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R3",
+     "name": "政策文件栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-19，距今 10 天",
+     "evidence": "https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html",
+     "points": 0
+    },
+    {
+     "id": "R4",
+     "name": "政策解读栏目",
+     "clause": "未开设扣 5 分；6 个月未更新扣 5 分",
+     "status": "pass",
+     "detail": "最近更新 2026-10-19，距今 10 天",
+     "evidence": "https://www.hebei.gov.cn/columns/b4515201-74c2-4866-ba74-70199fee1a67/index.html",
+     "points": 0
+    },
+    {
+     "id": "R5",
+     "name": "网站标识",
+     "clause": "每缺一项扣 0.5 分",
+     "status": "pass",
+     "detail": "齐全｜网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
+     "evidence": "网站标识码：1300000013；ICP备06016263；公网安备 13010202002246；主办：",
+     "points": -0.0
+    },
+    {
+     "id": "R6",
+     "name": "我为政府网站找错入口",
+     "clause": "未添加扣 1 分",
+     "status": "pass",
+     "detail": "找到入口脚本/链接",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R7",
+     "name": "站内搜索",
+     "clause": "未提供扣 4 分",
+     "status": "pass",
+     "detail": "找到搜索框",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R8",
+     "name": "页面标签",
+     "clause": "每个无标签页面扣 0.1 分",
+     "status": "fail",
+     "detail": "首页 title=有，description=无",
+     "evidence": "",
+     "points": -0.2
+    },
+    {
+     "id": "R9",
+     "name": "链接可用性",
+     "clause": "首页每条坏链扣 0.2 分",
+     "status": "pass",
+     "detail": "抽查 5 条，坏链 0 条",
+     "evidence": "",
+     "points": -0.0
+    },
+    {
+     "id": "R10",
+     "name": "IPv6",
+     "clause": "未完成改造扣 1 分",
+     "status": "pass",
+     "detail": "解析到 AAAA",
+     "evidence": "",
+     "points": 0
+    },
+    {
+     "id": "R11",
+     "name": "办事指南要素",
+     "clause": "重点要素每缺一处扣 0.5 分",
+     "status": "abstain",
+     "detail": "未定位到事项详情页（栏目首页不判定）",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R12",
+     "name": "严重错别字",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需语言模型或人工判定，自动判定会误伤",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R13",
+     "name": "互动回应",
+     "clause": "单项否决",
+     "status": "abstain",
+     "detail": "需实际提交留言并等待答复，探针不做",
+     "evidence": "",
+     "points": 0.0
+    },
+    {
+     "id": "R14",
+     "name": "兼容性 / 一号登录",
+     "clause": "每类扣 1 分",
+     "status": "abstain",
+     "detail": "需多浏览器与账号体系，超出静态抓取范围",
+     "evidence": "",
+     "points": 0.0
+    }
+   ]
+  }
+ ]
+}

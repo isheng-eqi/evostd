@@ -20,6 +20,8 @@ import os
 import re
 import socket
 import threading
+
+OMIT_CONTACT = False
 import sys
 import time
 from dataclasses import dataclass, field
@@ -220,7 +222,7 @@ def audit_site(name: str, home_url: str, session: requests.Session) -> dict:
                           f"{pg.url}", 0 if days <= 183 else -5))
 
     # R5 网站标识（5 项）
-    footer = home.text[-3000:]
+    footer = home.text[-800:]
     pats = {
         "网站标识码": r"网站标识码[:：]?\s*\d{6,}",
         "ICP 备案号": r"ICP\s*备?\s*\d{6,}",
@@ -228,6 +230,8 @@ def audit_site(name: str, home_url: str, session: requests.Session) -> dict:
         "主办单位": r"主办(单位)?[:：]",
         "联系电话": r"(联系电话|联系方式|服务热线|热线|电话)[:：]?\s*[\d\-]{7,}|12345",
     }
+    if OMIT_CONTACT:
+        pats = {k: v for k, v in pats.items() if k != "联系电话"}
     flags = {k: bool(re.search(p, footer)) for k, p in pats.items()}
     ev = [re.search(p, footer).group(0)[:24] for p in pats.values() if re.search(p, footer)]
     evidence_text = "；".join(ev)[:120]
@@ -342,8 +346,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join("submission", "可行性-M0-数据.json"))
     ap.add_argument("--sites-file", default="", help="JSON: {名称: 首页URL}")
+    ap.add_argument("--omit-contact", action="store_true", help="演示用：暂时不查联系电话")
     args = ap.parse_args()
 
+    global OMIT_CONTACT
+    OMIT_CONTACT = args.omit_contact
     socket.setdefaulttimeout(20)
     session = requests.Session()
     results = []

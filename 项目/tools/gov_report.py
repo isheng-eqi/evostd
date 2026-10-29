@@ -68,6 +68,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--site", required=True)
     ap.add_argument("--judgments", default=JUDGMENTS)
+    ap.add_argument("--suffix", default="")
     args = ap.parse_args()
 
     data = json.load(open(args.judgments, encoding="utf-8"))
@@ -114,7 +115,7 @@ def main() -> int:
   </div>
 </div></body></html>"""
 
-    out = os.path.join(OUT_DIR, f"report-{args.site}.html")
+    out = os.path.join(OUT_DIR, f"report-{args.site}{args.suffix}.html")
     open(out, "w", encoding="utf-8", newline="\n").write(doc)
     print(f"已生成 {out}（{counts}）")
     return 0
