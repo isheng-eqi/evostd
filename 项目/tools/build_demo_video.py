@@ -31,6 +31,9 @@ SCENES = [
     ("s2", "体检报告-河北.png", (0, 0, 1440, 430), 7,
      "14 项检查：8 项通过，2 项不合格，4 项弃权",
      "每条判定都绑定页面证据。"),
+    ("s2b", "07-智能体工具绑定.png", (0, 0, 1440, 560), 8,
+     "编排在 Nexent：36 个 MCP 工具、1 个检索工具、5 个技能",
+     "判定在规则层：不调用模型。"),
     ("s3", "体检报告-河北.png", (40, 250, 520, 430), 6,
      "不合格 1：网站标识缺联系电话", "按检查指标，这一项扣 0.5 分。"),
     ("s4", "体检报告-河北.png", (520, 250, 1000, 430), 6,
@@ -117,7 +120,7 @@ def main() -> int:
         fitted = fit(raw, f"{name}_fit.png")
         make_seg(fitted, secs, (c1, c2), str(i))
         print(f"   {name} {secs}s")
-    make_seg("s7.png", 5, None, "7")
+    make_seg("s7.png", 7, None, "7")
 
     with open(os.path.join(WORK, "list.txt"), "w", encoding="utf-8") as f:
         for s in segs:
