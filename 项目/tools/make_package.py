@@ -35,6 +35,7 @@ CURRENT_FILES = [
     "平台核验证据.md",
     "年度报告结构体检.md",
     "gov-kg.json",
+    "report-河北.html",
 ]
 CURRENT_DIRS = [
     ("screenshots", ("*.png",)),

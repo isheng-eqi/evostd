@@ -24,8 +24,6 @@ SUB = os.path.join(ROOT, "submission")
 
 CURRENT_DOCS = [
     "00-先读我-评委入口.md",
-    "开发设计文档-六节版.md",
-    "开发设计文档-模板版.md",
     "开发设计文档-合规体检版.md",
     "Nexent智能体说明.md",
     "知识图谱构建方案.md",
