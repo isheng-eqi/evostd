@@ -32,22 +32,20 @@ CURRENT_FILES = [
     "Nexent智能体说明.md",
     "Nexent智能体说明.docx",
     "agent-config.json",
-    "知识图谱构建方案.md",
     "平台核验证据.md",
-    "新行业迁移手册.md",
-    "数字对账.json",
-    "成本基准.json",
-    "agent-callgraph.png",
-    "agent-callgraph.svg",
+    "年度报告结构体检.md",
+    "gov-kg.json",
 ]
 CURRENT_DIRS = [
     ("screenshots", ("*.png",)),
-    ("kg", ("*.json", "*.dot", "*.svg", "*.png")),
-    ("kg-gov", ("*.json", "*.dot", "*.svg", "*.png")),
     ("videos", ("*.mp4",)),
 ]
 # 明确不打包的（历史口径 / 含联系方式 / 过时）
 INTERNAL = [
+    "知识图谱构建方案.md",       # 旧制造业图谱方案（新文档 §1.6 已替代）
+    "新行业迁移手册.md",         # 旧制造业迁移手册
+    "数字对账.json",             # 旧口径对账
+    "成本基准.json",             # 旧口径成本
     "答辩问答准备.md",           # 队内答辩准备
     "演示视频脚本-3分钟.md",      # 录制脚本（成片视频在包里）
     "开源发布说明.md",           # 内部发布流程与凭据操作记录
