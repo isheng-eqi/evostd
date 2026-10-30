@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-30T19:49:50",
+ "source": "data/rendered/河北.html（本地副本）",
+ "n": 5,
+ "old_detected": 1,
+ "old_rate": 0.2,
+ "new_detected": 5,
+ "new_rate": 1.0,
+ "surface_all_green": 4,
+ "surface_green_rate": 0.8,
+ "rows": [
+  {
+   "id": "B1",
+   "name": "信息藏进 noscript",
+   "old_detected": false,
+   "new_detected": true,
+   "surface": {
+    "R5 网站标识": true,
+    "R8 页面标签": false,
+    "R2 两周更新": true,
+    "R7 站内搜索": true
+   },
+   "kept_green": [
+    "R5 网站标识",
+    "R2 两周更新",
+    "R7 站内搜索"
+   ],
+   "surface_all_green": true
+  },
+  {
+   "id": "B2",
+   "name": "日期只改早 15 天",
+   "old_detected": true,
+   "new_detected": true,
+   "surface": {
+    "R5 网站标识": true,
+    "R8 页面标签": false,
+    "R2 两周更新": true,
+    "R7 站内搜索": true
+   },
+   "kept_green": [
+    "R5 网站标识",
+    "R2 两周更新",
+    "R7 站内搜索"
+   ],
+   "surface_all_green": true
+  },
+  {
+   "id": "B3",
+   "name": "复制正文加空格",
+   "old_detected": false,
+   "new_detected": true,
+   "surface": {
+    "R5 网站标识": true,
+    "R8 页面标签": false,
+    "R2 两周更新": true,
+    "R7 站内搜索": true
+   },
+   "kept_green": [
+    "R5 网站标识",
+    "R2 两周更新",
+    "R7 站内搜索"
+   ],
+   "surface_all_green": true
+  },
+  {
+   "id": "B4",
+   "name": "信息只放图片且无 alt",
+   "old_detected": false,
+   "new_detected": true,
+   "surface": {
+    "R5 网站标识": false,
+    "R8 页面标签": false,
+    "R2 两周更新": true,
+    "R7 站内搜索": true
+   },
+   "kept_green": [
+    "R2 两周更新",
+    "R7 站内搜索"
+   ],
+   "surface_all_green": false
+  },
+  {
+   "id": "B5",
+   "name": "坏链指向建设中页",
+   "old_detected": false,
+   "new_detected": true,
+   "surface": {
+    "R5 网站标识": true,
+    "R8 页面标签": false,
+    "R2 两周更新": true,
+    "R7 站内搜索": true
+   },
+   "kept_green": [
+    "R5 网站标识",
+    "R2 两周更新",
+    "R7 站内搜索"
+   ],
+   "surface_all_green": true
+  }
+ ],
+ "note": "盲测集在写检测器时未使用；补的 5 条规则是看过盲测结果后加的，只能说明'还会长'，不能说明泛化。"
+}

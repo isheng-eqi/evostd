@@ -186,7 +186,9 @@ def det_similar_blocks(html: str, meta: dict, ctx: dict) -> bool:
 def det_home_link(html: str, meta: dict, ctx: dict) -> bool:
     s = BeautifulSoup(html, "lxml")
     for a in s.find_all("a", href=True):
-        if a.get("data-fake") == "302" or a["href"].rstrip("/") == ctx.get("home", "").rstrip("/"):
+        if a.get("data-fake") == "302":
+            return True
+        if len(a.get_text(" ", strip=True)) >= 8 and a["href"].rstrip("/") == ctx.get("home", "").rstrip("/"):
             return True
     return False
 
