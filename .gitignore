@@ -59,3 +59,5 @@ ICT自进化-给测试者-*.zip
 ICT自进化-初赛包-*.zip
 # 生成的状态目录（可再跑 smoke 重建），不入库
 项目/src/evostd-smoke/
+# 红队实验的本地页面副本（可重跑生成）
+项目/data/redteam/
