@@ -1,0 +1,538 @@
+{
+ "generated_at": "2026-10-30T19:34:07",
+ "results": {
+  "国务院": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "北京": {
+   "联系电话": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "天津": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "河北": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "山西": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "内蒙古": {
+   "联系电话": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "辽宁": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "吉林": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 0,
+    "hidden_only": 0
+   }
+  },
+  "黑龙江": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "上海": {
+   "联系电话": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "江苏": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "浙江": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 0,
+    "hidden_only": 0
+   }
+  },
+  "安徽": {
+   "联系电话": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "福建": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "江西": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "河南": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "湖南": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "广东": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 1,
+    "sample": "中央第四生态环境保护督察组联系电话及邮箱 @ inline/visible"
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "海南": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "四川": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "贵州": {
+   "联系电话": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "云南": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "西藏": {
+   "联系电话": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "陕西": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "宁夏": {
+   "error": "TimeoutError: Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.nx"
+  },
+  "新疆": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "太原": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "教育部": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 0,
+    "hidden_only": 0
+   }
+  },
+  "工信部": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  },
+  "应急部": {
+   "联系电话": {
+    "visible": 0,
+    "hidden_only": 0
+   },
+   "网站标识码": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "ICP": {
+    "visible": 1,
+    "hidden_only": 0
+   },
+   "主办": {
+    "visible": 1,
+    "hidden_only": 0
+   }
+  }
+ },
+ "only_hidden": [
+  {
+   "site": "广东",
+   "keyword": "联系电话",
+   "sample": "中央第四生态环境保护督察组联系电话及邮箱 @ inline/visible"
+  }
+ ]
+}

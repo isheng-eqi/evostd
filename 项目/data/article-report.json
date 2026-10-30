@@ -1,0 +1,319 @@
+{
+ "generated_at": "2026-10-30T19:36:45",
+ "sites": {
+  "国务院": {
+   "articles": 6,
+   "issues": [
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084542.htm",
+     "other": "https://www.gov.cn/home/toutu/202610/content_7084491.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084542.htm",
+     "other": "https://www.gov.cn/zhengce/jiedu/tujie/202610/content_7084502.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084542.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084479.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084542.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084484.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084542.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084565.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/home/toutu/202610/content_7084491.htm",
+     "other": "https://www.gov.cn/zhengce/jiedu/tujie/202610/content_7084502.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/home/toutu/202610/content_7084491.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084479.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/home/toutu/202610/content_7084491.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084484.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/home/toutu/202610/content_7084491.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084565.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/zhengce/jiedu/tujie/202610/content_7084502.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084479.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/zhengce/jiedu/tujie/202610/content_7084502.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084484.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/zhengce/jiedu/tujie/202610/content_7084502.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084565.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084479.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084484.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084479.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084565.htm",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7084484.htm",
+     "other": "https://www.gov.cn/yaowen/liebiao/202610/content_7084565.htm",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "北京": {
+   "articles": 6,
+   "issues": []
+  },
+  "天津": {
+   "articles": 6,
+   "issues": []
+  },
+  "河北": {
+   "articles": 6,
+   "issues": [
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/9047e3bf-6323-48e5-877c-b38e419fe2e2.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/ec78f4de-8887-4fc1-93ed-5ee5acf296f5.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/9047e3bf-6323-48e5-877c-b38e419fe2e2.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/a222a412-344c-460c-be8d-147e7535e4fd.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/9047e3bf-6323-48e5-877c-b38e419fe2e2.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/7bc68b59-79e5-4d00-bcd4-60e49e19993a.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/9047e3bf-6323-48e5-877c-b38e419fe2e2.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3ae5133c-90f3-436d-80da-7bb6448fac35.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/9047e3bf-6323-48e5-877c-b38e419fe2e2.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3a9cee3c-8d75-46d7-a7aa-2dc5d11602a2.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/ec78f4de-8887-4fc1-93ed-5ee5acf296f5.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/a222a412-344c-460c-be8d-147e7535e4fd.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/ec78f4de-8887-4fc1-93ed-5ee5acf296f5.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/7bc68b59-79e5-4d00-bcd4-60e49e19993a.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/ec78f4de-8887-4fc1-93ed-5ee5acf296f5.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3ae5133c-90f3-436d-80da-7bb6448fac35.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/ec78f4de-8887-4fc1-93ed-5ee5acf296f5.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3a9cee3c-8d75-46d7-a7aa-2dc5d11602a2.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/a222a412-344c-460c-be8d-147e7535e4fd.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/7bc68b59-79e5-4d00-bcd4-60e49e19993a.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/a222a412-344c-460c-be8d-147e7535e4fd.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3ae5133c-90f3-436d-80da-7bb6448fac35.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/a222a412-344c-460c-be8d-147e7535e4fd.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3a9cee3c-8d75-46d7-a7aa-2dc5d11602a2.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/7bc68b59-79e5-4d00-bcd4-60e49e19993a.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3ae5133c-90f3-436d-80da-7bb6448fac35.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/7bc68b59-79e5-4d00-bcd4-60e49e19993a.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3a9cee3c-8d75-46d7-a7aa-2dc5d11602a2.html",
+     "similarity": 1.0
+    },
+    {
+     "kind": "正文重复",
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3ae5133c-90f3-436d-80da-7bb6448fac35.html",
+     "other": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3a9cee3c-8d75-46d7-a7aa-2dc5d11602a2.html",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "山西": {
+   "articles": 6,
+   "issues": []
+  },
+  "内蒙古": {
+   "articles": 6,
+   "issues": []
+  },
+  "辽宁": {
+   "articles": 6,
+   "issues": []
+  },
+  "吉林": {
+   "articles": 6,
+   "issues": []
+  },
+  "黑龙江": {
+   "articles": 6,
+   "issues": []
+  },
+  "上海": {
+   "articles": 6,
+   "issues": []
+  },
+  "江苏": {
+   "articles": 6,
+   "issues": []
+  },
+  "浙江": {
+   "articles": 6,
+   "issues": []
+  },
+  "安徽": {
+   "articles": 6,
+   "issues": []
+  },
+  "福建": {
+   "articles": 6,
+   "issues": []
+  },
+  "江西": {
+   "error": "HTTPSConnectionPool(host='www.jiangxi.gov.cn', port=443): Max retries exceeded w"
+  },
+  "河南": {
+   "articles": 6,
+   "issues": []
+  },
+  "湖南": {
+   "error": "HTTPSConnectionPool(host='www.hunan.gov.cn', port=443): Max retries exceeded wit"
+  },
+  "广东": {
+   "articles": 6,
+   "issues": []
+  },
+  "海南": {
+   "articles": 4,
+   "issues": []
+  },
+  "四川": {
+   "articles": 6,
+   "issues": []
+  },
+  "贵州": {
+   "articles": 6,
+   "issues": []
+  },
+  "云南": {
+   "articles": 6,
+   "issues": []
+  },
+  "西藏": {
+   "articles": 6,
+   "issues": [
+    {
+     "kind": "正文重复",
+     "url": "https://www.xizang.gov.cn/xwzx_406/syttxw/202610/t20261030_564579.html",
+     "other": "https://www.xizang.gov.cn/xwzx_406/tpxw/202610/t20261030_564579.html",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "陕西": {
+   "articles": 6,
+   "issues": []
+  },
+  "宁夏": {
+   "articles": 6,
+   "issues": []
+  },
+  "新疆": {
+   "articles": 6,
+   "issues": []
+  },
+  "太原": {
+   "articles": 6,
+   "issues": []
+  },
+  "教育部": {
+   "articles": 6,
+   "issues": [
+    {
+     "kind": "正文重复",
+     "url": "http://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202610/t20261030_1456542.html",
+     "other": "https://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202610/t20261030_1456542.html",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "工信部": {
+   "articles": 6,
+   "issues": []
+  },
+  "应急部": {
+   "articles": 6,
+   "issues": []
+  }
+ }
+}
