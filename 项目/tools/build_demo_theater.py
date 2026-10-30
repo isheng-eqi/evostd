@@ -20,7 +20,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOT = os.path.join(ROOT, "submission", "screenshots")
 WORK = os.path.join(ROOT, "submission", "videos", "_theater")
-OUT = os.path.join(ROOT, "submission", "videos", "00-反合规表演-60秒.mp4")
+OUT = os.path.join(ROOT, "submission", "videos", "00-反合规表演-55秒.mp4")
 FF = r"C:\ictwork\ffmpeg\bin\ffmpeg.exe"
 FONT = r"C:\Windows\Fonts\msyh.ttc"
 
@@ -32,7 +32,7 @@ CARDS = [
     ("补一条规则：字号 / 透明度", "抓到", 5),
     ("改造 3：日期换成图片", "文本规则永远看不见", 5),
     ("Qwen3-VL 读图", "把日期读出来", 5),
-    ("13 种手法", "清单 4/5 仍全绿 · 检出 1/5 → 4/5", 7),
+    ("10 种盲测攻击", "清单 9/10 仍通过 · 检出 1/5 → 4/5", 7),
 ]
 
 
