@@ -1,0 +1,280 @@
+{
+ "generated_at": "2026-10-30T19:52:00",
+ "sites": {
+  "国务院": {
+   "only_in_image": [],
+   "ocr_len": 261,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "北京": {
+   "only_in_image": [],
+   "ocr_len": 307,
+   "in_page": {
+    "联系电话": true,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "天津": {
+   "only_in_image": [],
+   "ocr_len": 279,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "河北": {
+   "only_in_image": [],
+   "ocr_len": 170,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "山西": {
+   "only_in_image": [],
+   "ocr_len": 177,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "内蒙古": {
+   "only_in_image": [],
+   "ocr_len": 244,
+   "in_page": {
+    "联系电话": true,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "辽宁": {
+   "error": "Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.ln"
+  },
+  "吉林": {
+   "only_in_image": [],
+   "ocr_len": 179,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": false
+   }
+  },
+  "黑龙江": {
+   "only_in_image": [],
+   "ocr_len": 215,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "上海": {
+   "only_in_image": [],
+   "ocr_len": 256,
+   "in_page": {
+    "联系电话": true,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "江苏": {
+   "only_in_image": [],
+   "ocr_len": 169,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "浙江": {
+   "only_in_image": [
+    "主办"
+   ],
+   "ocr_len": 206,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": false
+   }
+  },
+  "安徽": {
+   "only_in_image": [],
+   "ocr_len": 158,
+   "in_page": {
+    "联系电话": true,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "福建": {
+   "only_in_image": [],
+   "ocr_len": 305,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "江西": {
+   "error": "Page.screenshot: Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n"
+  },
+  "河南": {
+   "only_in_image": [],
+   "ocr_len": 221,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "湖南": {
+   "only_in_image": [],
+   "ocr_len": 119,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "广东": {
+   "only_in_image": [],
+   "ocr_len": 266,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "海南": {
+   "error": "Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.ha"
+  },
+  "四川": {
+   "only_in_image": [],
+   "ocr_len": 242,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "贵州": {
+   "only_in_image": [],
+   "ocr_len": 187,
+   "in_page": {
+    "联系电话": true,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "云南": {
+   "only_in_image": [],
+   "ocr_len": 207,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "西藏": {
+   "only_in_image": [],
+   "ocr_len": 207,
+   "in_page": {
+    "联系电话": true,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "陕西": {
+   "only_in_image": [],
+   "ocr_len": 201,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "宁夏": {
+   "error": "Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.nx"
+  },
+  "新疆": {
+   "error": "Page.goto: Timeout 25000ms exceeded.\nCall log:\n  - navigating to \"https://www.xi"
+  },
+  "太原": {
+   "only_in_image": [],
+   "ocr_len": 151,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "教育部": {
+   "only_in_image": [],
+   "ocr_len": 270,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": false
+   }
+  },
+  "工信部": {
+   "only_in_image": [],
+   "ocr_len": 215,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  },
+  "应急部": {
+   "only_in_image": [],
+   "ocr_len": 90,
+   "in_page": {
+    "联系电话": false,
+    "网站标识码": true,
+    "ICP": true,
+    "主办": true
+   }
+  }
+ },
+ "cases": [
+  [
+   "浙江",
+   [
+    "主办"
+   ]
+  ]
+ ]
+}
