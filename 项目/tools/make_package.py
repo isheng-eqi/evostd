@@ -27,13 +27,13 @@ SUB = os.path.join(ROOT, "submission")
 # 包内清单：只放**当前口径**的材料；历史版本留在工作区，不进包
 CURRENT_FILES = [
     "00-先读我-评委入口.md",
-    "开发设计文档-合规体检版.md",
-    "开发设计文档-合规体检版.docx",
+    "开发设计文档-反合规表演.md",
+    "开发设计文档-反合规表演.docx",
     "Nexent智能体说明.md",
     "Nexent智能体说明.docx",
     "agent-config.json",
-    "平台核验证据.md",
-    "年度报告结构体检.md",
+    "反合规表演-实验.md",
+    "真实案例猎捕记录.md",
     "gov-kg.json",
     "report-河北.html",
 ]
@@ -82,7 +82,7 @@ def main() -> int:
         return 1
 
     stamp = dt.date.today().strftime("%Y%m%d")
-    out = args.out or os.path.join(os.path.dirname(ROOT), f"ICT自进化-初赛包-{stamp}-{dt.datetime.now():%H%M}.zip")
+    out = args.out or os.path.join(os.path.dirname(ROOT), f"ICT自进化-反合规表演-初赛包-{stamp}-{dt.datetime.now():%H%M}.zip")
     out = os.path.abspath(out)
 
     manifest = []
@@ -118,10 +118,10 @@ def main() -> int:
                     manifest.append((f"代码/{rel}", os.path.getsize(p)))
 
         readme = (
-            "ICT 自进化 · 初赛提交包\n"
+            "ICT 自进化 · 反合规表演 · 初赛提交包\n"
             f"生成时间：{dt.datetime.now().isoformat(timespec='seconds')}\n\n"
             "目录：\n"
-            "  提交材料/   设计文档、知识图谱方案、平台核验证据、迁移手册、对账与成本、截图与视频\n"
+            "  提交材料/   反合规表演设计文档、红队实验、真实案例记录、平台说明、截图与视频\n"
             "  代码/       可复现源码（src / tools / skills）\n\n"
             "不包含（历史口径）：\n  " + "\n  ".join(EXCLUDED) + "\n"
             "内部材料（留工作区，不提交）：\n  " + "\n  ".join(INTERNAL) + "\n\n"
