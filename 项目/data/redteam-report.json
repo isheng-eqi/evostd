@@ -1,0 +1,72 @@
+{
+ "generated_at": "2026-10-30T19:48:32",
+ "source": "data/rendered/河北.html（真实页面本地副本）",
+ "total": 8,
+ "caught_first": 8,
+ "success_rate_first": 1.0,
+ "caught_second": 8,
+ "success_rate_second": 0.0,
+ "new_rules": [],
+ "rows": [
+  {
+   "id": "A1",
+   "name": "隐藏必需信息",
+   "expect": "visible_missing",
+   "n": 3,
+   "detected": true,
+   "file": "A1.html"
+  },
+  {
+   "id": "A2",
+   "name": "日期改到未来",
+   "expect": "future_date",
+   "detected": true,
+   "file": "A2.html"
+  },
+  {
+   "id": "A3",
+   "name": "旧文换日期再发",
+   "expect": "dup_title_diff_date",
+   "built": true,
+   "detected": true,
+   "file": "A3.html"
+  },
+  {
+   "id": "A4",
+   "name": "解读抄原文",
+   "expect": "similar_blocks",
+   "detected": true,
+   "file": "A4.html"
+  },
+  {
+   "id": "A5",
+   "name": "坏链洗到首页",
+   "expect": "home_link",
+   "detected": true,
+   "file": "A5.html"
+  },
+  {
+   "id": "A6",
+   "name": "空栏目占位",
+   "expect": "empty_page",
+   "detected": true,
+   "file": "A6.html"
+  },
+  {
+   "id": "A7",
+   "name": "信息只放图片",
+   "expect": "alt_only",
+   "n": 3,
+   "detected": true,
+   "file": "A7.html"
+  },
+  {
+   "id": "A8",
+   "name": "只写已整改",
+   "expect": "stub_claim",
+   "detected": true,
+   "file": "A8.html"
+  }
+ ],
+ "note": "改造只作用于本地副本，不触碰真实站点；补规则后重跑可把漏掉的补上。"
+}
