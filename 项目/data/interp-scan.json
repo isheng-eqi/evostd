@@ -1,0 +1,124 @@
+{
+ "generated_at": "2026-10-30T20:18:41",
+ "rows": [
+  {
+   "site": "上海",
+   "status": "未命中"
+  },
+  {
+   "site": "云南",
+   "status": "未命中"
+  },
+  {
+   "site": "内蒙古",
+   "status": "未命中"
+  },
+  {
+   "site": "北京",
+   "status": "未命中"
+  },
+  {
+   "site": "吉林",
+   "status": "未命中"
+  },
+  {
+   "site": "四川",
+   "status": "未命中"
+  },
+  {
+   "site": "国务院",
+   "status": "未命中"
+  },
+  {
+   "site": "天津",
+   "status": "未命中"
+  },
+  {
+   "site": "太原",
+   "status": "未命中"
+  },
+  {
+   "site": "宁夏",
+   "status": "未命中"
+  },
+  {
+   "site": "安徽",
+   "status": "未命中"
+  },
+  {
+   "site": "山西",
+   "column": "http://www.shanxi.gov.cn/ywdt/zcjd/",
+   "article": "http://www.shanxi.gov.cn/ywdt/zcjd/tpjd/202610/t20261030_10249097.shtml",
+   "text_chars": 118,
+   "images": 13
+  },
+  {
+   "site": "工信部",
+   "status": "未命中"
+  },
+  {
+   "site": "广东",
+   "status": "未命中"
+  },
+  {
+   "site": "应急部",
+   "status": "未命中"
+  },
+  {
+   "site": "教育部",
+   "status": "未命中"
+  },
+  {
+   "site": "新疆",
+   "status": "无解读入口"
+  },
+  {
+   "site": "江苏",
+   "status": "未命中"
+  },
+  {
+   "site": "江西",
+   "status": "无解读入口"
+  },
+  {
+   "site": "河北",
+   "status": "未命中"
+  },
+  {
+   "site": "河南",
+   "status": "未命中"
+  },
+  {
+   "site": "浙江",
+   "status": "未命中"
+  },
+  {
+   "site": "湖南",
+   "status": "未命中"
+  },
+  {
+   "site": "福建",
+   "status": "未命中"
+  },
+  {
+   "site": "西藏",
+   "status": "无解读入口"
+  },
+  {
+   "site": "贵州",
+   "status": "未命中"
+  },
+  {
+   "site": "辽宁",
+   "status": "未命中"
+  },
+  {
+   "site": "陕西",
+   "status": "无解读入口"
+  },
+  {
+   "site": "黑龙江",
+   "status": "未命中"
+  }
+ ]
+}
