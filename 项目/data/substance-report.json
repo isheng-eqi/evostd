@@ -1,0 +1,1283 @@
+{
+ "generated_at": "2026-10-30T19:40:32",
+ "sites": {
+  "北京": {
+   "articles": [
+    {
+     "url": "https://www.beijing.gov.cn/ywdt/dzyjs/202610/t20261030_4925557.html",
+     "title": "中共中央召开党外人士座谈会 习近平主持并发表重要讲话_党中央精神_首都之窗_北京市人民政府门户网站",
+     "len": 1780,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "2a1a16a951"
+    },
+    {
+     "url": "https://www.beijing.gov.cn/gongkai/shuju/sjjd/202610/t20261029_4922760.html",
+     "title": "前三季度北京社融增量超1.1万亿元 金融支持首都经济稳中向好_数据解读_首都之窗_北京市人民政府门户",
+     "len": 2052,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": "2a414c3311"
+    },
+    {
+     "url": "https://www.beijing.gov.cn/ywdt/dzyjs/202610/t20261029_4923883.html",
+     "title": "中国共产党第二十届中央委员会第五次全体会议公报_党中央精神_首都之窗_北京市人民政府门户网站",
+     "len": 5365,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": "5e1f31ec98"
+    },
+    {
+     "url": "https://www.beijing.gov.cn/ywdt/dzyjs/202610/t20261030_4924572.html",
+     "title": "党的二十届五中全会公报一图速览_党中央精神_首都之窗_北京市人民政府门户网站",
+     "len": 102,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.beijing.gov.cn/ywdt/dzyjs/202610/t20261030_4924362.html",
+     "title": "中国共产党第二十一次全国代表大会于2027年下半年在北京召开_党中央精神_首都之窗_北京市人民政府门",
+     "len": 212,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "b2406d372b"
+    },
+    {
+     "url": "https://www.beijing.gov.cn/ywdt/dzyjs/202610/t20261029_4923901.html",
+     "title": "党的二十届五中全会审议通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》_党中央精神_首",
+     "len": 144,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": ""
+    }
+   ]
+  },
+  "天津": {
+   "articles": [
+    {
+     "url": "https://www.tj.gov.cn/sy/tpxw/202610/t20261029_7644550.html",
+     "title": "2026年首批越冬候鸟抵达天津塘沽老码头_图片新闻_天津政务网",
+     "len": 202,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": "c288f3ac9e"
+    },
+    {
+     "url": "https://www.tj.gov.cn/sy/tpxw/202610/t20261028_7643353.html",
+     "title": "“天美艺术街区”城市更新案例全国推广_图片新闻_天津政务网",
+     "len": 1105,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      28
+     ],
+     "written": null,
+     "fp": "002757a13d"
+    },
+    {
+     "url": "https://www.tj.gov.cn/sy/tpxw/202610/t20261027_7642347.html",
+     "title": "天津西站南片区项目开工建设_图片新闻_天津政务网",
+     "len": 231,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      27
+     ],
+     "written": null,
+     "fp": "7bde8df250"
+    },
+    {
+     "url": "https://www.tj.gov.cn/sy/tpxw/202610/t20261026_7641422.html",
+     "title": "桥边音乐汇百场演出收官_图片新闻_天津政务网",
+     "len": 709,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      26
+     ],
+     "written": null,
+     "fp": "2f28c93107"
+    },
+    {
+     "url": "https://www.tj.gov.cn/sy/jrgz/202610/t20261030_7645627.html",
+     "title": "中共中央将于30日上午举行新闻发布会_今日关注_天津政务网",
+     "len": 241,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "c78f718c49"
+    },
+    {
+     "url": "https://www.tj.gov.cn/sy/jrgz/202610/t20261030_7645625.html",
+     "title": "习近平就西班牙高速列车追尾脱轨事故向西班牙国王费利佩六世致慰问电_今日关注_天津政务网",
+     "len": 296,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "cc50719acb"
+    }
+   ]
+  },
+  "河北": {
+   "articles": [
+    {
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/9047e3bf-6323-48e5-877c-b38e419fe2e2.html",
+     "title": "励精图治 奋发图强 持之以恒推进全面从严治党",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      30
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/ec78f4de-8887-4fc1-93ed-5ee5acf296f5.html",
+     "title": "今年以来河北省发布11项京津冀协同地方标准",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      30
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/a222a412-344c-460c-be8d-147e7535e4fd.html",
+     "title": "河北省进一步提升工贸行业安全管理水平",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      30
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/7bc68b59-79e5-4d00-bcd4-60e49e19993a.html",
+     "title": "河北省第十一届残运会暨第七届特奥会闭幕",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      30
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3ae5133c-90f3-436d-80da-7bb6448fac35.html",
+     "title": "河北省海外人才创业大赛将在雄安新区举行",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      30
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202610/30/3a9cee3c-8d75-46d7-a7aa-2dc5d11602a2.html",
+     "title": "河北省2人入选“中国好医生、中国好护士”",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      30
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    }
+   ]
+  },
+  "山西": {
+   "articles": [
+    {
+     "url": "https://www.shanxi.gov.cn/ywdt/tpxw/202610/t20261030_10248600.shtml",
+     "title": "国道307线文水至汾阳段项目加速建设 - 山西省人民政府",
+     "len": 234,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "8a50a2c0fc"
+    },
+    {
+     "url": "https://www.shanxi.gov.cn/ywdt/tpxw/202610/t20261030_10248599.shtml",
+     "title": "智能设备赋能产业升级 - 山西省人民政府",
+     "len": 208,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "aebbc386ff"
+    },
+    {
+     "url": "https://www.shanxi.gov.cn/ywdt/tpxw/202610/t20261030_10248585.shtml",
+     "title": "运城马泉沟秋色如画 - 山西省人民政府",
+     "len": 180,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.shanxi.gov.cn/ywdt/qgyw/202610/t20261030_10248863.shtml",
+     "title": "中国共产党第二十一次全国代表大会于2027年下半年在北京召开 - 山西省人民政府",
+     "len": 158,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.shanxi.gov.cn/ywdt/qgyw/202610/t20261030_10248584.shtml",
+     "title": "习近平就西班牙高速列车追尾脱轨事故向西班牙国王费利佩六世致慰问电 - 山西省人民政府",
+     "len": 255,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "d4edfc5a73"
+    }
+   ]
+  },
+  "上海": {
+   "articles": [
+    {
+     "url": "https://www.sh.gov.cn/nw4411/20261030/13ee1faff7454b9391281ac1dba943cb.html",
+     "title": "上海广大党员干部群众第一时间收听收看认真学习二十届五中全会公报 在新时代赶考之路上展现新作为",
+     "len": 3955,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "496e40cbc0"
+    },
+    {
+     "url": "https://www.sh.gov.cn/nw4411/20261030/a57ee83395754c0f827d99a870ede441.html",
+     "title": "上海发布行动方案加强统筹形成合力 三大专班共同构成服务组织保障 九大行动理清中小企业“千头万绪”",
+     "len": 1614,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "778a9de22f"
+    },
+    {
+     "url": "https://www.sh.gov.cn/nw4411/20261030/1f887dc432304b0398f08d104cfac51d.html",
+     "title": "前三季度上海社融增量直接融资占比升逾一成",
+     "len": 792,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "c048758163"
+    },
+    {
+     "url": "https://www.sh.gov.cn/nw4411/20261030/4334ab267df34049a6c9d5d2a21c49ea.html",
+     "title": "回顾国际友人与长征深厚渊源 “长征·上海·宋庆龄”纪念中国工农红军长征胜利90周年主题研讨会在上海举",
+     "len": 417,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "169c018399"
+    },
+    {
+     "url": "https://www.sh.gov.cn/nw4411/20261030/3606ccd1317141a8a9e3f42b73a3d764.html",
+     "title": "上海国际可持续活力周启幕",
+     "len": 375,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "0c768b0700"
+    },
+    {
+     "url": "https://www.sh.gov.cn/nw4411/20261030/b33f8fd7f81748ceb43d34cfa4b8e97e.html",
+     "title": "虹桥枢纽网约车蓄车场投用 规划设置约250个停车位 还配置食堂、小卖部等",
+     "len": 1154,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "4418c70ff3"
+    }
+   ]
+  },
+  "江苏": {
+   "articles": [
+    {
+     "url": "https://www.jiangsu.gov.cn/art/2026/10/30/art_31260_11852220.html",
+     "title": "江苏省人民政府 图片新闻 穿太湖隧道进入“双盾构”掘进阶段",
+     "len": 639,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "d552e353bb"
+    },
+    {
+     "url": "https://www.jiangsu.gov.cn/art/2026/10/28/art_31260_11849666.html",
+     "title": "江苏省人民政府 图片新闻 第十二届江苏省家电家装职业技能竞赛总决赛在南京开赛",
+     "len": 206,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      28
+     ],
+     "written": null,
+     "fp": "67f0903f93"
+    },
+    {
+     "url": "https://www.jiangsu.gov.cn/art/2026/10/30/art_60095_11852206.html",
+     "title": "江苏省人民政府 今日江苏 全国人大环资委来苏开展水污染防治工作调研",
+     "len": 583,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "a6e5e44c57"
+    },
+    {
+     "url": "https://www.jiangsu.gov.cn/art/2026/10/30/art_60095_11852204.html",
+     "title": "江苏省人民政府 今日江苏 全国退役军人创业创新大赛决赛在宁举办 江苏斩获三金一银取得历史性突破",
+     "len": 474,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "809b7141f8"
+    },
+    {
+     "url": "https://www.jiangsu.gov.cn/art/2026/10/30/art_60095_11852202.html",
+     "title": "江苏省人民政府 今日江苏 省领导会见瑞士客人",
+     "len": 537,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "e84a57c40b"
+    },
+    {
+     "url": "https://www.jiangsu.gov.cn/art/2026/10/30/art_60095_11852200.html",
+     "title": "江苏省人民政府 今日江苏 一枚芯片 一头江豚 一套制度 江苏生物多样性保护实践亮相COP17",
+     "len": 1628,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "cad30f8038"
+    }
+   ]
+  },
+  "浙江": {
+   "articles": [
+    {
+     "url": "https://www.zj.gov.cn/col/col1229823372/art/2026/art_052b439d845d4fb9b2ac7ae644b27ddb.html",
+     "title": "全省1000所学校周边道路拥堵治理主要工作完成并进入验收",
+     "len": 1416,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "1eaff6dcfa"
+    },
+    {
+     "url": "https://www.zj.gov.cn/col/col1229823372/art/2026/art_c8642338019c4b848b9d071e04dfcb7a.html",
+     "title": "省直机关大讲堂开讲",
+     "len": 460,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "b37a6bf8cb"
+    },
+    {
+     "url": "https://www.zj.gov.cn/col/col1229823372/art/2026/art_d4819b5b4281432f9223c95f3d99ce31.html",
+     "title": "浙江发起“粮青汇”青年交流计划",
+     "len": 349,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "043c2d8efe"
+    },
+    {
+     "url": "https://www.zj.gov.cn/col/col1229823372/art/2026/art_4de9b38f4f6d41409bc4765d94ecf05e.html",
+     "title": "浙江公布首批26个复合型创新社区试点",
+     "len": 677,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": "f757c3d8ac"
+    },
+    {
+     "url": "https://www.zj.gov.cn/col/col1229823372/art/2026/art_eae02280ae0a46d885a527f578372c09.html",
+     "title": "2026年省文化特派员第二期培训班开班",
+     "len": 651,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": "5d0d0f2f83"
+    },
+    {
+     "url": "https://www.zj.gov.cn/col/col1229823372/art/2026/art_45839601ef544b5685cec145334d7708.html",
+     "title": "前三季度全省高技术产业投资同比增长6.9%",
+     "len": 1354,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": "d3f1d1b8b5"
+    }
+   ]
+  },
+  "安徽": {
+   "articles": [
+    {
+     "url": "https://www.ah.gov.cn/zwyw/ztzl/szfcwhy/syssytgnxzdsxx/2026n/565547991.html",
+     "title": "第117次常务会议_安徽省人民政府",
+     "len": 859,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      16
+     ],
+     "written": null,
+     "fp": "7fd389be3e"
+    },
+    {
+     "url": "https://www.ah.gov.cn/zwyw/ztzl/szfcwhy/syssytgnxzdsxx/2026n/565546801.html",
+     "title": "第116次常务会议_安徽省人民政府",
+     "len": 875,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      12
+     ],
+     "written": null,
+     "fp": "574f586bc4"
+    },
+    {
+     "url": "https://www.ah.gov.cn/zwyw/ztzl/szfcwhy/syssytgnxzdsxx/2026n/565545591.html",
+     "title": "第115次常务会议_安徽省人民政府",
+     "len": 837,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      1
+     ],
+     "written": null,
+     "fp": "aa2b114411"
+    },
+    {
+     "url": "https://www.ah.gov.cn/zwyw/ztzl/szfcwhy/syssytgnxzdsxx/2026n/565542501.html",
+     "title": "第114次常务会议_安徽省人民政府",
+     "len": 848,
+     "url_date": null,
+     "publish": [
+      2026,
+      9,
+      18
+     ],
+     "written": null,
+     "fp": "f07d1f5e18"
+    },
+    {
+     "url": "https://www.ah.gov.cn/zwyw/ztzl/szfcwhy/syssytgnxzdsxx/2026n/565539141.html",
+     "title": "第113次常务会议_安徽省人民政府",
+     "len": 823,
+     "url_date": null,
+     "publish": [
+      2026,
+      9,
+      4
+     ],
+     "written": null,
+     "fp": "71c2bd53c3"
+    },
+    {
+     "url": "https://www.ah.gov.cn/content/article/565540221",
+     "title": "关于斑马线和信号灯设置问题_安徽省人民政府",
+     "len": 489,
+     "url_date": null,
+     "publish": [
+      2026,
+      8,
+      12
+     ],
+     "written": null,
+     "fp": "cbc539631a"
+    }
+   ]
+  },
+  "福建": {
+   "articles": [
+    {
+     "url": "https://www.fujian.gov.cn/sylm/szyw/202610/t20261030_7242320.htm",
+     "title": "中国共产党第二十届中央委员会第五次全体会议公报_ 时政要闻_福建省人民政府门户网站",
+     "len": 5464,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "1d33b355a2"
+    },
+    {
+     "url": "https://www.fujian.gov.cn/sylm/szyw/202610/t20261029_7242175.htm",
+     "title": "党的二十届五中全会审议通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》_ 时政要闻_福",
+     "len": 183,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.fujian.gov.cn/sylm/szyw/202610/t20261030_7242200.htm",
+     "title": "中国共产党第二十届中央委员会第五次全体会议在京举行_ 时政要闻_福建省人民政府门户网站",
+     "len": 550,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "bcf788658f"
+    },
+    {
+     "url": "https://www.fujian.gov.cn/xwdt/fjyw/202610/t20261025_7240109.htm",
+     "title": "纪念台湾光复81周年座谈会在福州举办_ 福建要闻_福建省人民政府门户网站",
+     "len": 1019,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "304d21dde3"
+    },
+    {
+     "url": "https://www.fujian.gov.cn/szf/szfhy/szfqthy/202610/t20261025_7240076.htm",
+     "title": "省政府党组会议和省政府常务会议召开_ 其他会议_ 福建省人民政府门户网站",
+     "len": 1332,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "7902718567"
+    },
+    {
+     "url": "https://www.fujian.gov.cn/xwdt/fjyw/202610/t20261023_7240011.htm",
+     "title": "省委召开三季度工作会议_ 福建要闻_福建省人民政府门户网站",
+     "len": 1468,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "fd0d95893a"
+    }
+   ]
+  },
+  "江西": {
+   "articles": []
+  },
+  "河南": {
+   "articles": [
+    {
+     "url": "https://www.henan.gov.cn/2026/10-30/3442937.html",
+     "title": "征求对中共中央关于持之以恒推进全面从严治党若干重大问题的决定的意见 中共中央召开党外人士座谈会 习近",
+     "len": 1749,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "31633125dc"
+    },
+    {
+     "url": "https://www.henan.gov.cn/zt/2026/897601/index.html",
+     "title": "学习贯彻省第十二次党代会精神",
+     "len": 205,
+     "url_date": null,
+     "publish": null,
+     "written": null,
+     "fp": "2d8ee1b99d"
+    },
+    {
+     "url": "https://www.henan.gov.cn/2026/10-30/3442693.html",
+     "title": "宁德时代洛阳基地：电池下线发往全国_图片新闻_河南省人民政府门户网站",
+     "len": 183,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.henan.gov.cn/2026/10-30/3442694.html",
+     "title": "抢抓晴好玉米收储忙_图片新闻_河南省人民政府门户网站",
+     "len": 155,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.henan.gov.cn/2026/10-29/3442245.html",
+     "title": "智能生产线有序运转_图片新闻_河南省人民政府门户网站",
+     "len": 141,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.henan.gov.cn/zt/2026/748722/index.html",
+     "title": "树立和践行正确政绩观",
+     "len": 68,
+     "url_date": null,
+     "publish": null,
+     "written": null,
+     "fp": ""
+    }
+   ]
+  },
+  "湖南": {
+   "articles": [
+    {
+     "url": "https://www.hunan.gov.cn/hnszf/hnyw/sy/tt1/202610/t20261030_34091001.html",
+     "title": "中国共产党第二十届中央委员会第五次全体会议公报-湖南省人民政府门户网站",
+     "len": 5281,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "7227a2a592"
+    },
+    {
+     "url": "https://www.hunan.gov.cn/hnszf/hnyw/sy/tt1/202610/t20261030_34090994.html",
+     "title": "党的二十届五中全会审议通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》-湖南省人民政府",
+     "len": 42,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "http://www.hunan.gov.cn/hnszf/hnyw/ywtj/202610/t20261030_34091483.html",
+     "title": "党的二十届五中全会公报一图速览-湖南省人民政府门户网站",
+     "len": 0,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.hunan.gov.cn/hnszf/hnyw/sy/hnyw1/202610/t20261030_34092081.html",
+     "title": "省十四届人大常委会第二十六次会议举行 决定谢卫江为湖南省代理省长-湖南省人民政府门户网站",
+     "len": 1277,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "31f3a5eee1"
+    },
+    {
+     "url": "https://www.hunan.gov.cn/hnszf/hnyw/sy/hnyw1/202610/t20261030_34091009.html",
+     "title": "全省工贸行业安全生产工作调度部署视频会议召开 王道席出席并讲话-湖南省人民政府门户网站",
+     "len": 473,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "e06d715b83"
+    },
+    {
+     "url": "https://www.hunan.gov.cn/hnszf/hnyw/sy/hnyw1/202610/t20261030_34091008.html",
+     "title": "首届中部五省药品安全协同监管交流会举行 蒋涤非出席并讲话-湖南省人民政府门户网站",
+     "len": 487,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "ab9f18a5ac"
+    }
+   ]
+  },
+  "广东": {
+   "articles": [
+    {
+     "url": "https://www.gd.gov.cn/gdywdt/ttxw/content/post_4972839.html",
+     "title": "中国共产党第二十届中央委员会第五次全体会议公报  广东省人民政府门户网站",
+     "len": 5306,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "ac957fb522"
+    },
+    {
+     "url": "https://www.gd.gov.cn/gdywdt/xwdt/content/post_4972845.html",
+     "title": "中国共产党第二十届中央委员会第五次全体会议在京举行  广东省人民政府门户网站",
+     "len": 444,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "99e22788ce"
+    },
+    {
+     "url": "https://www.gd.gov.cn/gdywdt/xwdt/content/post_4972843.html",
+     "title": "党的二十届五中全会公报一图速览  广东省人民政府门户网站",
+     "len": 29,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.gd.gov.cn/gdywdt/gdyw/content/post_4970390.html",
+     "title": "李强主持召开国务院常务会议 研究统筹人口与经济社会发展有关工作等  广东省人民政府门户网站",
+     "len": 729,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      24
+     ],
+     "written": null,
+     "fp": "9e98e63e03"
+    },
+    {
+     "url": "https://www.gd.gov.cn/gdywdt/gdyw/content/post_4969630.html",
+     "title": "省委常委会召开会议 认真学习贯彻习近平总书记重要讲话重要指示精神 研究推进我省绿色发展、算力建设和办",
+     "len": 1285,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      22
+     ],
+     "written": null,
+     "fp": "7c15044f17"
+    },
+    {
+     "url": "https://www.gd.gov.cn/gdywdt/gdyw/content/post_4968556.html",
+     "title": "省委财经委会议暨全省三季度经济形势分析会召开 全力以赴完成全年目标任务 确保“十五五”实现良好开局 ",
+     "len": 1198,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      20
+     ],
+     "written": null,
+     "fp": "016b3ff8c7"
+    }
+   ]
+  },
+  "四川": {
+   "articles": [
+    {
+     "url": "https://www.sc.gov.cn/10462/13241/2026/10/29/d17ffb01931b4b48826e940988e9b2d0.shtml",
+     "title": "中国共产党第二十届中央委员会第五次全体会议公报- 四川省人民政府网站",
+     "len": 10562,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "c080252a9d"
+    },
+    {
+     "url": "https://www.sc.gov.cn/10462/13241/2026/10/30/ad1f8e62b0db45d4b06f3947958f8c56.shtml",
+     "title": "中国共产党第二十届中央委员会第五次全体会议在京举行- 四川省人民政府网站",
+     "len": 734,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "f6b1fc571d"
+    },
+    {
+     "url": "https://www.sc.gov.cn/10462/13241/2026/10/15/db1fb7350d1942528cd67b46e85ab1a2.shtml",
+     "title": "李强在中朝新鸭绿江大桥开通仪式上发表视频致辞- 四川省人民政府网站",
+     "len": 1082,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "5807f8ca79"
+    },
+    {
+     "url": "https://www.sc.gov.cn/10462/13241/2026/10/30/f25cf1ce09dc46879d208c8b4857e83b.shtml",
+     "title": "党的二十届五中全会审议通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》- 四川省人民政",
+     "len": 0,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.sc.gov.cn/10462/13241/2026/10/30/bfbb8aee6a324a16927d319dcdc80f83.shtml",
+     "title": "中国共产党第二十一次全国代表大会于2027年下半年在北京召开- 四川省人民政府网站",
+     "len": 160,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.sc.gov.cn/10462/13241/2026/10/30/540a29552e6641ca9413039adac26e9c.shtml",
+     "title": "总书记的人民情怀 | “更加清醒坚定地推进反腐败斗争”- 四川省人民政府网站",
+     "len": 3102,
+     "url_date": null,
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": "af99c8078c"
+    }
+   ]
+  },
+  "陕西": {
+   "articles": [
+    {
+     "url": "https://www.shaanxi.gov.cn/xw/tpxw/202610/t20261029_3707755.html",
+     "title": "智能巡检无人机田间收集果园数据_陕西省人民政府",
+     "len": 163,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      29
+     ],
+     "written": null,
+     "fp": ""
+    },
+    {
+     "url": "https://www.shaanxi.gov.cn/xw/sxyw/202610/t20261026_3706460.html",
+     "title": "第33届中国杨凌农高会和2026上合组织农博会开幕_陕西省人民政府",
+     "len": 1866,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      26
+     ],
+     "written": null,
+     "fp": "0d791b43b4"
+    },
+    {
+     "url": "https://www.shaanxi.gov.cn/xw/sxyw/202610/t20261023_3706033.html",
+     "title": "纪念中国工农红军长征胜利90周年大会在京隆重举行_陕西省人民政府",
+     "len": 2662,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      23
+     ],
+     "written": null,
+     "fp": "b6455d8588"
+    },
+    {
+     "url": "https://www.shaanxi.gov.cn/xw/sxyw/202610/t20261022_3705608.html",
+     "title": "2026中国国际友好城市大会在西安开幕_陕西省人民政府",
+     "len": 1118,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      22
+     ],
+     "written": null,
+     "fp": "797b19e38d"
+    },
+    {
+     "url": "https://www.shaanxi.gov.cn/xw/sxyw/202610/t20261030_3708160.html",
+     "title": "中共中央将于30日上午举行新闻发布会_陕西省人民政府",
+     "len": 136,
+     "url_date": [
+      2026,
+      10,
+      0
+     ],
+     "publish": [
+      2026,
+      10,
+      30
+     ],
+     "written": null,
+     "fp": ""
+    }
+   ]
+  }
+ },
+ "issues": []
+}
