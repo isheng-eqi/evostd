@@ -1,0 +1,59 @@
+{
+ "generated_at": "2026-10-30T19:51:02",
+ "n": 5,
+ "soup_detected": 1,
+ "browser_detected": 4,
+ "surface_avg": 3.0,
+ "rows": [
+  {
+   "id": "C1",
+   "name": "hidden 属性藏信息",
+   "soup": false,
+   "findings": [
+    "不可见:主办"
+   ],
+   "browser": true,
+   "surface_kept": 3
+  },
+  {
+   "id": "C2",
+   "name": "字号 0 藏信息",
+   "soup": false,
+   "findings": [
+    "字号为0:主办"
+   ],
+   "browser": true,
+   "surface_kept": 3
+  },
+  {
+   "id": "C3",
+   "name": "日期换成图片",
+   "soup": true,
+   "findings": [],
+   "browser": false,
+   "surface_kept": 3
+  },
+  {
+   "id": "C4",
+   "name": "canonical 指向旧文",
+   "soup": false,
+   "findings": [
+    "canonical 指向旧文"
+   ],
+   "browser": true,
+   "surface_kept": 3
+  },
+  {
+   "id": "C5",
+   "name": "visibility 藏信息",
+   "soup": false,
+   "findings": [
+    "不可见:主办",
+    "visibility:主办"
+   ],
+   "browser": true,
+   "surface_kept": 3
+  }
+ ],
+ "note": "浏览器检测只覆盖'文字存在但不可见'；图片日期与 canonical 偷换仍需新规则。"
+}
