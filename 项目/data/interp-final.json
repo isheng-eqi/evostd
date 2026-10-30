@@ -1,0 +1,43 @@
+{
+ "generated_at": "2026-10-30T20:46:45",
+ "rows": [
+  {
+   "site": "吉林",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "黑龙江",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "上海",
+   "status": "无解读入口"
+  },
+  {
+   "site": "贵州",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "西藏",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "宁夏",
+   "status": "首页渲染失败"
+  },
+  {
+   "site": "新疆",
+   "status": "首页渲染失败"
+  },
+  {
+   "site": "太原",
+   "checked": 0,
+   "status": "未命中"
+  }
+ ],
+ "cases": []
+}
