@@ -27,6 +27,7 @@ def main() -> int:
     bb = load("redteam-blind-b.json")
     fo = load("footer-ocr.json")
     ar = load("substance-report.json")
+    rc = load("real-cases-final.json")
 
     sites = load("gov-sites-30.json")
     footer_ok = sum(1 for v in fo["sites"].values() if "only_in_image" in v)
@@ -50,6 +51,7 @@ def main() -> int:
         ("盲测 B 浏览器", f"{bb['browser_detected']}/{bb['n']}", "4/5"),
         ("清单保持通过", f"{combined_green}/{combined_n}", f"{combined_green}/{combined_n}"),
         ("页脚差异案例", footer_cases, "1"),
+        ("真实案例数", len(rc["cases"]), "6"),
     ]
     bad = 0
     for name, actual, expect in checks:

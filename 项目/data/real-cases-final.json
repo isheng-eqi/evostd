@@ -1,0 +1,50 @@
+{
+ "criteria": {
+  "S1": "meta description < 12 字",
+  "S2": "解读正文 < 150 字且含图片"
+ },
+ "cases": [
+  {
+   "site": "上海",
+   "kind": "S1 有标签无描述",
+   "desc": "中国上海",
+   "len": 4,
+   "evidence": "页面源码"
+  },
+  {
+   "site": "宁夏",
+   "kind": "S1 有标签无描述",
+   "desc": "宁夏,",
+   "len": 3,
+   "evidence": "页面源码"
+  },
+  {
+   "site": "河北",
+   "kind": "S2 有解读无文字",
+   "text_chars": 39,
+   "images": 23,
+   "url": "https://www.hebei.gov.cn/columns/3d1c6d59-e2af-4f3e-8140-b9dcdad30f6a/202610/15/24e60fef-063e-4012-afa9-93eb7b219e99.html"
+  },
+  {
+   "site": "浙江",
+   "kind": "S2 有解读无文字",
+   "text_chars": 0,
+   "images": 2,
+   "url": "https://www.zj.gov.cn/col/col1229667608/art/2026/art_e48de9d.html"
+  },
+  {
+   "site": "山西",
+   "kind": "S2 有解读无文字",
+   "text_chars": 118,
+   "images": 13,
+   "url": "http://www.shanxi.gov.cn/ywdt/zcjd/tpjd/202610/t20261030_10248600.shtml"
+  },
+  {
+   "site": "应急部",
+   "kind": "S2 有解读无文字",
+   "text_chars": 75,
+   "images": 12,
+   "url": "https://www.mem.gov.cn/gk/zcjd/202609/t20260908_715528.shtml"
+  }
+ ]
+}
