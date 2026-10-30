@@ -51,7 +51,7 @@ def main() -> int:
         ("盲测 B 浏览器", f"{bb['browser_detected']}/{bb['n']}", "4/5"),
         ("清单保持通过", f"{combined_green}/{combined_n}", f"{combined_green}/{combined_n}"),
         ("页脚差异案例", footer_cases, "1"),
-        ("真实案例数", len(rc["cases"]), "8"),
+        ("真实案例数", len(rc["cases"]), "9"),
     ]
     bad = 0
     for name, actual, expect in checks:

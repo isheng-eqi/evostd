@@ -1,0 +1,35 @@
+{
+ "generated_at": "2026-10-30T20:42:27",
+ "rows": [
+  {
+   "site": "国务院",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "内蒙古",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "河南",
+   "checked": 10,
+   "status": "未命中"
+  },
+  {
+   "site": "海南",
+   "status": "首页失败"
+  },
+  {
+   "site": "教育部",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "工信部",
+   "checked": 0,
+   "status": "未命中"
+  }
+ ],
+ "cases": []
+}

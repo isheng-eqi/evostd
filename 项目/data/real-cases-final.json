@@ -59,6 +59,14 @@
    "text_chars": 114,
    "images": 3,
    "url": "https://www.yn.gov.cn/"
+  },
+  {
+   "site": "湖南",
+   "kind": "S2 有解读无文字",
+   "text_chars": 57,
+   "images": 3,
+   "url": "https://www.hunan.gov.cn/",
+   "note": "【图解】省政府常务会议"
   }
  ]
 }

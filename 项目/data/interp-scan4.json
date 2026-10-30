@@ -1,0 +1,46 @@
+{
+ "generated_at": "2026-10-30T20:40:44",
+ "rows": [
+  {
+   "site": "吉林",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "黑龙江",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "上海",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "贵州",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "西藏",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "宁夏",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "新疆",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "太原",
+   "checked": 0,
+   "status": "未命中"
+  }
+ ],
+ "cases": []
+}

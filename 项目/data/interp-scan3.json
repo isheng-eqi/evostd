@@ -1,0 +1,60 @@
+{
+ "generated_at": "2026-10-30T20:37:54",
+ "rows": [
+  {
+   "site": "北京",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "天津",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "江苏",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "安徽",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "福建",
+   "checked": 0,
+   "status": "未命中"
+  },
+  {
+   "site": "江西",
+   "status": "首页失败"
+  },
+  {
+   "site": "湖南",
+   "checked": 1,
+   "article": "http://www.hunan.gov.cn/hnszf/szf/zfhyjtj/tjzfhy/202610/t20261020_34084464.html",
+   "title": "【图解】10月19日省政府常务会议：分析前三季度经济形势 部署四季度重点工作、推",
+   "static_chars": 57,
+   "render_chars": 57,
+   "big_images": 3,
+   "shot": "data\\interp-shots3\\湖南.png"
+  },
+  {
+   "site": "四川",
+   "checked": 0,
+   "status": "未命中"
+  }
+ ],
+ "cases": [
+  {
+   "site": "湖南",
+   "article": "http://www.hunan.gov.cn/hnszf/szf/zfhyjtj/tjzfhy/202610/t20261020_34084464.html",
+   "title": "【图解】10月19日省政府常务会议：分析前三季度经济形势 部署四季度重点工作、推",
+   "static_chars": 57,
+   "render_chars": 57,
+   "big_images": 3,
+   "shot": "data\\interp-shots3\\湖南.png"
+  }
+ ]
+}
